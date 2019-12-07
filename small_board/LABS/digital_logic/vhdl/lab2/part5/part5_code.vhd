@@ -1,0 +1,48 @@
+LIBRARY ieee;
+USE ieee.std_logic_1164.all;
+
+ENTITY part5_code IS
+	PORT(
+		BUTTONS 		: IN  STD_LOGIC_VECTOR (3 DOWNTO 0);
+		CONSTANTS : IN  STD_LOGIC_VECTOR (3 DOWNTO 0);
+		LED   : OUT STD_LOGIC_VECTOR (6 DOWNTO 0);
+		DISP: OUT STD_LOGIC_VECTOR(3 DOWNTO 0);
+		clk_in : IN STD_LOGIC;
+		carry_in : IN STD_LOGIC;
+		carry_out : OUT STD_LOGIC
+	);
+END part5_code;
+
+ARCHITECTURE Behaviour of part5_code IS
+
+SIGNAL carry : STD_LOGIC;
+SIGNAL HEX_0, HEX_1, BLANK: STD_LOGIC_VECTOR (6 DOWNTO 0);
+SIGNAL s_o : STD_LOGIC_VECTOR (3 DOWNTO 0);
+
+COMPONENT segseven PORT ( SW     : IN  STD_LOGIC_VECTOR (3 DOWNTO 0); 
+                          LEDSEG : OUT STD_LOGIC_VECTOR (6 DOWNTO 0)); END COMPONENT;
+COMPONENT circuitb PORT ( SW     : IN  STD_LOGIC; 
+                          LEDSEG : OUT STD_LOGIC_VECTOR (6 DOWNTO 0)); END COMPONENT;						  
+COMPONENT DE1_disp PORT ( HEX0, HEX1, HEX2, HEX3 : IN STD_LOGIC_VECTOR(6 DOWNTO 0); 
+                          clk : IN STD_LOGIC; 
+                          HEX : OUT STD_LOGIC_VECTOR(6 DOWNTO 0);
+								  DISPn: OUT STD_LOGIC_VECTOR(3 DOWNTO 0)); END COMPONENT;
+COMPONENT bcd_adder PORT (b_in  : IN STD_LOGIC_VECTOR (3 DOWNTO 0);
+                          a_in  : IN STD_LOGIC_VECTOR (3 DOWNTO 0);
+		                    c_in : IN STD_LOGIC;
+		                    c_out : OUT STD_LOGIC;
+		                    s_out  : OUT STD_LOGIC_VECTOR (3 DOWNTO 0));END COMPONENT;
+			 
+BEGIN
+
+	BLANK <= "1111111";
+		
+	S0 : segseven PORT MAP (SW=>s_o, LEDSEG=>HEX_0);
+	S1 : circuitb PORT MAP (SW=>carry, LEDSEG=>HEX_1);
+	DE1: DE1_disp PORT MAP (HEX0=>HEX_0, HEX1=>HEX_1, HEX2=>BLANK, HEX3=>BLANK, clk=>clk_in,HEX=>LED,DISPn=>DISP);
+	
+	badder: bcd_adder PORT MAP (b_in=> NOT BUTTONS, a_in => CONSTANTS, c_in =>carry_in, c_out=> carry, s_out => s_o);
+	
+	carry_out <= carry;
+	
+END Behaviour;

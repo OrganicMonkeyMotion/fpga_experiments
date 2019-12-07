@@ -1,0 +1,404 @@
+
+<!-- saved from url=(0037)http://www.fpga4fun.com/PongGame.html -->
+<html><head><meta http-equiv="Content-Type" content="text/html; charset=ISO-8859-1">
+<title>fpga4fun.com - Pong Game</title>
+
+<style type="text/css">
+ .pos_top {background-color:#90a080; position:absolute; left:0px; right:5px; top:5px; padding:2px; }
+ .pos_menushadow {background-color:#ffffff; position:absolute; left:60px; top:57px; width:207px; padding:3px; border: 1px solid  #ffffff;}
+ .pos_menu {background-color:#dddddd; position:absolute; left: 56px; top:50px; width:207px; padding:3px; border: 1px outset #000000;}
+ .pos_content {position:absolute; left:287px; top:110px; margin:0px; }
+
+ div, table {font-family: Verdana,Tahoma,Arial; font-size:12;}
+ pre {font-family: 'Lucida Sans Typewriter Regular', 'Lucida Console'; font-size:12;}
+ h1 {font-size: 240%}
+ h2 {font-size: 210%}
+ h3 {font-size: 190%}
+ h4 {font-size: 160%}
+ h5 {font-size: 130%}
+ h6 {font-size: 110%}
+ a {text-decoration:none; color:black; font-weight:bold;}
+ a:hover {text-decoration:underline;}
+ .link {color:#000080;}
+ .link:hover {text-decoration:underline; color:blue;}
+ pre {background: #d0d0f0; padding: 5px; margin: 5px;}
+</style>
+</head>
+
+<body marginwidth="0" marginheight="0" rightmargin="0" topmargin="0" leftmargin="0">
+<div class="pos_top"><table width="100%"><tbody><tr><td width="280"></td><td><br><img src="./fpga4fun.com - Pong Game_files/title.gif"><hr></td></tr></tbody></table></div>
+<div class="pos_menushadow"><br><br><br></div>
+<div class="pos_menu">
+<font color="#9090c0"><b>
+<br>
+<br>
+Home<br>
+<a class="link" href="http://www.fpga4fun.com/index.html">Welcome</a><br>
+<a class="link" href="http://www.fpga4fun.com/SiteInformation.html">Information</a><br>
+
+<hr>
+<br>FPGA projects - Basic<br>
+<a class="link" href="http://www.fpga4fun.com/MusicBox.html">Music box</a><br>
+<a class="link" href="http://www.fpga4fun.com/Opto.html">LED displays</a><br>
+<a class="link" href="./fpga4fun.com - Pong Game_files/fpga4fun.com - Pong Game.htm">Pong game</a><br>
+<a class="link" href="http://www.fpga4fun.com/RCServos.html">R/C servos</a><br>
+<a class="link" href="http://www.fpga4fun.com/TextLCDmodule.html">Text LCD module</a><br>
+<a class="link" href="http://www.fpga4fun.com/QuadratureDecoder.html">Quadrature decoder</a><br>
+<a class="link" href="http://www.fpga4fun.com/PWM_DAC.html">PWM and one-bit DAC</a><br>
+<a class="link" href="http://www.fpga4fun.com/Debouncer.html">Debouncer</a><br>
+<a class="link" href="http://www.fpga4fun.com/CrossClockDomain.html">Crossing clock domains</a><br>
+<a class="link" href="http://www.fpga4fun.com/Counters.html">The art of counting</a><br>
+<a class="link" href="http://www.fpga4fun.com/ExternalContributions">External contributions</a><br>
+
+<br>Interfaces<br>
+<a class="link" href="http://www.fpga4fun.com/SerialInterface.html">RS-232</a><br>
+<a class="link" href="http://www.fpga4fun.com/JTAG.html">JTAG</a><br>
+<a class="link" href="http://www.fpga4fun.com/I2C.html">I2C</a><br>
+<a class="link" href="http://www.fpga4fun.com/EPP.html">EPP</a><br>
+<a class="link" href="http://www.fpga4fun.com/SPI.html">SPI</a><br>
+<a class="link" href="http://www.fpga4fun.com/PCI.html">PCI</a><br>
+<a class="link" href="http://www.fpga4fun.com/PCI-Express.html">PCI Express</a><br>
+<a class="link" href="http://www.fpga4fun.com/10BASE-T.html">Ethernet</a><br>
+<a class="link" href="http://www.fpga4fun.com/HDMI.html">HDMI</a><br>
+<a class="link" href="http://www.fpga4fun.com/SDRAM.html">SDRAM</a><br>
+
+<br>Advanced<br>
+<a class="link" href="http://www.fpga4fun.com/digitalscope.html">Digital oscilloscope</a><br>
+<a class="link" href="http://www.fpga4fun.com/GraphicLCDpanel.html">Graphic LCD panel</a><br>
+<a class="link" href="http://www.fpga4fun.com/DDS.html">Direct Digital Synthesis</a><br>
+<a class="link" href="http://www.fpga4fun.com/CNC.html">CNC steppers</a><br>
+<a class="link" href="http://www.fpga4fun.com/spoc.html">Spoc CPU core</a><br>
+
+<br>Hands-on<br>
+<a class="link" href="http://www.fpga4fun.com/Hands-on_Flashy.html">A simple oscilloscope</a><br>
+
+<hr>
+<br>FPGA introduction<br>
+<a class="link" href="http://www.fpga4fun.com/FPGAinfo1.html">What are FPGAs?</a><br>
+<a class="link" href="http://www.fpga4fun.com/FPGAinfo2.html">How FPGAs work</a><br>
+<a class="link" href="http://www.fpga4fun.com/FPGAinfo3.html">Internal RAM</a><br>
+<a class="link" href="http://www.fpga4fun.com/FPGAinfo4.html">FPGA pins</a><br>
+<a class="link" href="http://www.fpga4fun.com/FPGAinfo5.html">Clocks and global lines</a><br>
+<a class="link" href="http://www.fpga4fun.com/FPGAinfo6.html">Download cables</a><br>
+<a class="link" href="http://www.fpga4fun.com/FPGAinfo7.html">Configuration</a><br>
+<a class="link" href="http://www.fpga4fun.com/FPGAinfo8.html">Learn more</a><br>
+
+<br>FPGA software<br>
+<a class="link" href="http://www.fpga4fun.com/FPGAsoftware1.html">Design software</a><br>
+<a class="link" href="http://www.fpga4fun.com/FPGAsoftware2.html">Design-entry</a><br>
+<a class="link" href="http://www.fpga4fun.com/FPGAsoftware3.html">Simulation</a><br>
+<a class="link" href="http://www.fpga4fun.com/FPGAsoftware4.html">Pin assignment</a><br>
+<a class="link" href="http://www.fpga4fun.com/FPGAsoftware5.html">Synthesis and P&amp;R</a><br>
+
+<br>FPGA electronic<br>
+<a class="link" href="http://www.fpga4fun.com/SMD.html">SMD technology</a><br>
+<a class="link" href="http://www.fpga4fun.com/oscillators.html">Crystals and oscillators</a><br>
+
+<br>HDL info<br>
+<a class="link" href="http://www.fpga4fun.com/HDL%20tutorials.html">HDL tutorials</a><br>
+<a class="link" href="http://www.fpga4fun.com/VerilogTips.html">Verilog tips</a><br>
+<a class="link" href="http://www.fpga4fun.com/VHDLTips.html">VHDL tips</a><br>
+
+<br>Quick-start guides<br>
+<a class="link" href="http://www.fpga4fun.com/ISEQuickStart.html">ISE</a><br>
+<a class="link" href="http://www.fpga4fun.com/QuartusQuickStart.html">Quartus-II</a><br>
+
+<br>Site<br>
+<!--<a class='link' href='news.html'>News</a><br>-->
+<a class="link" href="http://www.fpga4fun.com/Links.html">FPGA links</a><br>
+<a class="link" href="http://www.fpga4fun.com/HDL%20tutorials.html">HDL tutorials</a><br>
+<a class="link" href="http://www.fpga4fun.com/forum">Forum</a><br>
+
+</b></font>
+<br><br>
+</div>
+
+<div class="pos_content">
+<h4>Pong Game</h4><p>FPGAs can become video generators easily.</p>
+<p><img src="./fpga4fun.com - Pong Game_files/PongGame.jpg"></p>
+
+<p>The pong game consists of a ball bouncing on a screen. A paddle (controlled from a mouse here) enables the user to make the ball bounce back up.</p>
+<p>We use a <a href="http://www.knjn.com/FPGA-RS232.html">Pluto</a> FPGA board, although any other FPGA developement board would work.</p>
+<p><img src="./fpga4fun.com - Pong Game_files/PongDiagram.gif"></p>
+
+<h4>Driving a VGA monitor</h4>
+A VGA monitor requires 5 signals to display a picture:
+
+<ul class="NewList">
+<li>R, G and B (red, green and blue signals).</li>
+<li>HS and VS (horizontal and vertical synchronization).</li>
+</ul>
+
+<p><img src="./fpga4fun.com - Pong Game_files/VGAconnector.gif"></p>
+
+<p>The R, G and B are analog signals, while HS and VS are digital signals.</p>
+
+<h4>Creating a VGA video signal from FPGA pins</h4>
+Here's how to drive the VGA connector:
+<ul>
+<li>Pins 13 and 14 of the VGA connector (HS and VS) are digital signals, so can be driven directly from two FPGA pins (or through low values resistors, like 10&#937; or 20&#937;).</li>
+<li>Pins 1, 2 and 3 (R, G and B) are 75&#937; analog signals with nominal values of 0.7V. With 3.3V FPGA outputs, use three 270&#937; series resistors.
+The resistors form voltage dividers with the 75&#937; resistors in the monitor inputs so that 3.3V become 3.3*75/(270+75)=0.72V, pretty close to 0.7V.
+Driving these 3 pins with different combinations of 0's and 1's gives us up to 8 colors.</li>
+<li>Ground pins are pins 5, 6, 7, 8 and 10.</li>
+</ul>
+<p><img src="./fpga4fun.com - Pong Game_files/VGAconnector.2.gif"></p>
+
+<p>Here's a view of the female VGA connector connected to Pluto on a breadboard.</p>
+<p><img src="./fpga4fun.com - Pong Game_files/VGAconnectorPluto.jpg"></p>
+
+<p>Back view of the female VGA connector to 12-pins header assembly.
+The 12-pins header makes it easy to connect to a breadboard.
+The three 270&#937; series resistors are clearly visible.
+We could also have used an <a href="http://www.knjn.com/ShopAdapterBoards.html">adapter board</a>.</p>
+<img src="./fpga4fun.com - Pong Game_files/VGAconnector.jpg">
+
+<h4>Frequency generator</h4>
+<p>A monitor always displays a picture line-by-line, from top-to-bottom.
+Each line is drawn from left-to-right.</p>
+
+<p>That's hard-coded, you cannot change that.</p>
+
+<p>But you specify when the drawing starts by sending short pulses on HS and VS at fixed intervals.
+HS makes a new line to start drawing; while VS tells that the bottom has been reached (makes the monitor go back up to the top line).</p>
+
+<p>For the standard 640x480 VGA video signal, the frequencies of the pulses should be:</p>
+
+<table border="1">
+<tbody><tr><th>Vertical Freq (VS)</th><th>Horizontal Freq (HS)</th></tr>
+<tr><td>60 Hz (=60 pulses per second)</td><td>31.5 kHz (=31500 pulses per second)</td></tr>
+</tbody></table>
+
+<p>To create a standard video signal, there is more details to take care of, like the duration of the pulses and the relationship between HS and VS.
+Get an idea on <a href="http://martin.hinner.info/vga/">this page</a>.</p>
+
+<h4>Our first video generator</h4>
+<p>Nowadays, VGA monitors are multisync, so can accommodate non-standard frequencies - no need to generate exactly 60Hz and 31.5KHz anymore
+(but if you are using an old (non-multisync) VGA monitor, you'll need to generate the exact frequencies).</p>
+
+<p>Let's start with X and Y counter.</p>
+<table cellpadding="10"><tbody><tr><td bgcolor="#d0d0f0">
+<b>reg</b> [9:0] CounterX;<br>
+<b>reg</b> [8:0] CounterY;<br>
+<b>wire</b> CounterXmaxed = (CounterX==767);<br><br>
+
+<b>always</b> @(<b>posedge</b> clk)<br>
+<b>if</b>(CounterXmaxed)<br>
+&nbsp; CounterX &lt;= 0;<br>
+<b>else</b><br>
+&nbsp; CounterX &lt;= CounterX + 1;<br><br>
+
+<b>always</b> @(<b>posedge</b> clk)<br>
+<b>if</b>(CounterXmaxed)<br>
+&nbsp; &nbsp; CounterY &lt;= CounterY + 1;<br>
+</td></tr></tbody></table>
+
+<p>CounterX counts 768 values (from 0 to 767) and CounterY counts 512 values (0 to 511).</p>
+
+<p>Now, CounterX is used to generate HS, and CounterY to generate VS.
+Using a 25MHz clock, we get 32.5KHz for HS and 63.5Hz for VS.
+The pulses need to be active long enough for the monitor to detect them.
+Let's use a 16 clocks pulse (0.64µs) for HS and a full horizontal line length pulse for VS (768 clocks or 30µs).
+That's shorter than what the VGA spec calls for but works fine anyway.</p>
+
+<p>We generate the HS and VS pulses from D flip-flop (to get glitch free outputs).</p>
+
+<table cellpadding="10"><tbody><tr><td bgcolor="#d0d0f0">
+<b>reg</b> vga_HS, vga_VS;<br>
+<b>always</b> @(<b>posedge</b> clk)<br>
+<b>begin</b><br>
+&nbsp; vga_HS &lt;= (CounterX[9:4]==0); &nbsp; // active for 16 clocks<br>
+&nbsp; vga_VS &lt;= (CounterY==0); &nbsp; // active for 768 clocks<br>
+<b>end</b>
+</td></tr></tbody></table>
+
+<p>The VGA outputs need to be negative, so we invert the signals.</p>
+
+<table cellpadding="10"><tbody><tr><td bgcolor="#d0d0f0">
+<b>assign</b> vga_h_sync = ~vga_HS;<br>
+<b>assign</b> vga_v_sync = ~vga_VS;
+</td></tr></tbody></table>
+
+<p>Finally we can drive the R, G and B signals.
+As a first cut, we can use some bits of the X and Y counters to get nice square color patterns...</p>
+
+<table cellpadding="10"><tbody><tr><td bgcolor="#d0d0f0">
+<b>assign</b> R = CounterY[3] | (CounterX==256);<br>
+<b>assign</b> G = (CounterX[5] ^ CounterX[6]) | (CounterX==256);<br>
+<b>assign</b> B = CounterX[4] | (CounterX==256);
+</td></tr></tbody></table>
+
+<p>... and we get a picture on the VGA monitor!</p>
+
+<h4>Drawing a useful picture</h4>
+<p>The sync generator is best rewritten to be used as an HDL module where we generate R, G and B outside.
+Also the X and Y counters are more useful if they start counting from the drawing area.<br>
+The new file can be found <a href="http://www.fpga4fun.com/files/hvsync_generator.zip">here</a>.</p>
+
+<p>Now we can use it to draw a border around the screen.</p>
+
+<table cellpadding="10"><tbody><tr><td bgcolor="#d0d0f0">
+<b>module</b> pong(clk, vga_h_sync, vga_v_sync, vga_R, vga_G, vga_B);<br>
+<b>input</b> clk;<br>
+<b>output</b> vga_h_sync, vga_v_sync, vga_R, vga_G, vga_B;<br><br>
+
+<b>wire</b> inDisplayArea;<br>
+<b>wire</b> [9:0] CounterX;<br>
+<b>wire</b> [8:0] CounterY;<br><br>
+
+<b>hvsync_generator</b> syncgen(.clk(clk), .vga_h_sync(vga_h_sync), .vga_v_sync(vga_v_sync), <br>
+&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; .inDisplayArea(inDisplayArea), .CounterX(CounterX), .CounterY(CounterY));<br><br>
+
+// Draw a border around the screen<br>
+<b>wire</b> border = (CounterX[9:3]==0) || (CounterX[9:3]==79) || (CounterY[8:3]==0) || (CounterY[8:3]==59);<br>
+<b>wire</b> R = border;<br>
+<b>wire</b> G = border;<br>
+<b>wire</b> B = border;<br><br>
+
+<b>reg</b> vga_R, vga_G, vga_B;<br>
+<b>always</b> @(<b>posedge</b> clk)<br>
+<b>begin</b><br>
+&nbsp; vga_R &lt;= R &amp; inDisplayArea;<br>
+&nbsp; vga_G &lt;= G &amp; inDisplayArea;<br>
+&nbsp; vga_B &lt;= B &amp; inDisplayArea;<br>
+<b>end</b><br><br>
+
+<b>endmodule</b>
+</td></tr></tbody></table>
+
+<h4>Drawing a paddle</h4>
+<p>Let's use a mouse to move the paddle left and right on the screen.</p>
+
+<p>The <a href="http://www.fpga4fun.com/QuadratureDecoder.html">quadrature decoder</a> page shows the secret.
+The code is as follow:</p>
+
+<table cellpadding="10"><tbody><tr><td bgcolor="#d0d0f0">
+<b>reg</b> [8:0] PaddlePosition;<br>
+<b>reg</b> [2:0] quadAr, quadBr;<br>
+<b>always</b> @(<b>posedge</b> clk) quadAr &lt;= {quadAr[1:0], quadA};<br>
+<b>always</b> @(<b>posedge</b> clk) quadBr &lt;= {quadBr[1:0], quadB};<br><br>
+
+<b>always</b> @(<b>posedge</b> clk)<br>
+<b>if</b>(quadAr[2] ^ quadAr[1] ^ quadBr[2] ^ quadBr[1])<br>
+<b>begin</b><br>
+&nbsp; <b>if</b>(quadAr[2] ^ quadBr[1])<br>
+&nbsp; <b>begin</b><br>
+&nbsp; &nbsp; <b>if</b>(~&amp;PaddlePosition)&nbsp; &nbsp; &nbsp; &nbsp; // make sure the value doesn't overflow<br>
+&nbsp; &nbsp; &nbsp; PaddlePosition &lt;= PaddlePosition + 1;<br>
+&nbsp; <b>end</b> <br>
+&nbsp; <b>else</b><br>
+&nbsp; <b>begin</b><br>
+&nbsp; &nbsp; <b>if</b>(|PaddlePosition)&nbsp; &nbsp; &nbsp; &nbsp; // make sure the value doesn't underflow<br>
+&nbsp; &nbsp; &nbsp; PaddlePosition &lt;= PaddlePosition - 1;<br>
+&nbsp; <b>end</b><br>
+<b>end</b>
+</td></tr></tbody></table>
+
+<p>Now that "PaddlePosition" value is known, we can display the paddle.</p>
+
+<table cellpadding="10"><tbody><tr><td bgcolor="#d0d0f0">
+<b>wire</b> border = (CounterX[9:3]==0) || (CounterX[9:3]==79) || (CounterY[8:3]==0) || (CounterY[8:3]==59);<br>
+<b>wire</b> paddle = (CounterX&gt;=PaddlePosition+8) &amp;&amp; (CounterX&lt;=PaddlePosition+120) &amp;&amp; (CounterY[8:4]==27);<br><br>
+
+<b>wire</b> R = border | (CounterX[3] ^ CounterY[3]) | paddle;<br>
+<b>wire</b> G = border | paddle;<br>
+<b>wire</b> B = border | paddle;
+</td></tr></tbody></table>
+
+<h4>Drawing the ball</h4>
+<p>The ball needs to move around the screen, and bounce back when it touches an object (border or paddle).</p>
+
+<p>First we display the ball. It is a square 16x16 pixels.
+We activate the drawing of the ball when CounterX and CounterY reach its coordinates.</p>
+
+<table cellpadding="10"><tbody><tr><td bgcolor="#d0d0f0">
+<b>reg</b> [9:0] ballX;<br>
+<b>reg</b> [8:0] ballY;<br>
+
+<b>reg</b> ball_inX, ball_inY;<br><br>
+<b>always</b> @(<b>posedge</b> clk)<br>
+<b>if</b>(ball_inX==0) ball_inX &lt;= (CounterX==ballX) &amp; ball_inY; <b>else</b> ball_inX &lt;= !(CounterX==ballX+16);<br><br>
+<b>always</b> @(<b>posedge</b> clk)<br>
+<b>if</b>(ball_inY==0) ball_inY &lt;= (CounterY==ballY); <b>else</b> ball_inY &lt;= !(CounterY==ballY+16);<br><br>
+<b>wire</b> ball = ball_inX &amp; ball_inY;
+</td></tr></tbody></table>
+
+<p>Now for the collisions. That's the difficult part of this project.</p>
+
+<p>We could check the coordinate of the ball against each object on the screen and determine if there is a collision.
+But that would become quickly a nightmare as the number of objects increases.</p>
+
+<p>Instead we define 4 "hot-spots" pixels, one in the middle of each side of the ball.
+If an object (border or paddle) redraws itself at the same time that the ball draws one of its "hot-spot", we know that there is collision on that side of the ball.</p>
+
+<table cellpadding="10"><tbody><tr><td bgcolor="#d0d0f0">
+<b>wire</b> border = (CounterX[9:3]==0) || (CounterX[9:3]==79) || (CounterY[8:3]==0) || (CounterY[8:3]==59);<br>
+<b>wire</b> paddle = (CounterX&gt;=PaddlePosition+8) &amp;&amp; (CounterX&lt;=PaddlePosition+120) &amp;&amp; (CounterY[8:4]==27);<br>
+<b>wire</b> BouncingObject = border | paddle; // active if the border or paddle is redrawing itself<br><br>
+
+<b>reg</b> CollisionX1, CollisionX2, CollisionY1, CollisionY2;<br>
+<b>always</b> @(<b>posedge</b> clk) <b>if</b>(BouncingObject &amp; (CounterX==ballX   ) &amp; (CounterY==ballY+ 8)) CollisionX1&lt;=1;<br>
+<b>always</b> @(<b>posedge</b> clk) <b>if</b>(BouncingObject &amp; (CounterX==ballX+16) &amp; (CounterY==ballY+ 8)) CollisionX2&lt;=1;<br>
+<b>always</b> @(<b>posedge</b> clk) <b>if</b>(BouncingObject &amp; (CounterX==ballX+ 8) &amp; (CounterY==ballY   )) CollisionY1&lt;=1;<br>
+<b>always</b> @(<b>posedge</b> clk) <b>if</b>(BouncingObject &amp; (CounterX==ballX+ 8) &amp; (CounterY==ballY+16)) CollisionY2&lt;=1;
+</td></tr></tbody></table>
+
+<p>(I simplified a little the above code by never resetting the collision flops, the complete code is available below).</p>
+
+<p>Now we update the ball position, but only once for every video frame.</p>
+
+<table cellpadding="10"><tbody><tr><td bgcolor="#d0d0f0">
+<b>reg</b> UpdateBallPosition; &nbsp; &nbsp; &nbsp; // active only once for every video frame<br>
+<b>always</b> @(<b>posedge</b> clk) UpdateBallPosition &lt;= (CounterY==500) &amp; (CounterX==0);<br><br>
+
+<b>reg</b> ball_dirX, ball_dirY;<br>
+<b>always</b> @(<b>posedge</b> clk)<br>
+<b>if</b>(UpdateBallPosition)<br>
+<b>begin</b><br>
+&nbsp; <b>if</b>(~(CollisionX1 &amp; CollisionX2))&nbsp; &nbsp; &nbsp; &nbsp; // if collision on both X-sides, don't move in the X direction<br>
+&nbsp; <b>begin</b><br>
+&nbsp; &nbsp; ballX &lt;= ballX + (ball_dirX ? -1 : 1);<br>
+&nbsp; &nbsp; <b>if</b>(CollisionX2) ball_dirX &lt;= 1; <b>else</b> if(CollisionX1) ball_dirX &lt;= 0;<br>
+&nbsp; <b>end</b><br><br>
+&nbsp; <b>if</b>(~(CollisionY1 &amp; CollisionY2))&nbsp; &nbsp; &nbsp; &nbsp; // if collision on both Y-sides, don't move in the Y direction<br>
+&nbsp; <b>begin</b><br>
+&nbsp; &nbsp; ballY &lt;= ballY + (ball_dirY ? -1 : 1);<br>
+&nbsp; &nbsp; <b>if</b>(CollisionY2) ball_dirY &lt;= 1; <b>else</b> if(CollisionY1) ball_dirY &lt;= 0;<br>
+&nbsp; <b>end</b><br>
+<b>end</b>
+</td></tr></tbody></table>
+
+<p>And finally we can draw all that together.</p>
+
+<table cellpadding="10"><tbody><tr><td bgcolor="#d0d0f0">
+<b>wire</b> R = BouncingObject | ball | (CounterX[3] ^ CounterY[3]);<br>
+<b>wire</b> G = BouncingObject | ball;<br>
+<b>wire</b> B = BouncingObject | ball;<br><br>
+
+<b>reg</b> vga_R, vga_G, vga_B;<br>
+<b>always</b> @(<b>posedge</b> clk)<br>
+<b>begin</b><br>
+&nbsp; vga_R &lt;= R &amp; inDisplayArea;<br>
+&nbsp; vga_G &lt;= G &amp; inDisplayArea;<br>
+&nbsp; vga_B &lt;= B &amp; inDisplayArea;<br>
+<b>end</b>
+</td></tr></tbody></table>
+
+<p>Whoa, wasn't so difficult after all.<br>
+The complete file is <a href="http://www.fpga4fun.com/files/pong.zip">pong.zip</a>, and works with <a href="http://www.fpga4fun.com/files/hvsync_generator.zip">hvsync_generator.zip</a></p>
+
+<p>It is also possible to use <a href="http://www.fpga4fun.com/HDMI.html">HDMI</a> to run the pong game.</p>
+
+<p>Your turn to experiment!</p><p>
+
+</p><h5>Links</h5>
+<ul>
+<li>Pong on the <a href="http://www.stevechamberlin.com/cpu/2009/06/21/fpga-pong/">Spartan 3A FPGA starter kit</a>.</li>
+<li>Pong on the <a href="http://web.mit.edu/skd/www/mas/fpga.html">XESS XSA-100</a>.</li>
+</ul>
+
+
+<br><br><br><br><hr>This page was last updated on April 11 2014.<br><br></div>
+
+
+</body></html>

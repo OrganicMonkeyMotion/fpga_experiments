@@ -1,0 +1,8 @@
+{C:/Users/rr/Documents/GitHub/fpga_experiments/small_board/Cyclone II Exp/Exp 12/majority3.vhd} {1 {vcom -work work -2002 -explicit {C:/Users/rr/Documents/GitHub/fpga_experiments/small_board/Cyclone II Exp/Exp 12/majority3.vhd}
+Model Technology ModelSim ALTERA vcom 6.6d Compiler 2010.11 Nov  2 2010
+-- Loading package standard
+-- Loading package std_logic_1164
+-- Compiling entity majority3
+-- Compiling architecture majority3_rtl of majority3
+
+} {} {}}

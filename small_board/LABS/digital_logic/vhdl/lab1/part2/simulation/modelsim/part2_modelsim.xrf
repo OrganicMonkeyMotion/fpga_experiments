@@ -1,0 +1,16 @@
+vendor_name = ModelSim
+source_file = 1, C:/Users/rr/Documents/GitHub/fpga_experiments/small_board/LABS/digital_logic/vhdl/lab1/part2/part2test.bdf
+source_file = 1, C:/Users/rr/Documents/GitHub/fpga_experiments/small_board/LABS/digital_logic/vhdl/lab1/part2/part2.vhd
+source_file = 1, C:/Users/rr/Documents/GitHub/fpga_experiments/small_board/LABS/digital_logic/vhdl/lab1/part2/testsig1.vhd
+source_file = 1, C:/Users/rr/Documents/GitHub/fpga_experiments/small_board/LABS/digital_logic/vhdl/lab1/part2/testsig2.vhd
+source_file = 1, C:/Users/rr/Documents/GitHub/fpga_experiments/small_board/LABS/digital_logic/vhdl/lab1/part2/db/part2.cbx.xml
+source_file = 1, c:/altera/11.1/quartus/libraries/vhdl/ieee/prmtvs_b.vhd
+source_file = 1, c:/altera/11.1/quartus/libraries/vhdl/ieee/prmtvs_p.vhd
+source_file = 1, c:/altera/11.1/quartus/libraries/vhdl/ieee/timing_b.vhd
+source_file = 1, c:/altera/11.1/quartus/libraries/vhdl/ieee/timing_p.vhd
+design_name = part2test
+instance = comp, \S~I\, S, part2test, 1
+instance = comp, \LED[3]~I\, LED[3], part2test, 1
+instance = comp, \LED[2]~I\, LED[2], part2test, 1
+instance = comp, \LED[1]~I\, LED[1], part2test, 1
+instance = comp, \LED[0]~I\, LED[0], part2test, 1

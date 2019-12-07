@@ -1,0 +1,934 @@
+Quartus II 32-bit
+Version 11.1 Build 259 01/25/2012 Service Pack 2 SJ Web Edition
+14
+1253
+OFF
+OFF
+OFF
+ON
+ON
+ON
+FV_OFF
+Level2
+0
+0
+0
+0
+VRSM_ON
+VHSM_ON
+0
+-- Start Library Paths --
+-- End Library Paths --
+-- Start VHDL Libraries --
+-- End VHDL Libraries --
+# entity
+lpm_constant
+# storage
+db|part6.(7).cnf
+db|part6.(7).cnf
+# case_insensitive
+# source_file
+lpm_constant.tdf
+39f6198d2fd534fc24ec55db94a24819
+7
+# user_parameter {
+LPM_WIDTH
+8
+PARAMETER_SIGNED_DEC
+USR
+LPM_CVALUE
+27
+PARAMETER_SIGNED_DEC
+USR
+ENABLE_RUNTIME_MOD
+YES
+PARAMETER_UNKNOWN
+USR
+CBXI_PARAMETER
+lpm_constant_qe8
+PARAMETER_UNKNOWN
+USR
+}
+# used_port {
+result7
+-1
+3
+result6
+-1
+3
+result5
+-1
+3
+result4
+-1
+3
+result3
+-1
+3
+result2
+-1
+3
+result1
+-1
+3
+result0
+-1
+3
+}
+# macro_sequence
+
+# end
+# entity
+lpm_constant_qe8
+# storage
+db|part6.(8).cnf
+db|part6.(8).cnf
+# case_insensitive
+# source_file
+db|lpm_constant_qe8.tdf
+59464ae5405356837ff421b93abc1cd9
+7
+# used_port {
+result7
+-1
+3
+result6
+-1
+3
+result5
+-1
+3
+result4
+-1
+3
+result3
+-1
+3
+result2
+-1
+3
+result1
+-1
+3
+result0
+-1
+3
+}
+# macro_sequence
+
+# end
+# entity
+sld_mod_ram_rom
+# storage
+db|part6.(9).cnf
+db|part6.(9).cnf
+# logic_option {
+AUTO_RAM_RECOGNITION
+ON
+}
+# case_insensitive
+# source_file
+sld_mod_ram_rom.vhd
+247476623698296e675244d1fb343582
+5
+# internal_option {
+IP_SHOW_ELABORATION_MESSAGES
+OFF
+HDL_INITIAL_FANOUT_LIMIT
+OFF
+AUTO_RESOURCE_SHARING
+OFF
+AUTO_RAM_RECOGNITION
+ON
+AUTO_ROM_RECOGNITION
+ON
+}
+# user_parameter {
+SLD_NODE_INFO
+135818752
+PARAMETER_SIGNED_DEC
+DEF
+SLD_AUTO_INSTANCE_INDEX
+yes
+PARAMETER_STRING
+DEF
+SLD_IP_VERSION
+1
+PARAMETER_SIGNED_DEC
+DEF
+SLD_IP_MINOR_VERSION
+3
+PARAMETER_SIGNED_DEC
+DEF
+SLD_COMMON_IP_VERSION
+0
+PARAMETER_SIGNED_DEC
+DEF
+width_word
+8
+PARAMETER_UNKNOWN
+USR
+numwords
+1
+PARAMETER_UNKNOWN
+USR
+widthad
+1
+PARAMETER_UNKNOWN
+USR
+shift_count_bits
+4
+PARAMETER_UNKNOWN
+USR
+cvalue
+00011011
+PARAMETER_UNKNOWN
+USR
+is_data_in_ram
+0
+PARAMETER_UNKNOWN
+USR
+is_readable
+0
+PARAMETER_UNKNOWN
+USR
+node_name
+1447119872
+PARAMETER_UNKNOWN
+USR
+}
+# macro_sequence
+
+# end
+# entity
+sld_rom_sr
+# storage
+db|part6.(10).cnf
+db|part6.(10).cnf
+# logic_option {
+AUTO_RAM_RECOGNITION
+ON
+}
+# case_insensitive
+# source_file
+sld_rom_sr.vhd
+c845566d8a447beac536d5d21c94793
+5
+# internal_option {
+IP_SHOW_ELABORATION_MESSAGES
+OFF
+HDL_INITIAL_FANOUT_LIMIT
+OFF
+AUTO_RESOURCE_SHARING
+OFF
+AUTO_RAM_RECOGNITION
+ON
+AUTO_ROM_RECOGNITION
+ON
+}
+# user_parameter {
+common_ip_version
+0
+PARAMETER_SIGNED_DEC
+USR
+n_bits
+48
+PARAMETER_SIGNED_DEC
+USR
+word_size
+4
+PARAMETER_SIGNED_DEC
+USR
+ constraint(rom_data)
+47 downto 0
+PARAMETER_STRING
+USR
+}
+# hierarchies {
+lpm_constant0:inst4|lpm_constant:LPM_CONSTANT_component|lpm_constant_0f8:ag|sld_mod_ram_rom:mgl_prim1|sld_rom_sr:\constant_logic_gen:name_gen:info_rom_sr
+}
+# macro_sequence
+
+# end
+# entity
+sld_hub
+# storage
+db|part6.(11).cnf
+db|part6.(11).cnf
+# logic_option {
+AUTO_RAM_RECOGNITION
+ON
+}
+# case_insensitive
+# source_file
+sld_hub.vhd
+ff883e3693e9875a90c1a3b2421b1e
+5
+# internal_option {
+IP_SHOW_ELABORATION_MESSAGES
+OFF
+HDL_INITIAL_FANOUT_LIMIT
+OFF
+AUTO_RESOURCE_SHARING
+OFF
+AUTO_RAM_RECOGNITION
+ON
+AUTO_ROM_RECOGNITION
+ON
+}
+# user_parameter {
+sld_hub_ip_version
+1
+PARAMETER_UNKNOWN
+USR
+sld_hub_ip_minor_version
+4
+PARAMETER_UNKNOWN
+USR
+sld_common_ip_version
+0
+PARAMETER_UNKNOWN
+USR
+device_family
+Cyclone II
+PARAMETER_UNKNOWN
+USR
+n_nodes
+1
+PARAMETER_UNKNOWN
+USR
+n_sel_bits
+1
+PARAMETER_UNKNOWN
+USR
+n_node_ir_bits
+5
+PARAMETER_UNKNOWN
+USR
+node_info
+00001000000110000110111000000000
+PARAMETER_UNSIGNED_BIN
+USR
+compilation_mode
+1
+PARAMETER_UNKNOWN
+USR
+BROADCAST_FEATURE
+1
+PARAMETER_SIGNED_DEC
+DEF
+FORCE_IR_CAPTURE_FEATURE
+1
+PARAMETER_SIGNED_DEC
+DEF
+}
+# macro_sequence
+
+# end
+# entity
+sld_shadow_jsm
+# storage
+db|part6.(12).cnf
+db|part6.(12).cnf
+# logic_option {
+AUTO_RAM_RECOGNITION
+ON
+}
+# case_insensitive
+# source_file
+sld_hub.vhd
+ff883e3693e9875a90c1a3b2421b1e
+5
+# internal_option {
+IP_SHOW_ELABORATION_MESSAGES
+OFF
+HDL_INITIAL_FANOUT_LIMIT
+OFF
+AUTO_RESOURCE_SHARING
+OFF
+AUTO_RAM_RECOGNITION
+ON
+AUTO_ROM_RECOGNITION
+ON
+}
+# user_parameter {
+ip_major_version
+1
+PARAMETER_SIGNED_DEC
+USR
+ip_minor_version
+4
+PARAMETER_SIGNED_DEC
+USR
+common_ip_version
+0
+PARAMETER_SIGNED_DEC
+USR
+ constraint(jtag_state)
+15 downto 0
+PARAMETER_STRING
+USR
+}
+# macro_sequence
+
+# end
+# entity
+sld_rom_sr
+# storage
+db|part6.(13).cnf
+db|part6.(13).cnf
+# logic_option {
+AUTO_RAM_RECOGNITION
+ON
+}
+# case_insensitive
+# source_file
+sld_rom_sr.vhd
+c845566d8a447beac536d5d21c94793
+5
+# internal_option {
+IP_SHOW_ELABORATION_MESSAGES
+OFF
+HDL_INITIAL_FANOUT_LIMIT
+OFF
+AUTO_RESOURCE_SHARING
+OFF
+AUTO_RAM_RECOGNITION
+ON
+AUTO_ROM_RECOGNITION
+OFF
+}
+# user_parameter {
+common_ip_version
+0
+PARAMETER_SIGNED_DEC
+USR
+n_bits
+64
+PARAMETER_SIGNED_DEC
+USR
+word_size
+4
+PARAMETER_SIGNED_DEC
+USR
+ constraint(rom_data)
+63 downto 0
+PARAMETER_STRING
+USR
+}
+# macro_sequence
+
+# end
+# entity
+lpm_constant0
+# storage
+db|part6.(6).cnf
+db|part6.(6).cnf
+# logic_option {
+AUTO_RAM_RECOGNITION
+ON
+}
+# case_insensitive
+# source_file
+lpm_constant0.vhd
+f3af3934e7d949c84479ba572c3071e5
+5
+# internal_option {
+HDL_INITIAL_FANOUT_LIMIT
+OFF
+AUTO_RESOURCE_SHARING
+OFF
+AUTO_RAM_RECOGNITION
+ON
+AUTO_ROM_RECOGNITION
+ON
+}
+# hierarchies {
+lpm_constant0:inst4
+}
+# macro_sequence
+
+# end
+# entity
+lpm_constant
+# storage
+db|part6.(14).cnf
+db|part6.(14).cnf
+# case_insensitive
+# source_file
+lpm_constant.tdf
+39f6198d2fd534fc24ec55db94a24819
+7
+# user_parameter {
+LPM_WIDTH
+8
+PARAMETER_SIGNED_DEC
+USR
+LPM_CVALUE
+228
+PARAMETER_SIGNED_DEC
+USR
+ENABLE_RUNTIME_MOD
+YES
+PARAMETER_UNKNOWN
+USR
+CBXI_PARAMETER
+lpm_constant_0f8
+PARAMETER_UNKNOWN
+USR
+}
+# used_port {
+result7
+-1
+3
+result6
+-1
+3
+result5
+-1
+3
+result4
+-1
+3
+result3
+-1
+3
+result2
+-1
+3
+result1
+-1
+3
+result0
+-1
+3
+}
+# hierarchies {
+lpm_constant0:inst4|lpm_constant:LPM_CONSTANT_component
+}
+# macro_sequence
+
+# end
+# entity
+lpm_constant_0f8
+# storage
+db|part6.(15).cnf
+db|part6.(15).cnf
+# case_insensitive
+# source_file
+db|lpm_constant_0f8.tdf
+4eb53033d6373d0873a96f78754657
+7
+# used_port {
+result7
+-1
+3
+result6
+-1
+3
+result5
+-1
+3
+result4
+-1
+3
+result3
+-1
+3
+result2
+-1
+3
+result1
+-1
+3
+result0
+-1
+3
+}
+# hierarchies {
+lpm_constant0:inst4|lpm_constant:LPM_CONSTANT_component|lpm_constant_0f8:ag
+}
+# macro_sequence
+
+# end
+# entity
+sld_mod_ram_rom
+# storage
+db|part6.(16).cnf
+db|part6.(16).cnf
+# logic_option {
+AUTO_RAM_RECOGNITION
+ON
+}
+# case_insensitive
+# source_file
+sld_mod_ram_rom.vhd
+247476623698296e675244d1fb343582
+5
+# internal_option {
+IP_SHOW_ELABORATION_MESSAGES
+OFF
+HDL_INITIAL_FANOUT_LIMIT
+OFF
+AUTO_RESOURCE_SHARING
+OFF
+AUTO_RAM_RECOGNITION
+ON
+AUTO_ROM_RECOGNITION
+ON
+}
+# user_parameter {
+SLD_NODE_INFO
+135818752
+PARAMETER_SIGNED_DEC
+DEF
+SLD_AUTO_INSTANCE_INDEX
+yes
+PARAMETER_STRING
+DEF
+SLD_IP_VERSION
+1
+PARAMETER_SIGNED_DEC
+DEF
+SLD_IP_MINOR_VERSION
+3
+PARAMETER_SIGNED_DEC
+DEF
+SLD_COMMON_IP_VERSION
+0
+PARAMETER_SIGNED_DEC
+DEF
+width_word
+8
+PARAMETER_UNKNOWN
+USR
+numwords
+1
+PARAMETER_UNKNOWN
+USR
+widthad
+1
+PARAMETER_UNKNOWN
+USR
+shift_count_bits
+4
+PARAMETER_UNKNOWN
+USR
+cvalue
+11100100
+PARAMETER_UNKNOWN
+USR
+is_data_in_ram
+0
+PARAMETER_UNKNOWN
+USR
+is_readable
+0
+PARAMETER_UNKNOWN
+USR
+node_name
+1447119872
+PARAMETER_UNKNOWN
+USR
+}
+# hierarchies {
+lpm_constant0:inst4|lpm_constant:LPM_CONSTANT_component|lpm_constant_0f8:ag|sld_mod_ram_rom:mgl_prim1
+}
+# macro_sequence
+
+# end
+# entity
+sweep
+# storage
+db|part6.(5).cnf
+db|part6.(5).cnf
+# logic_option {
+AUTO_RAM_RECOGNITION
+ON
+}
+# case_insensitive
+# source_file
+sweep.vhd
+17c9898e526763413ff705ddbc2526
+5
+# internal_option {
+HDL_INITIAL_FANOUT_LIMIT
+OFF
+AUTO_RESOURCE_SHARING
+OFF
+AUTO_RAM_RECOGNITION
+ON
+AUTO_ROM_RECOGNITION
+ON
+}
+# user_parameter {
+ constraint(sweep_out)
+1 downto 0
+PARAMETER_STRING
+USR
+}
+# macro_sequence
+
+# end
+# entity
+mux_2bit_4to1
+# storage
+db|part6.(1).cnf
+db|part6.(1).cnf
+# logic_option {
+AUTO_RAM_RECOGNITION
+ON
+}
+# case_insensitive
+# source_file
+mux_2bit_4to1.vhd
+ebfebb3d6e2e43f49173649f6e9f366
+5
+# internal_option {
+HDL_INITIAL_FANOUT_LIMIT
+OFF
+AUTO_RESOURCE_SHARING
+OFF
+AUTO_RAM_RECOGNITION
+ON
+AUTO_ROM_RECOGNITION
+ON
+}
+# user_parameter {
+ constraint(s)
+1 downto 0
+PARAMETER_STRING
+USR
+ constraint(u)
+1 downto 0
+PARAMETER_STRING
+USR
+ constraint(v)
+1 downto 0
+PARAMETER_STRING
+USR
+ constraint(w)
+1 downto 0
+PARAMETER_STRING
+USR
+ constraint(x)
+1 downto 0
+PARAMETER_STRING
+USR
+ constraint(m)
+1 downto 0
+PARAMETER_STRING
+USR
+}
+# hierarchies {
+part6:part6_inst|mux_2bit_4to1:M0
+part6:part6_inst|mux_2bit_4to1:M1
+part6:part6_inst|mux_2bit_4to1:M2
+part6:part6_inst|mux_2bit_4to1:M3
+}
+# macro_sequence
+
+# end
+# entity
+DE1_disp
+# storage
+db|part6.(4).cnf
+db|part6.(4).cnf
+# logic_option {
+AUTO_RAM_RECOGNITION
+ON
+}
+# case_insensitive
+# source_file
+de1_disp.vhd
+657b83e36d866321e9daa7a6f51fb17
+5
+# internal_option {
+HDL_INITIAL_FANOUT_LIMIT
+OFF
+AUTO_RESOURCE_SHARING
+OFF
+AUTO_RAM_RECOGNITION
+ON
+AUTO_ROM_RECOGNITION
+ON
+}
+# macro_sequence
+
+# end
+# entity
+part6
+# storage
+db|part6.(0).cnf
+db|part6.(0).cnf
+# logic_option {
+AUTO_RAM_RECOGNITION
+ON
+}
+# case_insensitive
+# source_file
+part6.vhd
+b2f2975860e70a9a248d37af2340a
+5
+# internal_option {
+HDL_INITIAL_FANOUT_LIMIT
+OFF
+AUTO_RESOURCE_SHARING
+OFF
+AUTO_RAM_RECOGNITION
+ON
+AUTO_ROM_RECOGNITION
+ON
+}
+# hierarchies {
+part6:part6_inst
+}
+# macro_sequence
+
+# end
+# entity
+char_7seg
+# storage
+db|part6.(17).cnf
+db|part6.(17).cnf
+# logic_option {
+AUTO_RAM_RECOGNITION
+ON
+}
+# case_insensitive
+# source_file
+char_7seg.vhd
+1cfcd41b1e2412b67bde4896b5defc7
+5
+# internal_option {
+HDL_INITIAL_FANOUT_LIMIT
+OFF
+AUTO_RESOURCE_SHARING
+OFF
+AUTO_RAM_RECOGNITION
+ON
+AUTO_ROM_RECOGNITION
+ON
+}
+# user_parameter {
+ constraint(c)
+1 downto 0
+PARAMETER_STRING
+USR
+ constraint(display)
+0 to 6
+PARAMETER_STRING
+USR
+}
+# hierarchies {
+part6:part6_inst|char_7seg:H0
+part6:part6_inst|char_7seg:H1
+part6:part6_inst|char_7seg:H2
+part6:part6_inst|char_7seg:H3
+}
+# macro_sequence
+
+# end
+# entity
+DE1_disp
+# storage
+db|part6.(3).cnf
+db|part6.(3).cnf
+# logic_option {
+AUTO_RAM_RECOGNITION
+ON
+}
+# case_sensitive
+# source_file
+de1_displ.v
+386aa9b8c4d78efc81829ce99018394e
+8
+# internal_option {
+HDL_INITIAL_FANOUT_LIMIT
+OFF
+AUTO_RESOURCE_SHARING
+OFF
+AUTO_RAM_RECOGNITION
+ON
+AUTO_ROM_RECOGNITION
+ON
+IGNORE_VERILOG_INITIAL_CONSTRUCTS
+OFF
+VERILOG_CONSTANT_LOOP_LIMIT
+5000
+VERILOG_NON_CONSTANT_LOOP_LIMIT
+250
+}
+# user_parameter {
+state0
+00
+PARAMETER_UNSIGNED_BIN
+USR
+state1
+01
+PARAMETER_UNSIGNED_BIN
+USR
+state2
+10
+PARAMETER_UNSIGNED_BIN
+USR
+state3
+11
+PARAMETER_UNSIGNED_BIN
+USR
+}
+# macro_sequence
+
+# end
+# entity
+part6_top
+# storage
+db|part6.(2).cnf
+db|part6.(2).cnf
+# case_insensitive
+# source_file
+part6_top.bdf
+2b171b1d8aa0a6632234424c6a67a6f
+26
+# internal_option {
+BLOCK_DESIGN_NAMING
+AUTO
+}
+# hierarchies {
+|
+}
+# macro_sequence
+
+# end
+# entity
+DE1_disp
+# storage
+db|part6.(18).cnf
+db|part6.(18).cnf
+# logic_option {
+AUTO_RAM_RECOGNITION
+ON
+}
+# case_insensitive
+# source_file
+de1_displ.vhdl
+8c24b188e7f6c6aafe95d5ca1dd0c213
+5
+# internal_option {
+HDL_INITIAL_FANOUT_LIMIT
+OFF
+AUTO_RESOURCE_SHARING
+OFF
+AUTO_RAM_RECOGNITION
+ON
+AUTO_ROM_RECOGNITION
+ON
+}
+# hierarchies {
+DE1_disp:inst1
+}
+# macro_sequence
+
+# end
+# complete
+

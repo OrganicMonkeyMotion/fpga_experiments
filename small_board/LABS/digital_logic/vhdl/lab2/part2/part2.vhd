@@ -1,0 +1,48 @@
+LIBRARY ieee;
+USE ieee.std_logic_1164.all;
+
+ENTITY part2 IS
+	PORT(
+		BUTTONS 		: IN  STD_LOGIC_VECTOR (3 DOWNTO 0);
+		LED   : OUT STD_LOGIC_VECTOR (6 DOWNTO 0);
+		DISP: OUT STD_LOGIC_VECTOR(3 DOWNTO 0);
+		clk_in : IN STD_LOGIC
+	);
+END part2;
+
+ARCHITECTURE Behaviour of part2 IS
+SIGNAL s_m: STD_LOGIC_VECTOR (3 DOWNTO 0);
+SIGNAL HOLD_LOW, s_z : STD_LOGIC;
+SIGNAL s_ao, s_ai: STD_LOGIC_VECTOR (2 DOWNTO 0);
+SIGNAL HEX_0, HEX_1, BLANK: STD_LOGIC_VECTOR (6 DOWNTO 0);
+
+COMPONENT circuita PORT ( INPUT  : IN  STD_LOGIC_VECTOR (2 DOWNTO 0); 
+                          OUTPUT : OUT STD_LOGIC_VECTOR (2 DOWNTO 0)); END COMPONENT;
+COMPONENT segseven PORT ( SW     : IN  STD_LOGIC_VECTOR (3 DOWNTO 0); 
+                          LEDSEG : OUT STD_LOGIC_VECTOR (6 DOWNTO 0)); END COMPONENT;
+COMPONENT circuitb PORT ( SW     : IN  STD_LOGIC; 
+                          LEDSEG : OUT STD_LOGIC_VECTOR (6 DOWNTO 0)); END COMPONENT;						  
+COMPONENT comparator PORT ( INPUT  : IN  STD_LOGIC_VECTOR (3 DOWNTO 0); OUTPUT : OUT STD_LOGIC ); END COMPONENT;
+COMPONENT mplex PORT ( V : IN  STD_LOGIC_VECTOR (1 DOWNTO 0); M : OUT STD_LOGIC; Z : IN  STD_LOGIC ); END COMPONENT;
+COMPONENT DE1_disp PORT ( HEX0, HEX1, HEX2, HEX3 : IN STD_LOGIC_VECTOR(6 DOWNTO 0); 
+                          clk : IN STD_LOGIC; 
+                          HEX : OUT STD_LOGIC_VECTOR(6 DOWNTO 0);
+								  DISPn: OUT STD_LOGIC_VECTOR(3 DOWNTO 0)); END COMPONENT;
+			 
+BEGIN
+   HOLD_LOW <='0';
+	BLANK <= "1111111";
+		
+	S0 : segseven PORT MAP (SW=>s_m, LEDSEG=>HEX_0);
+	S1 : circuitb PORT MAP (SW=>s_z, LEDSEG=>HEX_1);
+	DE1: DE1_disp PORT MAP (HEX0=>HEX_0, HEX1=>HEX_1, HEX2=>BLANK, HEX3=>BLANK, clk=>clk_in,HEX=>LED,DISPn=>DISP);
+	
+	C0 : comparator PORT MAP (INPUT=>BUTTONS,OUTPUT=>s_z);
+	C1 : circuita PORT MAP (INPUT(2)=>BUTTONS(2),INPUT(1)=>BUTTONS(1),INPUT(0)=>BUTTONS(0),OUTPUT=>s_ao);
+	
+	M3 : mplex PORT MAP (V(0) =>BUTTONS(3), V(1)=> HOLD_LOW, M=>s_m(3), Z=>s_z);
+	M2 : mplex PORT MAP (V(0) =>BUTTONS(2), V(1)=> s_ao(2), M=>s_m(2), Z=>s_z);
+	M1 : mplex PORT MAP (V(0) =>BUTTONS(1), V(1)=> s_ao(1), M=>s_m(1), Z=>s_z);
+	M0 : mplex PORT MAP (V(0) =>BUTTONS(0), V(1)=> s_ao(0), M=>s_m(0), Z=>s_z);
+
+END Behaviour;

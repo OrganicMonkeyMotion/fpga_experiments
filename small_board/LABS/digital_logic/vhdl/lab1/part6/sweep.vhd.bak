@@ -1,0 +1,14 @@
+LIBRARY ieee;
+USE ieee.std_logic_1164.all;
+
+ENTITY DE1_disp IS
+   PORT ( HEX0, HEX1, HEX2, HEX3 : IN STD_LOGIC_VECTOR(6 DOWNTO 0);
+			 clk : IN STD_LOGIC;
+			 HEX : OUT STD_LOGIC_VECTOR(6 DOWNTO 0);
+			 SWEEP: OUT STD_LOGIC_VECTOR(3 DOWNTO 0));
+END DE1_disp;
+
+ARCHITECTURE Behavior OF DE1_disp IS
+BEGIN -- Behavior
+	
+END Behavior;

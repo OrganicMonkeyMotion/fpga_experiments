@@ -1,0 +1,38 @@
+|test
+buttons[0] => segseven:inst.SW[0]
+buttons[1] => segseven:inst.SW[1]
+buttons[2] => segseven:inst.SW[2]
+buttons[3] => segseven:inst.SW[3]
+
+
+|test|segseven:inst
+SW[0] => LEDSEG.IN1
+SW[0] => LEDSEG.IN1
+SW[0] => LEDSEG.IN1
+SW[0] => LEDSEG.IN1
+SW[0] => LEDSEG.IN1
+SW[0] => LEDSEG.IN0
+SW[0] => LEDSEG.IN1
+SW[0] => LEDSEG.IN0
+SW[0] => LEDSEG.IN1
+SW[0] => LEDSEG.IN1
+SW[0] => LEDSEG.IN1
+SW[1] => LEDSEG.IN0
+SW[1] => LEDSEG.IN0
+SW[1] => LEDSEG.IN1
+SW[1] => LEDSEG.IN0
+SW[1] => LEDSEG.IN0
+SW[1] => LEDSEG.IN0
+SW[1] => LEDSEG.IN1
+SW[2] => LEDSEG.IN1
+SW[2] => LEDSEG.IN1
+SW[2] => LEDSEG.IN0
+SW[2] => LEDSEG.IN1
+SW[2] => LEDSEG.IN0
+SW[2] => LEDSEG.IN1
+SW[3] => LEDSEG.IN1
+SW[3] => LEDSEG.IN1
+SW[3] => LEDSEG.IN1
+SW[3] => LEDSEG.IN1
+
+

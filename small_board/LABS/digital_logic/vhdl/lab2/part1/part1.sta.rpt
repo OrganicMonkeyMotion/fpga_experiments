@@ -1,0 +1,467 @@
+TimeQuest Timing Analyzer report for part1
+Sat Jun 27 21:34:06 2015
+Quartus II 32-bit Version 11.1 Build 259 01/25/2012 Service Pack 2 SJ Web Edition
+
+
+---------------------
+; Table of Contents ;
+---------------------
+  1. Legal Notice
+  2. TimeQuest Timing Analyzer Summary
+  3. Parallel Compilation
+  4. Clocks
+  5. Slow Model Fmax Summary
+  6. Slow Model Setup Summary
+  7. Slow Model Hold Summary
+  8. Slow Model Recovery Summary
+  9. Slow Model Removal Summary
+ 10. Slow Model Minimum Pulse Width Summary
+ 11. Propagation Delay
+ 12. Minimum Propagation Delay
+ 13. Fast Model Setup Summary
+ 14. Fast Model Hold Summary
+ 15. Fast Model Recovery Summary
+ 16. Fast Model Removal Summary
+ 17. Fast Model Minimum Pulse Width Summary
+ 18. Propagation Delay
+ 19. Minimum Propagation Delay
+ 20. Multicorner Timing Analysis Summary
+ 21. Progagation Delay
+ 22. Minimum Progagation Delay
+ 23. Clock Transfers
+ 24. Report TCCS
+ 25. Report RSKM
+ 26. Unconstrained Paths
+ 27. TimeQuest Timing Analyzer Messages
+
+
+
+----------------
+; Legal Notice ;
+----------------
+Copyright (C) 1991-2011 Altera Corporation
+Your use of Altera Corporation's design tools, logic functions 
+and other software and tools, and its AMPP partner logic 
+functions, and any output files from any of the foregoing 
+(including device programming or simulation files), and any 
+associated documentation or information are expressly subject 
+to the terms and conditions of the Altera Program License 
+Subscription Agreement, Altera MegaCore Function License 
+Agreement, or other applicable license agreement, including, 
+without limitation, that your use is for the sole purpose of 
+programming logic devices manufactured by Altera and sold by 
+Altera or its authorized distributors.  Please refer to the 
+applicable agreement for further details.
+
+
+
++--------------------------------------------------------------------------------------+
+; TimeQuest Timing Analyzer Summary                                                    ;
++--------------------+-----------------------------------------------------------------+
+; Quartus II Version ; Version 11.1 Build 259 01/25/2012 Service Pack 2 SJ Web Edition ;
+; Revision Name      ; part1                                                           ;
+; Device Family      ; Cyclone II                                                      ;
+; Device Name        ; EP2C5T144C8                                                     ;
+; Timing Models      ; Final                                                           ;
+; Delay Model        ; Combined                                                        ;
+; Rise/Fall Delays   ; Unavailable                                                     ;
++--------------------+-----------------------------------------------------------------+
+
+
+Parallel compilation was disabled, but you have multiple processors available. Enable parallel compilation to reduce compilation time.
++-------------------------------------+
+; Parallel Compilation                ;
++----------------------------+--------+
+; Processors                 ; Number ;
++----------------------------+--------+
+; Number detected on machine ; 4      ;
+; Maximum allowed            ; 1      ;
++----------------------------+--------+
+
+
+----------
+; Clocks ;
+----------
+No clocks to report.
+
+
+---------------------------
+; Slow Model Fmax Summary ;
+---------------------------
+No paths to report.
+
+
+----------------------------
+; Slow Model Setup Summary ;
+----------------------------
+No paths to report.
+
+
+---------------------------
+; Slow Model Hold Summary ;
+---------------------------
+No paths to report.
+
+
+-------------------------------
+; Slow Model Recovery Summary ;
+-------------------------------
+No paths to report.
+
+
+------------------------------
+; Slow Model Removal Summary ;
+------------------------------
+No paths to report.
+
+
+------------------------------------------
+; Slow Model Minimum Pulse Width Summary ;
+------------------------------------------
+No paths to report.
+
+
++--------------------------------------------------------------+
+; Propagation Delay                                            ;
++------------+-------------+--------+--------+--------+--------+
+; Input Port ; Output Port ; RR     ; RF     ; FR     ; FF     ;
++------------+-------------+--------+--------+--------+--------+
+; SW[0]      ; LEDSEG[0]   ; 14.486 ; 14.486 ; 14.486 ; 14.486 ;
+; SW[0]      ; LEDSEG[1]   ; 14.484 ; 14.484 ; 14.484 ; 14.484 ;
+; SW[0]      ; LEDSEG[2]   ; 14.430 ;        ;        ; 14.430 ;
+; SW[0]      ; LEDSEG[3]   ; 14.459 ; 14.459 ; 14.459 ; 14.459 ;
+; SW[0]      ; LEDSEG[4]   ;        ; 13.026 ; 13.026 ;        ;
+; SW[0]      ; LEDSEG[5]   ;        ; 12.828 ; 12.828 ;        ;
+; SW[0]      ; LEDSEG[6]   ;        ; 14.051 ; 14.051 ;        ;
+; SW[1]      ; LEDSEG[0]   ; 14.389 ; 14.389 ; 14.389 ; 14.389 ;
+; SW[1]      ; LEDSEG[1]   ; 14.383 ; 14.383 ; 14.383 ; 14.383 ;
+; SW[1]      ; LEDSEG[2]   ;        ; 14.335 ; 14.335 ;        ;
+; SW[1]      ; LEDSEG[3]   ; 14.372 ; 14.372 ; 14.372 ; 14.372 ;
+; SW[1]      ; LEDSEG[4]   ; 12.937 ; 12.937 ; 12.937 ; 12.937 ;
+; SW[1]      ; LEDSEG[5]   ;        ; 12.732 ; 12.732 ;        ;
+; SW[1]      ; LEDSEG[6]   ; 13.955 ; 13.955 ; 13.955 ; 13.955 ;
+; SW[2]      ; LEDSEG[0]   ; 13.688 ; 13.688 ; 13.688 ; 13.688 ;
+; SW[2]      ; LEDSEG[1]   ;        ; 13.679 ; 13.679 ;        ;
+; SW[2]      ; LEDSEG[2]   ; 13.638 ; 13.638 ; 13.638 ; 13.638 ;
+; SW[2]      ; LEDSEG[3]   ; 13.674 ; 13.674 ; 13.674 ; 13.674 ;
+; SW[2]      ; LEDSEG[4]   ;        ; 12.239 ; 12.239 ;        ;
+; SW[2]      ; LEDSEG[5]   ; 12.035 ; 12.035 ; 12.035 ; 12.035 ;
+; SW[2]      ; LEDSEG[6]   ; 13.251 ; 13.251 ; 13.251 ; 13.251 ;
+; SW[3]      ; LEDSEG[0]   ; 14.094 ; 14.094 ; 14.094 ; 14.094 ;
+; SW[3]      ; LEDSEG[1]   ;        ; 14.090 ; 14.090 ;        ;
+; SW[3]      ; LEDSEG[2]   ;        ; 14.045 ; 14.045 ;        ;
+; SW[3]      ; LEDSEG[3]   ;        ; 14.076 ; 14.076 ;        ;
+; SW[3]      ; LEDSEG[4]   ;        ; 12.642 ; 12.642 ;        ;
+; SW[3]      ; LEDSEG[5]   ; 12.442 ; 12.442 ; 12.442 ; 12.442 ;
+; SW[3]      ; LEDSEG[6]   ; 13.661 ; 13.661 ; 13.661 ; 13.661 ;
++------------+-------------+--------+--------+--------+--------+
+
+
++--------------------------------------------------------------+
+; Minimum Propagation Delay                                    ;
++------------+-------------+--------+--------+--------+--------+
+; Input Port ; Output Port ; RR     ; RF     ; FR     ; FF     ;
++------------+-------------+--------+--------+--------+--------+
+; SW[0]      ; LEDSEG[0]   ; 14.486 ; 14.486 ; 14.486 ; 14.486 ;
+; SW[0]      ; LEDSEG[1]   ; 14.484 ; 14.484 ; 14.484 ; 14.484 ;
+; SW[0]      ; LEDSEG[2]   ; 14.430 ;        ;        ; 14.430 ;
+; SW[0]      ; LEDSEG[3]   ; 14.459 ; 14.459 ; 14.459 ; 14.459 ;
+; SW[0]      ; LEDSEG[4]   ;        ; 13.026 ; 13.026 ;        ;
+; SW[0]      ; LEDSEG[5]   ;        ; 12.828 ; 12.828 ;        ;
+; SW[0]      ; LEDSEG[6]   ;        ; 14.051 ; 14.051 ;        ;
+; SW[1]      ; LEDSEG[0]   ; 14.389 ; 14.389 ; 14.389 ; 14.389 ;
+; SW[1]      ; LEDSEG[1]   ; 14.383 ; 14.383 ; 14.383 ; 14.383 ;
+; SW[1]      ; LEDSEG[2]   ;        ; 14.335 ; 14.335 ;        ;
+; SW[1]      ; LEDSEG[3]   ; 14.372 ; 14.372 ; 14.372 ; 14.372 ;
+; SW[1]      ; LEDSEG[4]   ; 12.937 ; 12.937 ; 12.937 ; 12.937 ;
+; SW[1]      ; LEDSEG[5]   ;        ; 12.732 ; 12.732 ;        ;
+; SW[1]      ; LEDSEG[6]   ; 13.955 ; 13.955 ; 13.955 ; 13.955 ;
+; SW[2]      ; LEDSEG[0]   ; 13.688 ; 13.688 ; 13.688 ; 13.688 ;
+; SW[2]      ; LEDSEG[1]   ;        ; 13.679 ; 13.679 ;        ;
+; SW[2]      ; LEDSEG[2]   ; 13.638 ; 13.638 ; 13.638 ; 13.638 ;
+; SW[2]      ; LEDSEG[3]   ; 13.674 ; 13.674 ; 13.674 ; 13.674 ;
+; SW[2]      ; LEDSEG[4]   ;        ; 12.239 ; 12.239 ;        ;
+; SW[2]      ; LEDSEG[5]   ; 12.035 ; 12.035 ; 12.035 ; 12.035 ;
+; SW[2]      ; LEDSEG[6]   ; 13.251 ; 13.251 ; 13.251 ; 13.251 ;
+; SW[3]      ; LEDSEG[0]   ; 14.094 ; 14.094 ; 14.094 ; 14.094 ;
+; SW[3]      ; LEDSEG[1]   ;        ; 14.090 ; 14.090 ;        ;
+; SW[3]      ; LEDSEG[2]   ;        ; 14.045 ; 14.045 ;        ;
+; SW[3]      ; LEDSEG[3]   ;        ; 14.076 ; 14.076 ;        ;
+; SW[3]      ; LEDSEG[4]   ;        ; 12.642 ; 12.642 ;        ;
+; SW[3]      ; LEDSEG[5]   ; 12.442 ; 12.442 ; 12.442 ; 12.442 ;
+; SW[3]      ; LEDSEG[6]   ; 13.661 ; 13.661 ; 13.661 ; 13.661 ;
++------------+-------------+--------+--------+--------+--------+
+
+
+----------------------------
+; Fast Model Setup Summary ;
+----------------------------
+No paths to report.
+
+
+---------------------------
+; Fast Model Hold Summary ;
+---------------------------
+No paths to report.
+
+
+-------------------------------
+; Fast Model Recovery Summary ;
+-------------------------------
+No paths to report.
+
+
+------------------------------
+; Fast Model Removal Summary ;
+------------------------------
+No paths to report.
+
+
+------------------------------------------
+; Fast Model Minimum Pulse Width Summary ;
+------------------------------------------
+No paths to report.
+
+
++----------------------------------------------------------+
+; Propagation Delay                                        ;
++------------+-------------+-------+-------+-------+-------+
+; Input Port ; Output Port ; RR    ; RF    ; FR    ; FF    ;
++------------+-------------+-------+-------+-------+-------+
+; SW[0]      ; LEDSEG[0]   ; 6.297 ; 6.297 ; 6.297 ; 6.297 ;
+; SW[0]      ; LEDSEG[1]   ; 6.298 ; 6.298 ; 6.298 ; 6.298 ;
+; SW[0]      ; LEDSEG[2]   ; 6.262 ;       ;       ; 6.262 ;
+; SW[0]      ; LEDSEG[3]   ; 6.270 ; 6.270 ; 6.270 ; 6.270 ;
+; SW[0]      ; LEDSEG[4]   ;       ; 5.884 ; 5.884 ;       ;
+; SW[0]      ; LEDSEG[5]   ;       ; 5.875 ; 5.875 ;       ;
+; SW[0]      ; LEDSEG[6]   ;       ; 6.146 ; 6.146 ;       ;
+; SW[1]      ; LEDSEG[0]   ; 6.263 ; 6.263 ; 6.263 ; 6.263 ;
+; SW[1]      ; LEDSEG[1]   ; 6.264 ; 6.264 ; 6.264 ; 6.264 ;
+; SW[1]      ; LEDSEG[2]   ;       ; 6.228 ; 6.228 ;       ;
+; SW[1]      ; LEDSEG[3]   ; 6.246 ; 6.246 ; 6.246 ; 6.246 ;
+; SW[1]      ; LEDSEG[4]   ; 5.858 ; 5.858 ; 5.858 ; 5.858 ;
+; SW[1]      ; LEDSEG[5]   ;       ; 5.840 ; 5.840 ;       ;
+; SW[1]      ; LEDSEG[6]   ; 6.113 ; 6.113 ; 6.113 ; 6.113 ;
+; SW[2]      ; LEDSEG[0]   ; 6.002 ; 6.002 ; 6.002 ; 6.002 ;
+; SW[2]      ; LEDSEG[1]   ;       ; 5.999 ; 5.999 ;       ;
+; SW[2]      ; LEDSEG[2]   ; 5.970 ; 5.970 ; 5.970 ; 5.970 ;
+; SW[2]      ; LEDSEG[3]   ; 5.988 ; 5.988 ; 5.988 ; 5.988 ;
+; SW[2]      ; LEDSEG[4]   ;       ; 5.601 ; 5.601 ;       ;
+; SW[2]      ; LEDSEG[5]   ; 5.582 ; 5.582 ; 5.582 ; 5.582 ;
+; SW[2]      ; LEDSEG[6]   ; 5.848 ; 5.848 ; 5.848 ; 5.848 ;
+; SW[3]      ; LEDSEG[0]   ; 6.162 ; 6.162 ; 6.162 ; 6.162 ;
+; SW[3]      ; LEDSEG[1]   ;       ; 6.161 ; 6.161 ;       ;
+; SW[3]      ; LEDSEG[2]   ;       ; 6.129 ; 6.129 ;       ;
+; SW[3]      ; LEDSEG[3]   ;       ; 6.144 ; 6.144 ;       ;
+; SW[3]      ; LEDSEG[4]   ;       ; 5.757 ; 5.757 ;       ;
+; SW[3]      ; LEDSEG[5]   ; 5.740 ; 5.740 ; 5.740 ; 5.740 ;
+; SW[3]      ; LEDSEG[6]   ; 6.010 ; 6.010 ; 6.010 ; 6.010 ;
++------------+-------------+-------+-------+-------+-------+
+
+
++----------------------------------------------------------+
+; Minimum Propagation Delay                                ;
++------------+-------------+-------+-------+-------+-------+
+; Input Port ; Output Port ; RR    ; RF    ; FR    ; FF    ;
++------------+-------------+-------+-------+-------+-------+
+; SW[0]      ; LEDSEG[0]   ; 6.297 ; 6.297 ; 6.297 ; 6.297 ;
+; SW[0]      ; LEDSEG[1]   ; 6.298 ; 6.298 ; 6.298 ; 6.298 ;
+; SW[0]      ; LEDSEG[2]   ; 6.262 ;       ;       ; 6.262 ;
+; SW[0]      ; LEDSEG[3]   ; 6.270 ; 6.270 ; 6.270 ; 6.270 ;
+; SW[0]      ; LEDSEG[4]   ;       ; 5.884 ; 5.884 ;       ;
+; SW[0]      ; LEDSEG[5]   ;       ; 5.875 ; 5.875 ;       ;
+; SW[0]      ; LEDSEG[6]   ;       ; 6.146 ; 6.146 ;       ;
+; SW[1]      ; LEDSEG[0]   ; 6.263 ; 6.263 ; 6.263 ; 6.263 ;
+; SW[1]      ; LEDSEG[1]   ; 6.264 ; 6.264 ; 6.264 ; 6.264 ;
+; SW[1]      ; LEDSEG[2]   ;       ; 6.228 ; 6.228 ;       ;
+; SW[1]      ; LEDSEG[3]   ; 6.246 ; 6.246 ; 6.246 ; 6.246 ;
+; SW[1]      ; LEDSEG[4]   ; 5.858 ; 5.858 ; 5.858 ; 5.858 ;
+; SW[1]      ; LEDSEG[5]   ;       ; 5.840 ; 5.840 ;       ;
+; SW[1]      ; LEDSEG[6]   ; 6.113 ; 6.113 ; 6.113 ; 6.113 ;
+; SW[2]      ; LEDSEG[0]   ; 6.002 ; 6.002 ; 6.002 ; 6.002 ;
+; SW[2]      ; LEDSEG[1]   ;       ; 5.999 ; 5.999 ;       ;
+; SW[2]      ; LEDSEG[2]   ; 5.970 ; 5.970 ; 5.970 ; 5.970 ;
+; SW[2]      ; LEDSEG[3]   ; 5.988 ; 5.988 ; 5.988 ; 5.988 ;
+; SW[2]      ; LEDSEG[4]   ;       ; 5.601 ; 5.601 ;       ;
+; SW[2]      ; LEDSEG[5]   ; 5.582 ; 5.582 ; 5.582 ; 5.582 ;
+; SW[2]      ; LEDSEG[6]   ; 5.848 ; 5.848 ; 5.848 ; 5.848 ;
+; SW[3]      ; LEDSEG[0]   ; 6.162 ; 6.162 ; 6.162 ; 6.162 ;
+; SW[3]      ; LEDSEG[1]   ;       ; 6.161 ; 6.161 ;       ;
+; SW[3]      ; LEDSEG[2]   ;       ; 6.129 ; 6.129 ;       ;
+; SW[3]      ; LEDSEG[3]   ;       ; 6.144 ; 6.144 ;       ;
+; SW[3]      ; LEDSEG[4]   ;       ; 5.757 ; 5.757 ;       ;
+; SW[3]      ; LEDSEG[5]   ; 5.740 ; 5.740 ; 5.740 ; 5.740 ;
+; SW[3]      ; LEDSEG[6]   ; 6.010 ; 6.010 ; 6.010 ; 6.010 ;
++------------+-------------+-------+-------+-------+-------+
+
+
++----------------------------------------------------------------------------+
+; Multicorner Timing Analysis Summary                                        ;
++------------------+-------+------+----------+---------+---------------------+
+; Clock            ; Setup ; Hold ; Recovery ; Removal ; Minimum Pulse Width ;
++------------------+-------+------+----------+---------+---------------------+
+; Worst-case Slack ; N/A   ; N/A  ; N/A      ; N/A     ; N/A                 ;
+; Design-wide TNS  ; 0.0   ; 0.0  ; 0.0      ; 0.0     ; 0.0                 ;
++------------------+-------+------+----------+---------+---------------------+
+
+
++--------------------------------------------------------------+
+; Progagation Delay                                            ;
++------------+-------------+--------+--------+--------+--------+
+; Input Port ; Output Port ; RR     ; RF     ; FR     ; FF     ;
++------------+-------------+--------+--------+--------+--------+
+; SW[0]      ; LEDSEG[0]   ; 14.486 ; 14.486 ; 14.486 ; 14.486 ;
+; SW[0]      ; LEDSEG[1]   ; 14.484 ; 14.484 ; 14.484 ; 14.484 ;
+; SW[0]      ; LEDSEG[2]   ; 14.430 ;        ;        ; 14.430 ;
+; SW[0]      ; LEDSEG[3]   ; 14.459 ; 14.459 ; 14.459 ; 14.459 ;
+; SW[0]      ; LEDSEG[4]   ;        ; 13.026 ; 13.026 ;        ;
+; SW[0]      ; LEDSEG[5]   ;        ; 12.828 ; 12.828 ;        ;
+; SW[0]      ; LEDSEG[6]   ;        ; 14.051 ; 14.051 ;        ;
+; SW[1]      ; LEDSEG[0]   ; 14.389 ; 14.389 ; 14.389 ; 14.389 ;
+; SW[1]      ; LEDSEG[1]   ; 14.383 ; 14.383 ; 14.383 ; 14.383 ;
+; SW[1]      ; LEDSEG[2]   ;        ; 14.335 ; 14.335 ;        ;
+; SW[1]      ; LEDSEG[3]   ; 14.372 ; 14.372 ; 14.372 ; 14.372 ;
+; SW[1]      ; LEDSEG[4]   ; 12.937 ; 12.937 ; 12.937 ; 12.937 ;
+; SW[1]      ; LEDSEG[5]   ;        ; 12.732 ; 12.732 ;        ;
+; SW[1]      ; LEDSEG[6]   ; 13.955 ; 13.955 ; 13.955 ; 13.955 ;
+; SW[2]      ; LEDSEG[0]   ; 13.688 ; 13.688 ; 13.688 ; 13.688 ;
+; SW[2]      ; LEDSEG[1]   ;        ; 13.679 ; 13.679 ;        ;
+; SW[2]      ; LEDSEG[2]   ; 13.638 ; 13.638 ; 13.638 ; 13.638 ;
+; SW[2]      ; LEDSEG[3]   ; 13.674 ; 13.674 ; 13.674 ; 13.674 ;
+; SW[2]      ; LEDSEG[4]   ;        ; 12.239 ; 12.239 ;        ;
+; SW[2]      ; LEDSEG[5]   ; 12.035 ; 12.035 ; 12.035 ; 12.035 ;
+; SW[2]      ; LEDSEG[6]   ; 13.251 ; 13.251 ; 13.251 ; 13.251 ;
+; SW[3]      ; LEDSEG[0]   ; 14.094 ; 14.094 ; 14.094 ; 14.094 ;
+; SW[3]      ; LEDSEG[1]   ;        ; 14.090 ; 14.090 ;        ;
+; SW[3]      ; LEDSEG[2]   ;        ; 14.045 ; 14.045 ;        ;
+; SW[3]      ; LEDSEG[3]   ;        ; 14.076 ; 14.076 ;        ;
+; SW[3]      ; LEDSEG[4]   ;        ; 12.642 ; 12.642 ;        ;
+; SW[3]      ; LEDSEG[5]   ; 12.442 ; 12.442 ; 12.442 ; 12.442 ;
+; SW[3]      ; LEDSEG[6]   ; 13.661 ; 13.661 ; 13.661 ; 13.661 ;
++------------+-------------+--------+--------+--------+--------+
+
+
++----------------------------------------------------------+
+; Minimum Progagation Delay                                ;
++------------+-------------+-------+-------+-------+-------+
+; Input Port ; Output Port ; RR    ; RF    ; FR    ; FF    ;
++------------+-------------+-------+-------+-------+-------+
+; SW[0]      ; LEDSEG[0]   ; 6.297 ; 6.297 ; 6.297 ; 6.297 ;
+; SW[0]      ; LEDSEG[1]   ; 6.298 ; 6.298 ; 6.298 ; 6.298 ;
+; SW[0]      ; LEDSEG[2]   ; 6.262 ;       ;       ; 6.262 ;
+; SW[0]      ; LEDSEG[3]   ; 6.270 ; 6.270 ; 6.270 ; 6.270 ;
+; SW[0]      ; LEDSEG[4]   ;       ; 5.884 ; 5.884 ;       ;
+; SW[0]      ; LEDSEG[5]   ;       ; 5.875 ; 5.875 ;       ;
+; SW[0]      ; LEDSEG[6]   ;       ; 6.146 ; 6.146 ;       ;
+; SW[1]      ; LEDSEG[0]   ; 6.263 ; 6.263 ; 6.263 ; 6.263 ;
+; SW[1]      ; LEDSEG[1]   ; 6.264 ; 6.264 ; 6.264 ; 6.264 ;
+; SW[1]      ; LEDSEG[2]   ;       ; 6.228 ; 6.228 ;       ;
+; SW[1]      ; LEDSEG[3]   ; 6.246 ; 6.246 ; 6.246 ; 6.246 ;
+; SW[1]      ; LEDSEG[4]   ; 5.858 ; 5.858 ; 5.858 ; 5.858 ;
+; SW[1]      ; LEDSEG[5]   ;       ; 5.840 ; 5.840 ;       ;
+; SW[1]      ; LEDSEG[6]   ; 6.113 ; 6.113 ; 6.113 ; 6.113 ;
+; SW[2]      ; LEDSEG[0]   ; 6.002 ; 6.002 ; 6.002 ; 6.002 ;
+; SW[2]      ; LEDSEG[1]   ;       ; 5.999 ; 5.999 ;       ;
+; SW[2]      ; LEDSEG[2]   ; 5.970 ; 5.970 ; 5.970 ; 5.970 ;
+; SW[2]      ; LEDSEG[3]   ; 5.988 ; 5.988 ; 5.988 ; 5.988 ;
+; SW[2]      ; LEDSEG[4]   ;       ; 5.601 ; 5.601 ;       ;
+; SW[2]      ; LEDSEG[5]   ; 5.582 ; 5.582 ; 5.582 ; 5.582 ;
+; SW[2]      ; LEDSEG[6]   ; 5.848 ; 5.848 ; 5.848 ; 5.848 ;
+; SW[3]      ; LEDSEG[0]   ; 6.162 ; 6.162 ; 6.162 ; 6.162 ;
+; SW[3]      ; LEDSEG[1]   ;       ; 6.161 ; 6.161 ;       ;
+; SW[3]      ; LEDSEG[2]   ;       ; 6.129 ; 6.129 ;       ;
+; SW[3]      ; LEDSEG[3]   ;       ; 6.144 ; 6.144 ;       ;
+; SW[3]      ; LEDSEG[4]   ;       ; 5.757 ; 5.757 ;       ;
+; SW[3]      ; LEDSEG[5]   ; 5.740 ; 5.740 ; 5.740 ; 5.740 ;
+; SW[3]      ; LEDSEG[6]   ; 6.010 ; 6.010 ; 6.010 ; 6.010 ;
++------------+-------------+-------+-------+-------+-------+
+
+
+-------------------
+; Clock Transfers ;
+-------------------
+Nothing to report.
+
+
+---------------
+; Report TCCS ;
+---------------
+No dedicated SERDES Transmitter circuitry present in device or used in design
+
+
+---------------
+; Report RSKM ;
+---------------
+No dedicated SERDES Receiver circuitry present in device or used in design
+
+
++------------------------------------------------+
+; Unconstrained Paths                            ;
++---------------------------------+-------+------+
+; Property                        ; Setup ; Hold ;
++---------------------------------+-------+------+
+; Illegal Clocks                  ; 0     ; 0    ;
+; Unconstrained Clocks            ; 0     ; 0    ;
+; Unconstrained Input Ports       ; 4     ; 4    ;
+; Unconstrained Input Port Paths  ; 28    ; 28   ;
+; Unconstrained Output Ports      ; 7     ; 7    ;
+; Unconstrained Output Port Paths ; 28    ; 28   ;
++---------------------------------+-------+------+
+
+
++------------------------------------+
+; TimeQuest Timing Analyzer Messages ;
++------------------------------------+
+Info: *******************************************************************
+Info: Running Quartus II 32-bit TimeQuest Timing Analyzer
+    Info: Version 11.1 Build 259 01/25/2012 Service Pack 2 SJ Web Edition
+    Info: Processing started: Sat Jun 27 21:34:03 2015
+Info: Command: quartus_sta part1 -c part1
+Info: qsta_default_script.tcl version: #1
+Warning (20028): Parallel compilation is not licensed and has been disabled
+Info (21077): Low junction temperature is 0 degrees C
+Info (21077): High junction temperature is 85 degrees C
+Critical Warning (332012): Synopsys Design Constraints File file not found: 'part1.sdc'. A Synopsys Design Constraints File is required by the TimeQuest Timing Analyzer to get proper timing constraints. Without it, the Compiler will not properly optimize the design.
+Info (332142): No user constrained base clocks found in the design. Calling "derive_clocks -period 1.0"
+Info (332096): The command derive_clocks did not find any clocks to derive.  No clocks were created or changed.
+Warning (332068): No clocks defined in design.
+Info: Found TIMEQUEST_REPORT_SCRIPT_INCLUDE_DEFAULT_ANALYSIS = ON
+Info (332159): No clocks to report
+Info: Analyzing Slow Model
+Info (332140): No fmax paths to report
+Info (332140): No Setup paths to report
+Info (332140): No Hold paths to report
+Info (332140): No Recovery paths to report
+Info (332140): No Removal paths to report
+Info (332140): No Minimum Pulse Width paths to report
+Info (332001): The selected device family is not supported by the report_metastability command.
+Info: Analyzing Fast Model
+Info (306004): Started post-fitting delay annotation
+Warning (306006): Found 8 output pins without output pin load capacitance assignment
+    Info (306007): Pin "LEDSEG[0]" has no specified output pin load capacitance -- assuming default load capacitance of 0 pF for timing analysis
+    Info (306007): Pin "LEDSEG[1]" has no specified output pin load capacitance -- assuming default load capacitance of 0 pF for timing analysis
+    Info (306007): Pin "LEDSEG[2]" has no specified output pin load capacitance -- assuming default load capacitance of 0 pF for timing analysis
+    Info (306007): Pin "LEDSEG[3]" has no specified output pin load capacitance -- assuming default load capacitance of 0 pF for timing analysis
+    Info (306007): Pin "LEDSEG[4]" has no specified output pin load capacitance -- assuming default load capacitance of 0 pF for timing analysis
+    Info (306007): Pin "LEDSEG[5]" has no specified output pin load capacitance -- assuming default load capacitance of 0 pF for timing analysis
+    Info (306007): Pin "LEDSEG[6]" has no specified output pin load capacitance -- assuming default load capacitance of 0 pF for timing analysis
+    Info (306007): Pin "ENABLE" has no specified output pin load capacitance -- assuming default load capacitance of 0 pF for timing analysis
+Info (306005): Delay annotation completed successfully
+Info (332142): No user constrained base clocks found in the design. Calling "derive_clocks -period 1.0"
+Info (332096): The command derive_clocks did not find any clocks to derive.  No clocks were created or changed.
+Warning (332068): No clocks defined in design.
+Info (332140): No Setup paths to report
+Info (332140): No Hold paths to report
+Info (332140): No Recovery paths to report
+Info (332140): No Removal paths to report
+Info (332140): No Minimum Pulse Width paths to report
+Info (332001): The selected device family is not supported by the report_metastability command.
+Info (332102): Design is not fully constrained for setup requirements
+Info (332102): Design is not fully constrained for hold requirements
+Info: Quartus II 32-bit TimeQuest Timing Analyzer was successful. 0 errors, 5 warnings
+    Info: Peak virtual memory: 261 megabytes
+    Info: Processing ended: Sat Jun 27 21:34:06 2015
+    Info: Elapsed time: 00:00:03
+    Info: Total CPU time (on all processors): 00:00:01
+
+

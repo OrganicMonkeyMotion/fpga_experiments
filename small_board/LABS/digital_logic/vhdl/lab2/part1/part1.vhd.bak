@@ -1,0 +1,23 @@
+LIBRARY ieee;
+USE ieee.std_logic_1164.all;
+
+-- simple module that connects the buttons on our Master 21EDA board.
+-- based on labs from Altera 
+-- ftp://ftp.altera.com/up/pub/Altera_Material/11.1/Laboratory_Exercises/Digital_Logic/DE2/vhdl/lab2_VHDL.pdf
+
+ENTITY part1 IS
+	PORT (SW : IN  STD_LOGIC_VECTOR (3 DOWNTO 0); -- (3)=A, (2)=B, (1)=C, (0)=D
+	      LEDSEG    : OUT STD_LOGIC_VECTOR (6 DOWNTO 0)); -- our red leds
+END part1;
+
+
+ARCHITECTURE Behavior OF part1 IS
+BEGIN
+  LEDSEG(0) <= ; -- SEG A
+  LEDSEG(1) <= ; -- SEG B
+  LEDSEG(2) <= ; -- SEG C
+  LEDSEG(3) <= ; -- SEG D
+  LEDSEG(4) <= ; -- SEG E
+  LEDSEG(5) <= ; -- SEG F
+  LEDSEG(6) <= ; -- SEG G
+END Behavior;

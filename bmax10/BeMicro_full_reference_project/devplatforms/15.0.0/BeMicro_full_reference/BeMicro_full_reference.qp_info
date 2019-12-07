@@ -1,0 +1,7 @@
+<platform><name>Nios II Full Featured Reference Design - BeMicro</name><category>Design Example</category><version>1.02</version><acds_version>15.0.0</acds_version><board>BeMicro MAX 10 FPGA Evaluation Kit</board><family>MAX 10</family><device>10M08DA</device><part>10M08DAF484C8GES</part><vendor>Arrow</vendor><description>This is a comprehensive design example which demonstrates how to use the following interfaces on the BeMicro Max 10 FPGA Evaluation kit:
+(i)	Accelerometer
+(ii)	Temperature Sensor 
+(iii)	DAC
+(iv)	ADC
+(v)	Serial Flash 
+</description><documentation><title>Full Featured Reference Design User Guide</title><url>http://www.alterawiki.com/uploads/a/a1/BeMicroM10_Full_Featured_Reference_User_Guide.pdf</url></documentation></platform>

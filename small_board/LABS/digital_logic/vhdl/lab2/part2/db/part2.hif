@@ -1,0 +1,338 @@
+Quartus II 32-bit
+Version 11.1 Build 259 01/25/2012 Service Pack 2 SJ Web Edition
+14
+1253
+OFF
+OFF
+OFF
+ON
+ON
+ON
+FV_OFF
+Level2
+0
+0
+0
+0
+VRSM_ON
+VHSM_ON
+0
+-- Start Library Paths --
+-- End Library Paths --
+-- Start VHDL Libraries --
+-- End VHDL Libraries --
+# entity
+mplex
+# storage
+db|part2.(3).cnf
+db|part2.(3).cnf
+# logic_option {
+AUTO_RAM_RECOGNITION
+ON
+}
+# case_insensitive
+# source_file
+mplex.vhd
+e7631b63dbe5be408dcfc59d618da586
+5
+# internal_option {
+HDL_INITIAL_FANOUT_LIMIT
+OFF
+AUTO_RESOURCE_SHARING
+OFF
+AUTO_RAM_RECOGNITION
+ON
+AUTO_ROM_RECOGNITION
+ON
+}
+# user_parameter {
+ constraint(v)
+1 downto 0
+PARAMETER_STRING
+USR
+}
+# hierarchies {
+mplex:M3
+mplex:M2
+mplex:M1
+mplex:M0
+}
+# macro_sequence
+
+# end
+# entity
+circuitb
+# storage
+db|part2.(7).cnf
+db|part2.(7).cnf
+# logic_option {
+AUTO_RAM_RECOGNITION
+ON
+}
+# case_insensitive
+# source_file
+circuitb.vhd
+c8129f6a5158216ebb7a47d56e9fcd
+5
+# internal_option {
+HDL_INITIAL_FANOUT_LIMIT
+OFF
+AUTO_RESOURCE_SHARING
+OFF
+AUTO_RAM_RECOGNITION
+ON
+AUTO_ROM_RECOGNITION
+ON
+}
+# user_parameter {
+ constraint(ledseg)
+6 downto 0
+PARAMETER_STRING
+USR
+}
+# hierarchies {
+circuitb:S1
+}
+# macro_sequence
+
+# end
+# entity
+comparator
+# storage
+db|part2.(2).cnf
+db|part2.(2).cnf
+# logic_option {
+AUTO_RAM_RECOGNITION
+ON
+}
+# case_insensitive
+# source_file
+comparator.vhd
+4ac6d614131b1eeaad0e96b6655d4b
+5
+# internal_option {
+HDL_INITIAL_FANOUT_LIMIT
+OFF
+AUTO_RESOURCE_SHARING
+OFF
+AUTO_RAM_RECOGNITION
+ON
+AUTO_ROM_RECOGNITION
+ON
+}
+# user_parameter {
+ constraint(input)
+3 downto 0
+PARAMETER_STRING
+USR
+}
+# hierarchies {
+comparator:C0
+}
+# macro_sequence
+
+# end
+# entity
+circuita
+# storage
+db|part2.(5).cnf
+db|part2.(5).cnf
+# logic_option {
+AUTO_RAM_RECOGNITION
+ON
+}
+# case_insensitive
+# source_file
+circuita.vhd
+d932c3ced4cdb66a5eaa54c1b3b353f
+5
+# internal_option {
+HDL_INITIAL_FANOUT_LIMIT
+OFF
+AUTO_RESOURCE_SHARING
+OFF
+AUTO_RAM_RECOGNITION
+ON
+AUTO_ROM_RECOGNITION
+ON
+}
+# user_parameter {
+ constraint(input)
+2 downto 0
+PARAMETER_STRING
+USR
+ constraint(output)
+2 downto 0
+PARAMETER_STRING
+USR
+}
+# hierarchies {
+circuita:C1
+}
+# macro_sequence
+
+# end
+# entity
+segseven
+# storage
+db|part2.(1).cnf
+db|part2.(1).cnf
+# logic_option {
+AUTO_RAM_RECOGNITION
+ON
+}
+# case_insensitive
+# source_file
+segseven.vhd
+cf0e1526ef7bfe37c23be6e608bf89
+5
+# internal_option {
+HDL_INITIAL_FANOUT_LIMIT
+OFF
+AUTO_RESOURCE_SHARING
+OFF
+AUTO_RAM_RECOGNITION
+ON
+AUTO_ROM_RECOGNITION
+ON
+}
+# user_parameter {
+ constraint(sw)
+3 downto 0
+PARAMETER_STRING
+USR
+ constraint(ledseg)
+6 downto 0
+PARAMETER_STRING
+USR
+}
+# hierarchies {
+segseven:S0
+}
+# macro_sequence
+
+# end
+# entity
+part2
+# storage
+db|part2.(0).cnf
+db|part2.(0).cnf
+# logic_option {
+AUTO_RAM_RECOGNITION
+ON
+}
+# case_insensitive
+# source_file
+part2.vhd
+fe8dfe49ef50e03d9aca83a3f2297460
+5
+# internal_option {
+HDL_INITIAL_FANOUT_LIMIT
+OFF
+AUTO_RESOURCE_SHARING
+OFF
+AUTO_RAM_RECOGNITION
+ON
+AUTO_ROM_RECOGNITION
+ON
+}
+# hierarchies {
+|
+}
+# macro_sequence
+
+# end
+# entity
+DE1_disp
+# storage
+db|part2.(4).cnf
+db|part2.(4).cnf
+# logic_option {
+AUTO_RAM_RECOGNITION
+ON
+}
+# case_insensitive
+# source_file
+de1_disp.vhd
+1f23a1b8eea511402ff786c89cb0cda3
+5
+# internal_option {
+HDL_INITIAL_FANOUT_LIMIT
+OFF
+AUTO_RESOURCE_SHARING
+OFF
+AUTO_RAM_RECOGNITION
+ON
+AUTO_ROM_RECOGNITION
+ON
+}
+# user_parameter {
+ constraint(hex0)
+6 downto 0
+PARAMETER_STRING
+USR
+ constraint(hex1)
+6 downto 0
+PARAMETER_STRING
+USR
+ constraint(hex2)
+6 downto 0
+PARAMETER_STRING
+USR
+ constraint(hex3)
+6 downto 0
+PARAMETER_STRING
+USR
+ constraint(hex)
+6 downto 0
+PARAMETER_STRING
+USR
+ constraint(dispn)
+3 downto 0
+PARAMETER_STRING
+USR
+}
+# hierarchies {
+DE1_disp:DE1
+}
+# macro_sequence
+
+# end
+# entity
+sweep
+# storage
+db|part2.(6).cnf
+db|part2.(6).cnf
+# logic_option {
+AUTO_RAM_RECOGNITION
+ON
+}
+# case_insensitive
+# source_file
+sweep.vhd
+56719bbf81ccce4eeea19c167c94e3b2
+5
+# internal_option {
+HDL_INITIAL_FANOUT_LIMIT
+OFF
+AUTO_RESOURCE_SHARING
+OFF
+AUTO_RAM_RECOGNITION
+ON
+AUTO_ROM_RECOGNITION
+ON
+}
+# user_parameter {
+ constraint(sweep_out)
+2 downto 0
+PARAMETER_STRING
+USR
+}
+# hierarchies {
+DE1_disp:DE1|sweep:S0
+}
+# macro_sequence
+
+# end
+# complete
+

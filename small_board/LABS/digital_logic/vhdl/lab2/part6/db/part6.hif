@@ -1,0 +1,262 @@
+Quartus II 32-bit
+Version 11.1 Build 259 01/25/2012 Service Pack 2 SJ Web Edition
+14
+1253
+OFF
+OFF
+OFF
+ON
+ON
+ON
+FV_OFF
+Level2
+0
+0
+0
+0
+VRSM_ON
+VHSM_ON
+0
+-- Start Library Paths --
+-- End Library Paths --
+-- Start VHDL Libraries --
+-- End VHDL Libraries --
+# entity
+part6
+# storage
+db|part6.(0).cnf
+db|part6.(0).cnf
+# case_insensitive
+# source_file
+part6.bdf
+e4e033aabd2dcab8f69f2afc390f041
+26
+# internal_option {
+BLOCK_DESIGN_NAMING
+AUTO
+}
+# hierarchies {
+|
+}
+# macro_sequence
+
+# end
+# entity
+segseven
+# storage
+db|part6.(2).cnf
+db|part6.(2).cnf
+# logic_option {
+AUTO_RAM_RECOGNITION
+ON
+}
+# case_insensitive
+# source_file
+segseven.vhd
+805b7bb15a6c76baa38faaee97641219
+5
+# internal_option {
+HDL_INITIAL_FANOUT_LIMIT
+OFF
+AUTO_RESOURCE_SHARING
+OFF
+AUTO_RAM_RECOGNITION
+ON
+AUTO_ROM_RECOGNITION
+ON
+}
+# user_parameter {
+ constraint(sw)
+3 downto 0
+PARAMETER_STRING
+USR
+ constraint(ledseg)
+6 downto 0
+PARAMETER_STRING
+USR
+}
+# hierarchies {
+part6_code:inst|segseven:seg1
+part6_code:inst|segseven:seg2
+part6_code:inst|segseven:seg3
+part6_code:inst|segseven:seg4
+}
+# macro_sequence
+
+# end
+# entity
+bin2bcd_12bit
+# storage
+db|part6.(3).cnf
+db|part6.(3).cnf
+# logic_option {
+AUTO_RAM_RECOGNITION
+ON
+}
+# case_insensitive
+# source_file
+bin2bcd_12bit.vhd
+dc7757f5cc4df35fb21581fc7b3df517
+5
+# internal_option {
+HDL_INITIAL_FANOUT_LIMIT
+OFF
+AUTO_RESOURCE_SHARING
+OFF
+AUTO_RAM_RECOGNITION
+ON
+AUTO_ROM_RECOGNITION
+ON
+}
+# user_parameter {
+ constraint(binin)
+11 downto 0
+PARAMETER_STRING
+USR
+ constraint(ones)
+3 downto 0
+PARAMETER_STRING
+USR
+ constraint(tens)
+3 downto 0
+PARAMETER_STRING
+USR
+ constraint(hundreds)
+3 downto 0
+PARAMETER_STRING
+USR
+ constraint(thousands)
+3 downto 0
+PARAMETER_STRING
+USR
+}
+# hierarchies {
+part6_code:inst|bin2bcd_12bit:convert
+}
+# macro_sequence
+
+# end
+# entity
+DE1_disp
+# storage
+db|part6.(4).cnf
+db|part6.(4).cnf
+# logic_option {
+AUTO_RAM_RECOGNITION
+ON
+}
+# case_insensitive
+# source_file
+de1_disp.vhd
+1f23a1b8eea511402ff786c89cb0cda3
+5
+# internal_option {
+HDL_INITIAL_FANOUT_LIMIT
+OFF
+AUTO_RESOURCE_SHARING
+OFF
+AUTO_RAM_RECOGNITION
+ON
+AUTO_ROM_RECOGNITION
+ON
+}
+# user_parameter {
+ constraint(hex0)
+6 downto 0
+PARAMETER_STRING
+USR
+ constraint(hex1)
+6 downto 0
+PARAMETER_STRING
+USR
+ constraint(hex2)
+6 downto 0
+PARAMETER_STRING
+USR
+ constraint(hex3)
+6 downto 0
+PARAMETER_STRING
+USR
+ constraint(hex)
+6 downto 0
+PARAMETER_STRING
+USR
+ constraint(dispn)
+3 downto 0
+PARAMETER_STRING
+USR
+}
+# hierarchies {
+part6_code:inst|DE1_disp:DE1
+}
+# macro_sequence
+
+# end
+# entity
+sweep
+# storage
+db|part6.(5).cnf
+db|part6.(5).cnf
+# logic_option {
+AUTO_RAM_RECOGNITION
+ON
+}
+# case_insensitive
+# source_file
+sweep.vhd
+56719bbf81ccce4eeea19c167c94e3b2
+5
+# internal_option {
+HDL_INITIAL_FANOUT_LIMIT
+OFF
+AUTO_RESOURCE_SHARING
+OFF
+AUTO_RAM_RECOGNITION
+ON
+AUTO_ROM_RECOGNITION
+ON
+}
+# user_parameter {
+ constraint(sweep_out)
+2 downto 0
+PARAMETER_STRING
+USR
+}
+# hierarchies {
+part6_code:inst|DE1_disp:DE1|sweep:S0
+}
+# macro_sequence
+
+# end
+# entity
+part6_code
+# storage
+db|part6.(1).cnf
+db|part6.(1).cnf
+# logic_option {
+AUTO_RAM_RECOGNITION
+ON
+}
+# case_insensitive
+# source_file
+part6_code.vhd
+91cd39c264a2c99cb540af7ec44d741
+5
+# internal_option {
+HDL_INITIAL_FANOUT_LIMIT
+OFF
+AUTO_RESOURCE_SHARING
+OFF
+AUTO_RAM_RECOGNITION
+ON
+AUTO_ROM_RECOGNITION
+ON
+}
+# hierarchies {
+part6_code:inst
+}
+# macro_sequence
+
+# end
+# complete
+

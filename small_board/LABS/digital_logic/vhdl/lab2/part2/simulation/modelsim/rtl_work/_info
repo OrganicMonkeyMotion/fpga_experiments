@@ -1,0 +1,190 @@
+m255
+K3
+13
+cModel Technology
+Z0 dC:\Users\rr\Documents\GitHub\fpga_experiments\small_board\LABS\digital_logic\vhdl\lab2\part2\simulation\modelsim
+Ecircuita
+Z1 w1436095117
+Z2 DPx4 ieee 14 std_logic_1164 0 22 GH1=`jDDBJ=`LM;:Ak`kf2
+Z3 dC:\Users\rr\Documents\GitHub\fpga_experiments\small_board\LABS\digital_logic\vhdl\lab2\part2\simulation\modelsim
+Z4 8C:/Users/rr/Documents/GitHub/fpga_experiments/small_board/LABS/digital_logic/vhdl/lab2/part2/circuita.vhd
+Z5 FC:/Users/rr/Documents/GitHub/fpga_experiments/small_board/LABS/digital_logic/vhdl/lab2/part2/circuita.vhd
+l0
+L4
+Vf9jTZj05OWTY1mK]CQgO:3
+Z6 OV;C;6.6d;45
+31
+Z7 o-93 -work work -O0
+Z8 tExplicit 1
+!s100 gB<C@mbl_:<HdLOa;A7;B0
+Abehavior
+R2
+DEx4 work 8 circuita 0 22 f9jTZj05OWTY1mK]CQgO:3
+l13
+L12
+V`mi^Nf>b?MScA;X0BI[5z3
+R6
+31
+Z9 Mx1 4 ieee 14 std_logic_1164
+R7
+R8
+!s100 VaQo`>>5I1=10A[@:;2ki1
+Ecomparator
+Z10 w1436095248
+R2
+R3
+Z11 8C:/Users/rr/Documents/GitHub/fpga_experiments/small_board/LABS/digital_logic/vhdl/lab2/part2/comparator.vhd
+Z12 FC:/Users/rr/Documents/GitHub/fpga_experiments/small_board/LABS/digital_logic/vhdl/lab2/part2/comparator.vhd
+l0
+L4
+VU1f01[]J@_Q[g:06U7D4M2
+R6
+31
+R7
+R8
+!s100 7iAb64niJa]mz7[WnmXg73
+Abehaviour
+R2
+DEx4 work 10 comparator 0 22 U1f01[]J@_Q[g:06U7D4M2
+l11
+L10
+Vbffi7XB<gU@6bJd:VY9^61
+R6
+31
+R9
+R7
+R8
+!s100 A]elJWhg[MklII5K;noCE1
+Ede1_disp
+Z13 w1436137275
+R2
+R3
+Z14 8C:/Users/rr/Documents/GitHub/fpga_experiments/small_board/LABS/digital_logic/vhdl/lab2/part2/DE1_disp.vhd
+Z15 FC:/Users/rr/Documents/GitHub/fpga_experiments/small_board/LABS/digital_logic/vhdl/lab2/part2/DE1_disp.vhd
+l0
+L4
+VV[NEjUUQZmgQ_GUKzNjPH1
+R6
+31
+R7
+R8
+!s100 2[>dZN>]PT3<OR@XXnM[:1
+Abehavior
+R2
+DEx4 work 8 de1_disp 0 22 V[NEjUUQZmgQ_GUKzNjPH1
+l18
+L10
+ViEM>=cfbbZE7GKChELh<B2
+R6
+31
+R9
+R7
+R8
+!s100 bdUBAZNbjU]BP3Y7bk2lA0
+Emplex
+Z16 w1436095316
+R2
+R3
+Z17 8C:/Users/rr/Documents/GitHub/fpga_experiments/small_board/LABS/digital_logic/vhdl/lab2/part2/mplex.vhd
+Z18 FC:/Users/rr/Documents/GitHub/fpga_experiments/small_board/LABS/digital_logic/vhdl/lab2/part2/mplex.vhd
+l0
+L4
+V]:EVdL9]k6<EIo57:GHJO3
+R6
+31
+R7
+R8
+!s100 l[BSZf;3j_C@mF:]6hJme1
+Abehaviour
+R2
+DEx4 work 5 mplex 0 22 ]:EVdL9]k6<EIo57:GHJO3
+l12
+L11
+VWWn;gbOSWaMjhC4gDK`PL0
+R6
+31
+R9
+R7
+R8
+!s100 Eeae;FVfIe:H[?O?Y3nYJ1
+Epart2
+Z19 w1436137105
+R2
+R3
+Z20 8C:/Users/rr/Documents/GitHub/fpga_experiments/small_board/LABS/digital_logic/vhdl/lab2/part2/part2.vhd
+Z21 FC:/Users/rr/Documents/GitHub/fpga_experiments/small_board/LABS/digital_logic/vhdl/lab2/part2/part2.vhd
+l0
+L4
+VOUfaQ=m@62PK<U=SD@_EM3
+R6
+31
+R7
+R8
+!s100 :;zMNQ<DZMZ^GDLin:B<]1
+Abehaviour
+R2
+DEx4 work 5 part2 0 22 OUfaQ=m@62PK<U=SD@_EM3
+l37
+L12
+V5@IQ2VHogNa3?KQXXB`D>3
+R6
+31
+R9
+R7
+R8
+!s100 GCVLlPlTFInBAR_oh9gM?2
+Esegseven
+Z22 w1436095151
+R2
+R3
+Z23 8C:/Users/rr/Documents/GitHub/fpga_experiments/small_board/LABS/digital_logic/vhdl/lab2/part2/segseven.vhd
+Z24 FC:/Users/rr/Documents/GitHub/fpga_experiments/small_board/LABS/digital_logic/vhdl/lab2/part2/segseven.vhd
+l0
+L4
+VoAS_8`Kn3MlMEWYhzIHmJ1
+R6
+31
+R7
+R8
+!s100 nJ2`RObgg?n66[>h1kQ1_2
+Abehavior
+R2
+DEx4 work 8 segseven 0 22 oAS_8`Kn3MlMEWYhzIHmJ1
+l10
+L9
+Vz@5U=4F=X^_b5TJ<`cbW52
+R6
+31
+R9
+R7
+R8
+!s100 h]5RN3FemY`8A<j<zPj:c0
+Esweep
+Z25 w1436097553
+Z26 DPx4 ieee 11 numeric_std 0 22 =NSdli^?T5OD8;4F<blj<3
+R2
+R3
+Z27 8C:/Users/rr/Documents/GitHub/fpga_experiments/small_board/LABS/digital_logic/vhdl/lab2/part2/sweep.vhd
+Z28 FC:/Users/rr/Documents/GitHub/fpga_experiments/small_board/LABS/digital_logic/vhdl/lab2/part2/sweep.vhd
+l0
+L5
+V=SZKKd60A9dBjU@OGMjYG1
+!s100 2YRhJQ[KjfEkc`5YVGcjn2
+R6
+31
+R7
+R8
+Aarch
+R26
+R2
+DEx4 work 5 sweep 0 22 =SZKKd60A9dBjU@OGMjYG1
+l12
+L10
+V7@FeAD34kXBBVVoDMSQQ>3
+!s100 l]5fF51WfBd_E_l[Ne7h82
+R6
+31
+Z29 Mx2 4 ieee 14 std_logic_1164
+Mx1 4 ieee 11 numeric_std
+R7
+R8

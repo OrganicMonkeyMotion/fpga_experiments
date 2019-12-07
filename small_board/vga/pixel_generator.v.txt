@@ -1,0 +1,228 @@
+module pixel_generator(switches,rst,hpos,vpos,red,green,blue);
+   // horizontal and vertical input positions (10 bits apiece)
+   input [9:0]		hpos;
+   input [9:0]		vpos;
+
+   // switches to control behavior
+	input [3:0]		switches;
+
+   // global reset
+   input 	    rst;
+   
+
+   // red, green, and blue output pixel values.
+   output 	    red;
+   reg		    red;
+   output 	    green;
+   reg		    green;
+   output 	    blue;
+   reg 		    blue;
+
+  	reg [2:0]	 setred;
+	reg [2:0]	 setgreen;
+	reg [2:0]	 setblue;
+
+   // ball position on screen
+   reg [9:0] 	    ball_x;
+   reg [9:0] 	    ball_y;
+
+   // ball velocity
+   reg [9:0] 	    ball_vx;
+   reg [9:0] 	    ball_vy;
+
+   // need to invert velocity
+   reg 		    bounce_x;
+   reg 		    bounce_y;
+
+	// paddle positions on screen
+	reg[9:0]		paddle_a_y;
+	reg[9:0]		paddle_b_y;
+
+
+   // screen dimensions
+   parameter 	    H_SIZE = 10'd800;
+   parameter 	    V_SIZE = 10'd600;
+
+   // playing field parameters
+   parameter 	    BORDER = 10'd4;
+   parameter 	    X_MIN = BORDER;
+   parameter 	    X_MAX = H_SIZE - BORDER;
+   parameter 	    Y_MIN = BORDER;
+   parameter 	    Y_MAX = V_SIZE - BORDER;
+
+   // ball parameters
+   parameter 	    BALL_WIDTH = 10'd16;
+   parameter 	    BALL_HEIGHT = 10'd12;
+
+   reg 		    frame_index;
+   reg [9:0] 	    frame;
+
+   reg 		    do_reset_x;
+   reg 		    do_reset_y;
+
+	// paddle parameters
+	parameter		PADDLE_WIDTH = 10'd8;
+	parameter		PADDLE_HEIGHT = 10'd36;
+	parameter		PADDLE_DIST_FROM_WALL = 10'd8;
+	parameter		PADDLE_START = 10'd282;
+	parameter		PADDLE_A_X_MIN = X_MIN + PADDLE_DIST_FROM_WALL;
+	parameter		PADDLE_A_X_MAX = X_MIN + PADDLE_DIST_FROM_WALL + PADDLE_WIDTH;
+	parameter		PADDLE_B_X_MIN = X_MAX - PADDLE_DIST_FROM_WALL - PADDLE_WIDTH;
+	parameter		PADDLE_B_X_MAX = X_MAX - PADDLE_DIST_FROM_WALL;
+
+	reg			 do_reset_p;
+
+	initial begin
+		setred = 0;
+		setgreen = 0;
+		setblue = 0;
+	end
+
+	always @(hpos or vpos) begin
+		red = |setred;
+		green = |setgreen;
+		blue = |setblue;
+	end
+
+   // draw a blue border around playfield
+   always @(hpos or vpos) begin
+      if (hpos < X_MIN || hpos > X_MAX || vpos < Y_MIN || vpos > Y_MAX)
+			setblue[0] = 1;
+      else
+			setblue[0] = 0;
+   end
+
+   // draw a yellow ball
+   always @(hpos or vpos or ball_x or ball_y) begin
+      if ((hpos >= ball_x) && (hpos < (ball_x + BALL_WIDTH)) 
+			&& (vpos >= ball_y) && (vpos < (ball_y + BALL_HEIGHT)))
+		begin
+			setred[0] = 1;
+		   setgreen[0] = 1;
+		end else begin
+		  setred[0] = 0;
+		  setgreen[0] = 0;
+	  	end
+   end // always @ (hpos or vpos or ball_x or ball_y)
+
+	always @(hpos or vpos) begin
+		if ((hpos >= PADDLE_A_X_MIN) && (hpos < PADDLE_A_X_MAX)
+			&& (vpos >= paddle_a_y) && (vpos < (paddle_a_y + PADDLE_HEIGHT)))
+			setred[1] = 1;
+		else
+			setred[1] = 0;
+	end
+
+	always @(hpos or vpos) begin
+		if ((hpos >= PADDLE_B_X_MIN) && (hpos < PADDLE_B_X_MAX)
+			&& (vpos >= paddle_b_y) && (vpos < (paddle_b_y + PADDLE_HEIGHT)))
+			setred[2] = 1;
+		else
+			setred[2] = 0;
+	end
+
+   // generate a frame_index pulse at the beginning of a frame
+   always @(hpos or vpos) begin
+      if (vpos == 0 && hpos == 0)
+			frame_index = 1;
+      else
+			frame_index = 0;
+   end
+
+   // keep a running count of the frame number
+   always @(posedge frame_index) begin
+      if (frame < 10'd600)
+			frame = frame + 1;
+      else
+			frame = 0;
+   end
+
+   always @(negedge rst) begin
+      do_reset_x = 1;
+      do_reset_y = 1;
+		do_reset_p = 1;
+
+   end
+
+   // update the ball position once per frame
+   // do x and y as separate tasks
+   always @(posedge frame_index) begin
+      // at reset, put the ball in center court
+      if (do_reset_x == 1) begin
+	 		ball_x = X_MAX / 2;
+		  	ball_vx = 3;
+			do_reset_x = 0;
+		end else begin
+			// bounce the ball off the sides
+			if (ball_x < X_MIN
+				|| (ball_x < PADDLE_A_X_MAX
+					&& !(ball_x < PADDLE_A_X_MIN)
+					&& !((ball_y + BALL_HEIGHT) < paddle_a_y || ball_y > (paddle_a_y + PADDLE_HEIGHT)))
+				|| (ball_x < PADDLE_B_X_MAX
+					&& !(ball_x < PADDLE_B_X_MIN)
+					&& !((ball_y + BALL_HEIGHT) < paddle_b_y || ball_y > (paddle_b_y + PADDLE_HEIGHT))))
+				ball_vx = 3;		//bounce right
+			else if (ball_x > (X_MAX - BALL_WIDTH)
+				|| ((ball_x + BALL_WIDTH) > PADDLE_A_X_MIN 
+					&& !((ball_x + BALL_WIDTH) > PADDLE_A_X_MAX)
+					&& !((ball_y + BALL_HEIGHT) < paddle_a_y || ball_y > (paddle_a_y + PADDLE_HEIGHT)))
+				|| ((ball_x + BALL_WIDTH) > PADDLE_B_X_MIN
+					&& !((ball_x + BALL_WIDTH) > PADDLE_B_X_MAX)
+					&& !((ball_y + BALL_HEIGHT) < paddle_b_y || ball_y > (paddle_b_y + PADDLE_HEIGHT))))
+				ball_vx = -3;		//bounce left
+			ball_x = ball_x + ball_vx;
+   	end
+	end // always @ (posedge frame_index)
+   
+   always @(posedge frame_index) begin
+		// at reset, put the ball in center court
+		if (do_reset_y == 1) begin
+			ball_y = Y_MAX / 2;
+			ball_vy = 3;
+			do_reset_y = 0;
+		end else begin
+			// bounce the ball off the top and bottom
+			if (ball_y < Y_MIN
+				 || (ball_y < (paddle_a_y + PADDLE_HEIGHT)
+				 		&& !((ball_y + BALL_HEIGHT) < (paddle_a_y + PADDLE_HEIGHT)) 
+				     	&& !((ball_x + BALL_WIDTH) < PADDLE_A_X_MIN || ball_x > PADDLE_A_X_MAX))
+				 || (ball_y < (paddle_b_y + PADDLE_HEIGHT)
+				 		&& !((ball_y + BALL_HEIGHT) < (paddle_b_y + PADDLE_HEIGHT)) 
+						&& !((ball_x + BALL_WIDTH) < PADDLE_B_X_MIN || ball_x > PADDLE_B_X_MAX)))
+				ball_vy = 3;
+			else if (ball_y > (Y_MAX - BALL_HEIGHT)
+				 || ((ball_y + BALL_HEIGHT) > paddle_a_y
+				 		&& !(ball_y > paddle_a_y)
+						&& !((ball_x + BALL_WIDTH) < PADDLE_A_X_MIN || ball_x > PADDLE_A_X_MAX))
+				 || ((ball_y + BALL_HEIGHT) > paddle_b_y
+				 		&& !(ball_y > paddle_b_y)
+				     	&& !((ball_x + BALL_WIDTH) < PADDLE_B_X_MIN || ball_x > PADDLE_B_X_MAX)))
+				ball_vy = -3;
+			ball_y = ball_y + ball_vy;
+		end
+	end // always @ (posedge frame_index)
+
+ always @(posedge frame_index) begin
+		// at reset, put the ball in center court
+		if (do_reset_p == 1) begin
+			paddle_a_y = PADDLE_START;
+			paddle_b_y = PADDLE_START;
+			do_reset_p = 0;
+		end else begin
+			if (^switches[1:0])
+				if (switches[0] && paddle_a_y > Y_MIN)
+					paddle_a_y = paddle_a_y - 1;
+				else if (switches[1] && (paddle_a_y + PADDLE_HEIGHT) < Y_MAX)
+					paddle_a_y = paddle_a_y + 1;
+
+			if (^switches[3:2])
+				if (switches[2] && paddle_b_y > Y_MIN)
+					paddle_b_y = paddle_b_y - 1;
+				else if (switches[3] && (paddle_b_y + PADDLE_HEIGHT) < Y_MAX)
+					paddle_b_y = paddle_b_y + 1;
+
+		end
+	end // always @ (posedge frame_index)
+
+endmodule
+

@@ -1,0 +1,8 @@
+vendor_name = ModelSim
+source_file = 1, C:/Users/rr/Documents/GitHub/fpga_experiments/small_board/RPODSed1/Chapter 1/LE1.14/ex1/ex1.bdf
+source_file = 1, C:/Users/rr/Documents/GitHub/fpga_experiments/small_board/RPODSed1/Chapter 1/LE1.14/ex1/db/ex1.cbx.xml
+design_name = ex1
+instance = comp, \A~I , A, ex1, 1
+instance = comp, \B~I , B, ex1, 1
+instance = comp, \X~I , X, ex1, 1
+instance = comp, \Y~I , Y, ex1, 1

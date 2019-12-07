@@ -1,0 +1,336 @@
+|part6_top
+clk => DE1_disp:inst1.clk
+Button[0] => inst[0].IN0
+Button[1] => inst[1].IN0
+
+
+|part6_top|DE1_disp:inst1
+HEX0[0] => Mux10.IN0
+HEX0[1] => Mux9.IN0
+HEX0[2] => Mux8.IN0
+HEX0[3] => Mux7.IN0
+HEX0[4] => Mux6.IN0
+HEX0[5] => Mux5.IN0
+HEX0[6] => Mux4.IN0
+HEX1[0] => Mux10.IN1
+HEX1[1] => Mux9.IN1
+HEX1[2] => Mux8.IN1
+HEX1[3] => Mux7.IN1
+HEX1[4] => Mux6.IN1
+HEX1[5] => Mux5.IN1
+HEX1[6] => Mux4.IN1
+HEX2[0] => Mux10.IN2
+HEX2[1] => Mux9.IN2
+HEX2[2] => Mux8.IN2
+HEX2[3] => Mux7.IN2
+HEX2[4] => Mux6.IN2
+HEX2[5] => Mux5.IN2
+HEX2[6] => Mux4.IN2
+HEX3[0] => Mux10.IN3
+HEX3[1] => Mux9.IN3
+HEX3[2] => Mux8.IN3
+HEX3[3] => Mux7.IN3
+HEX3[4] => Mux6.IN3
+HEX3[5] => Mux5.IN3
+HEX3[6] => Mux4.IN3
+clk => ~NO_FANOUT~
+
+
+|part6_top|part6:part6_inst
+Button[0] => mux_2bit_4to1:M0.S[0]
+Button[0] => mux_2bit_4to1:M1.S[0]
+Button[0] => mux_2bit_4to1:M2.S[0]
+Button[0] => mux_2bit_4to1:M3.S[0]
+Button[1] => mux_2bit_4to1:M0.S[1]
+Button[1] => mux_2bit_4to1:M1.S[1]
+Button[1] => mux_2bit_4to1:M2.S[1]
+Button[1] => mux_2bit_4to1:M3.S[1]
+SW[0] => mux_2bit_4to1:M0.X[0]
+SW[0] => mux_2bit_4to1:M1.W[0]
+SW[0] => mux_2bit_4to1:M2.V[0]
+SW[0] => mux_2bit_4to1:M3.U[0]
+SW[1] => mux_2bit_4to1:M0.X[1]
+SW[1] => mux_2bit_4to1:M1.W[1]
+SW[1] => mux_2bit_4to1:M2.V[1]
+SW[1] => mux_2bit_4to1:M3.U[1]
+SW[2] => mux_2bit_4to1:M0.W[0]
+SW[2] => mux_2bit_4to1:M1.V[0]
+SW[2] => mux_2bit_4to1:M2.U[0]
+SW[2] => mux_2bit_4to1:M3.X[0]
+SW[3] => mux_2bit_4to1:M0.W[1]
+SW[3] => mux_2bit_4to1:M1.V[1]
+SW[3] => mux_2bit_4to1:M2.U[1]
+SW[3] => mux_2bit_4to1:M3.X[1]
+SW[4] => mux_2bit_4to1:M0.V[0]
+SW[4] => mux_2bit_4to1:M1.U[0]
+SW[4] => mux_2bit_4to1:M2.X[0]
+SW[4] => mux_2bit_4to1:M3.W[0]
+SW[5] => mux_2bit_4to1:M0.V[1]
+SW[5] => mux_2bit_4to1:M1.U[1]
+SW[5] => mux_2bit_4to1:M2.X[1]
+SW[5] => mux_2bit_4to1:M3.W[1]
+SW[6] => mux_2bit_4to1:M0.U[0]
+SW[6] => mux_2bit_4to1:M1.X[0]
+SW[6] => mux_2bit_4to1:M2.W[0]
+SW[6] => mux_2bit_4to1:M3.V[0]
+SW[7] => mux_2bit_4to1:M0.U[1]
+SW[7] => mux_2bit_4to1:M1.X[1]
+SW[7] => mux_2bit_4to1:M2.W[1]
+SW[7] => mux_2bit_4to1:M3.V[1]
+
+
+|part6_top|part6:part6_inst|mux_2bit_4to1:M0
+S[0] => Mux0.IN1
+S[0] => Mux1.IN1
+S[1] => Mux0.IN0
+S[1] => Mux1.IN0
+U[0] => Mux1.IN2
+U[1] => Mux0.IN2
+V[0] => Mux1.IN3
+V[1] => Mux0.IN3
+W[0] => Mux1.IN4
+W[1] => Mux0.IN4
+X[0] => Mux1.IN5
+X[1] => Mux0.IN5
+
+
+|part6_top|part6:part6_inst|char_7seg:H0
+C[0] => Display.IN0
+C[0] => Display.IN0
+C[0] => Display[0].DATAIN
+C[0] => Display[5].DATAIN
+C[0] => Display.IN0
+C[1] => Display.IN1
+C[1] => Display.IN1
+C[1] => Display[3].DATAIN
+C[1] => Display.IN1
+
+
+|part6_top|part6:part6_inst|mux_2bit_4to1:M1
+S[0] => Mux0.IN1
+S[0] => Mux1.IN1
+S[1] => Mux0.IN0
+S[1] => Mux1.IN0
+U[0] => Mux1.IN2
+U[1] => Mux0.IN2
+V[0] => Mux1.IN3
+V[1] => Mux0.IN3
+W[0] => Mux1.IN4
+W[1] => Mux0.IN4
+X[0] => Mux1.IN5
+X[1] => Mux0.IN5
+
+
+|part6_top|part6:part6_inst|char_7seg:H1
+C[0] => Display.IN0
+C[0] => Display.IN0
+C[0] => Display[0].DATAIN
+C[0] => Display[5].DATAIN
+C[0] => Display.IN0
+C[1] => Display.IN1
+C[1] => Display.IN1
+C[1] => Display[3].DATAIN
+C[1] => Display.IN1
+
+
+|part6_top|part6:part6_inst|mux_2bit_4to1:M2
+S[0] => Mux0.IN1
+S[0] => Mux1.IN1
+S[1] => Mux0.IN0
+S[1] => Mux1.IN0
+U[0] => Mux1.IN2
+U[1] => Mux0.IN2
+V[0] => Mux1.IN3
+V[1] => Mux0.IN3
+W[0] => Mux1.IN4
+W[1] => Mux0.IN4
+X[0] => Mux1.IN5
+X[1] => Mux0.IN5
+
+
+|part6_top|part6:part6_inst|char_7seg:H2
+C[0] => Display.IN0
+C[0] => Display.IN0
+C[0] => Display[0].DATAIN
+C[0] => Display[5].DATAIN
+C[0] => Display.IN0
+C[1] => Display.IN1
+C[1] => Display.IN1
+C[1] => Display[3].DATAIN
+C[1] => Display.IN1
+
+
+|part6_top|part6:part6_inst|mux_2bit_4to1:M3
+S[0] => Mux0.IN1
+S[0] => Mux1.IN1
+S[1] => Mux0.IN0
+S[1] => Mux1.IN0
+U[0] => Mux1.IN2
+U[1] => Mux0.IN2
+V[0] => Mux1.IN3
+V[1] => Mux0.IN3
+W[0] => Mux1.IN4
+W[1] => Mux0.IN4
+X[0] => Mux1.IN5
+X[1] => Mux0.IN5
+
+
+|part6_top|part6:part6_inst|char_7seg:H3
+C[0] => Display.IN0
+C[0] => Display.IN0
+C[0] => Display[0].DATAIN
+C[0] => Display[5].DATAIN
+C[0] => Display.IN0
+C[1] => Display.IN1
+C[1] => Display.IN1
+C[1] => Display[3].DATAIN
+C[1] => Display.IN1
+
+
+|part6_top|lpm_constant0:inst4
+
+
+|part6_top|lpm_constant0:inst4|lpm_constant:LPM_CONSTANT_component
+
+
+|part6_top|lpm_constant0:inst4|lpm_constant:LPM_CONSTANT_component|lpm_constant_0f8:ag
+
+
+|part6_top|lpm_constant0:inst4|lpm_constant:LPM_CONSTANT_component|lpm_constant_0f8:ag|sld_mod_ram_rom:mgl_prim1
+data_read[0] => ~NO_FANOUT~
+data_read[1] => ~NO_FANOUT~
+data_read[2] => ~NO_FANOUT~
+data_read[3] => ~NO_FANOUT~
+data_read[4] => ~NO_FANOUT~
+data_read[5] => ~NO_FANOUT~
+data_read[6] => ~NO_FANOUT~
+data_read[7] => ~NO_FANOUT~
+raw_tck => is_in_use_reg.CLK
+raw_tck => bypass_reg_out.CLK
+raw_tck => ir_loaded_address_reg[0].CLK
+raw_tck => constant_update_reg[0].CLK
+raw_tck => constant_update_reg[1].CLK
+raw_tck => constant_update_reg[2].CLK
+raw_tck => constant_update_reg[3].CLK
+raw_tck => constant_update_reg[4].CLK
+raw_tck => constant_update_reg[5].CLK
+raw_tck => constant_update_reg[6].CLK
+raw_tck => constant_update_reg[7].CLK
+raw_tck => constant_shift_reg[0].CLK
+raw_tck => constant_shift_reg[1].CLK
+raw_tck => constant_shift_reg[2].CLK
+raw_tck => constant_shift_reg[3].CLK
+raw_tck => constant_shift_reg[4].CLK
+raw_tck => constant_shift_reg[5].CLK
+raw_tck => constant_shift_reg[6].CLK
+raw_tck => constant_shift_reg[7].CLK
+raw_tck => sld_rom_sr:constant_logic_gen:name_gen:info_rom_sr.TCK
+tdi => constant_shift_reg.DATAB
+tdi => sld_rom_sr:constant_logic_gen:name_gen:info_rom_sr.TDI
+tdi => bypass_reg_out.DATAIN
+usr1 => sld_rom_sr:constant_logic_gen:name_gen:info_rom_sr.USR1
+usr1 => dr_scan.IN0
+usr1 => name_gen.IN0
+jtag_state_cdr => cdr.IN1
+jtag_state_cdr => name_gen.IN0
+jtag_state_sdr => sdr.IN1
+jtag_state_sdr => name_gen.IN1
+jtag_state_sdr => sld_rom_sr:constant_logic_gen:name_gen:info_rom_sr.SHIFT
+jtag_state_e1dr => e1dr.IN1
+jtag_state_udr => sld_rom_sr:constant_logic_gen:name_gen:info_rom_sr.UPDATE
+jtag_state_uir => ~NO_FANOUT~
+clr => is_in_use_reg.ACLR
+clr => bypass_reg_out.ACLR
+ena => dr_scan.IN1
+ena => name_gen.IN1
+ena => bypass_reg_out.ENA
+ir_in[0] => process_1.IN0
+ir_in[0] => tdo.OUTPUTSELECT
+ir_in[0] => is_in_use_reg.OUTPUTSELECT
+ir_in[1] => process_0.IN1
+ir_in[1] => process_1.IN0
+ir_in[2] => process_0.IN1
+ir_in[2] => process_1.IN1
+ir_in[3] => ~NO_FANOUT~
+ir_in[4] => process_1.IN1
+ir_in[4] => is_in_use_reg.OUTPUTSELECT
+
+
+|part6_top|lpm_constant0:inst4|lpm_constant:LPM_CONSTANT_component|lpm_constant_0f8:ag|sld_mod_ram_rom:mgl_prim1|sld_rom_sr:\constant_logic_gen:name_gen:info_rom_sr
+ROM_DATA[0] => Mux3.IN66
+ROM_DATA[1] => Mux2.IN66
+ROM_DATA[2] => Mux1.IN66
+ROM_DATA[3] => Mux0.IN66
+ROM_DATA[4] => Mux3.IN62
+ROM_DATA[5] => Mux2.IN62
+ROM_DATA[6] => Mux1.IN62
+ROM_DATA[7] => Mux0.IN62
+ROM_DATA[8] => Mux3.IN58
+ROM_DATA[9] => Mux2.IN58
+ROM_DATA[10] => Mux1.IN58
+ROM_DATA[11] => Mux0.IN58
+ROM_DATA[12] => Mux3.IN54
+ROM_DATA[13] => Mux2.IN54
+ROM_DATA[14] => Mux1.IN54
+ROM_DATA[15] => Mux0.IN54
+ROM_DATA[16] => Mux3.IN50
+ROM_DATA[17] => Mux2.IN50
+ROM_DATA[18] => Mux1.IN50
+ROM_DATA[19] => Mux0.IN50
+ROM_DATA[20] => Mux3.IN46
+ROM_DATA[21] => Mux2.IN46
+ROM_DATA[22] => Mux1.IN46
+ROM_DATA[23] => Mux0.IN46
+ROM_DATA[24] => Mux3.IN42
+ROM_DATA[25] => Mux2.IN42
+ROM_DATA[26] => Mux1.IN42
+ROM_DATA[27] => Mux0.IN42
+ROM_DATA[28] => Mux3.IN38
+ROM_DATA[29] => Mux2.IN38
+ROM_DATA[30] => Mux1.IN38
+ROM_DATA[31] => Mux0.IN38
+ROM_DATA[32] => Mux3.IN34
+ROM_DATA[33] => Mux2.IN34
+ROM_DATA[34] => Mux1.IN34
+ROM_DATA[35] => Mux0.IN34
+ROM_DATA[36] => Mux3.IN30
+ROM_DATA[37] => Mux2.IN30
+ROM_DATA[38] => Mux1.IN30
+ROM_DATA[39] => Mux0.IN30
+ROM_DATA[40] => Mux3.IN26
+ROM_DATA[41] => Mux2.IN26
+ROM_DATA[42] => Mux1.IN26
+ROM_DATA[43] => Mux0.IN26
+ROM_DATA[44] => Mux3.IN22
+ROM_DATA[45] => Mux2.IN22
+ROM_DATA[46] => Mux1.IN22
+ROM_DATA[47] => Mux0.IN22
+TCK => WORD_SR[0].CLK
+TCK => WORD_SR[1].CLK
+TCK => WORD_SR[2].CLK
+TCK => WORD_SR[3].CLK
+TCK => word_counter[0].CLK
+TCK => word_counter[1].CLK
+TCK => word_counter[2].CLK
+TCK => word_counter[3].CLK
+SHIFT => word_counter.OUTPUTSELECT
+SHIFT => word_counter.OUTPUTSELECT
+SHIFT => word_counter.OUTPUTSELECT
+SHIFT => word_counter.OUTPUTSELECT
+SHIFT => WORD_SR.OUTPUTSELECT
+SHIFT => WORD_SR.OUTPUTSELECT
+SHIFT => WORD_SR.OUTPUTSELECT
+SHIFT => WORD_SR.OUTPUTSELECT
+UPDATE => clear_signal.IN0
+USR1 => clear_signal.IN1
+ENA => word_counter.OUTPUTSELECT
+ENA => word_counter.OUTPUTSELECT
+ENA => word_counter.OUTPUTSELECT
+ENA => word_counter.OUTPUTSELECT
+ENA => WORD_SR.OUTPUTSELECT
+ENA => WORD_SR.OUTPUTSELECT
+ENA => WORD_SR.OUTPUTSELECT
+ENA => WORD_SR.OUTPUTSELECT
+TDI => WORD_SR.DATAA
+
+

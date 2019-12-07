@@ -1,0 +1,11 @@
+# vsim +altera -do part6_run_msim_rtl_vhdl.do -l msim_transcript -gui work.de1_disp work.sweep 
+# Loading std.standard
+# Loading std.textio(body)
+# Loading ieee.std_logic_1164(body)
+# Loading work.de1_disp(behavior)
+# Loading ieee.numeric_std(body)
+# Loading work.sweep(arch)
+# part6_run_msim_rtl_vhdl.do 
+# invalid command name "part6_run_msim_rtl_vhdl.do"
+add wave  \
+sim:/de1_disp/clk

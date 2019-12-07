@@ -1,0 +1,109 @@
+m255
+K3
+13
+cModel Technology
+Z0 dC:\Users\rr\Documents\GitHub\fpga_experiments\small_board\LABS\digital_logic\vhdl\lab2\part3\simulation\modelsim
+Eadder
+Z1 w1440072057
+Z2 DPx4 ieee 14 std_logic_1164 0 22 GH1=`jDDBJ=`LM;:Ak`kf2
+Z3 dC:\Users\rr\Documents\GitHub\fpga_experiments\small_board\LABS\digital_logic\vhdl\lab2\part3\simulation\modelsim
+Z4 8C:/Users/rr/Documents/GitHub/fpga_experiments/small_board/LABS/digital_logic/vhdl/lab2/part3/adder.vhd
+Z5 FC:/Users/rr/Documents/GitHub/fpga_experiments/small_board/LABS/digital_logic/vhdl/lab2/part3/adder.vhd
+l0
+L4
+V08^VU?XO3Gfn;Jhn8e8@M0
+Z6 OV;C;6.6d;45
+31
+Z7 o-93 -work work -O0
+Z8 tExplicit 1
+!s100 6TOY^bg25Ej7mIQ5ozU_B0
+Abehavior
+R2
+DEx4 work 5 adder 0 22 08^VU?XO3Gfn;Jhn8e8@M0
+l13
+L12
+V;e58XHJ^COJ`A`Gf]XBHf2
+R6
+31
+Z9 Mx1 4 ieee 14 std_logic_1164
+R7
+R8
+!s100 5D8WOHUI3DNhzNP2ZmAYY1
+Elpm_constant0
+Z10 w1437273282
+R2
+R3
+Z11 8C:/Users/rr/Documents/GitHub/fpga_experiments/small_board/LABS/digital_logic/vhdl/lab2/part3/lpm_constant0.vhd
+Z12 FC:/Users/rr/Documents/GitHub/fpga_experiments/small_board/LABS/digital_logic/vhdl/lab2/part3/lpm_constant0.vhd
+l0
+L42
+Vl2WY@;1C`^_7Z]I2@JE]]0
+R6
+31
+R7
+R8
+!s100 Tm=IH@:KVmBaNPWJceSe30
+Asyn
+R2
+DEx4 work 13 lpm_constant0 0 22 l2WY@;1C`^_7Z]I2@JE]]0
+l68
+L50
+VkIg`RgdgUN[4jVbggmHQD3
+R6
+31
+R9
+R7
+R8
+!s100 NmX4Yg2IjCE8F]YW>A1mI0
+Elpm_constant1
+Z13 w1437200009
+R2
+R3
+Z14 8C:/Users/rr/Documents/GitHub/fpga_experiments/small_board/LABS/digital_logic/vhdl/lab2/part3/lpm_constant1.vhd
+Z15 FC:/Users/rr/Documents/GitHub/fpga_experiments/small_board/LABS/digital_logic/vhdl/lab2/part3/lpm_constant1.vhd
+l0
+L42
+VShZFIM;SBU;J1<2ZWzc5E2
+!s100 I13ig12N9WX@^dBJSg4fA2
+R6
+31
+R7
+R8
+Asyn
+R2
+DEx4 work 13 lpm_constant1 0 22 ShZFIM;SBU;J1<2ZWzc5E2
+l68
+L50
+V6YG8kd^=e]F;O?FHnhnLO1
+!s100 ^bzRL>cH8m4^>kMfcLE_[2
+R6
+31
+R9
+R7
+R8
+Eripple_adder
+Z16 w1437273448
+R2
+R3
+Z17 8C:/Users/rr/Documents/GitHub/fpga_experiments/small_board/LABS/digital_logic/vhdl/lab2/part3/ripple_adder.vhd
+Z18 FC:/Users/rr/Documents/GitHub/fpga_experiments/small_board/LABS/digital_logic/vhdl/lab2/part3/ripple_adder.vhd
+l0
+L4
+VAMJ5JHnEQ@0dAJ]0C_kU[1
+R6
+31
+R7
+R8
+!s100 ;<Pho[S_23VS[]06OSZ;U3
+Abehavior
+R2
+DEx4 work 12 ripple_adder 0 22 AMJ5JHnEQ@0dAJ]0C_kU[1
+l21
+L12
+Vi7L6COaFke6mhDW^>fFO93
+R6
+31
+R9
+R7
+R8
+!s100 hVlXBD;?ZTHiLSc<LV[XA2

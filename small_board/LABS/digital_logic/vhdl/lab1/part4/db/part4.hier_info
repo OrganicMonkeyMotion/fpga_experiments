@@ -1,0 +1,12 @@
+|part4
+A => LED.IN0
+A => LED.IN0
+A => LED[6].DATAIN
+A => LED[4].DATAIN
+A => LED[3].DATAIN
+B => LED[2].DATAIN
+B => LED[1].DATAIN
+B => LED.IN1
+B => LED.IN1
+
+

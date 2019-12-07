@@ -1,0 +1,29 @@
+(Info) ********************************************************************************************
+(Info) Deeds VHDL converter (ver. 1.80.100) is running...
+(Info) Convertion started (12:04:56 AM, 6/7/2014) on file:
+(Info) --> "C:\Users\rr\Documents\GitHub\fpga_experiments\small_board\LABS\digital_logic\vhdl\lab1\part3\part3b.pbs"
+(Info) --------------------------------------------------------------------------------------------
+(Info) Converting schematic (file: "part3b.pbs") into VHDL
+(Info) Extracting and Coding VHDL components
+(Info) VHDL components coded (file: "Components.vhd", 1010 bytes)
+(Info) Processing Input and Output Signals
+(Warning) Unnamed Input [Id#3] named as "iID0003"
+(Warning) Unnamed Input [Id#4] named as "iID0004"
+(Warning) Unnamed Input [Id#9] named as "iID0009"
+(Warning) Unnamed Output [Id#16] named as "oID0016"
+(Warning) Unnamed Output [Id#17] named as "oID0017"
+(Info) 3 Native Input(s), 2 Native Output(s) processed.
+(Info) 0 Added Input(s), 0 Added Output(s), 0 Default Output(s).
+(Info) Top level structural VHDL description coded (file "part3b.vhd", 2681 bytes)
+(Info) --------------------------------------------------------------------------------------------
+(Info) Saving all the VHDL files in the subfolder:
+(Info) --> "C:\Users\rr\Documents\GitHub\fpga_experiments\small_board\LABS\digital_logic\vhdl\lab1\part3\part3b_VHDL"
+(Info)   |--- "Components.vhd" file saved.
+(Info)   |--- "part3b.vhd" file saved.
+(Info) --------------------------------------------------------------------------------------------
+(Info) --------------------------------------------------------------------------------------------
+(Info) This message list saved on file:
+(Info) --> "C:\Users\rr\Documents\GitHub\fpga_experiments\small_board\LABS\digital_logic\vhdl\lab1\part3\part3b_VHDL\ReportMessages.txt"
+(Info) --------------------------------------------------------------------------------------------
+(Info) All files saved! VHDL conversion ended (12:04:56 AM, 6/7/2014)
+(Info) ********************************************************************************************

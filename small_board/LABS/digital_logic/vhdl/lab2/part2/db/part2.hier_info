@@ -1,0 +1,143 @@
+|part2
+BUTTONS[0] => comparator:C0.INPUT[0]
+BUTTONS[0] => circuita:C1.INPUT[0]
+BUTTONS[0] => mplex:M0.V[0]
+BUTTONS[1] => comparator:C0.INPUT[1]
+BUTTONS[1] => circuita:C1.INPUT[1]
+BUTTONS[1] => mplex:M1.V[0]
+BUTTONS[2] => comparator:C0.INPUT[2]
+BUTTONS[2] => circuita:C1.INPUT[2]
+BUTTONS[2] => mplex:M2.V[0]
+BUTTONS[3] => comparator:C0.INPUT[3]
+BUTTONS[3] => mplex:M3.V[0]
+clk_in => DE1_disp:DE1.clk
+
+
+|part2|segseven:S0
+SW[0] => LEDSEG.IN1
+SW[0] => LEDSEG.IN1
+SW[0] => LEDSEG.IN1
+SW[0] => LEDSEG.IN1
+SW[0] => LEDSEG.IN1
+SW[0] => LEDSEG.IN0
+SW[0] => LEDSEG.IN1
+SW[0] => LEDSEG.IN0
+SW[0] => LEDSEG.IN1
+SW[0] => LEDSEG.IN1
+SW[0] => LEDSEG.IN1
+SW[1] => LEDSEG.IN0
+SW[1] => LEDSEG.IN0
+SW[1] => LEDSEG.IN1
+SW[1] => LEDSEG.IN0
+SW[1] => LEDSEG.IN0
+SW[1] => LEDSEG.IN0
+SW[1] => LEDSEG.IN1
+SW[2] => LEDSEG.IN1
+SW[2] => LEDSEG.IN1
+SW[2] => LEDSEG.IN0
+SW[2] => LEDSEG.IN1
+SW[2] => LEDSEG.IN0
+SW[2] => LEDSEG.IN1
+SW[3] => LEDSEG.IN1
+SW[3] => LEDSEG.IN1
+SW[3] => LEDSEG.IN1
+SW[3] => LEDSEG.IN1
+
+
+|part2|circuitb:S1
+SW => LEDSEG[5].DATAIN
+SW => LEDSEG[0].DATAIN
+SW => LEDSEG[3].DATAIN
+SW => LEDSEG[4].DATAIN
+
+
+|part2|DE1_disp:DE1
+HEX0[0] => HEX.DATAB
+HEX0[1] => HEX.DATAB
+HEX0[2] => HEX.DATAB
+HEX0[3] => HEX.DATAB
+HEX0[4] => HEX.DATAB
+HEX0[5] => HEX.DATAB
+HEX0[6] => HEX.DATAB
+HEX1[0] => HEX.DATAB
+HEX1[1] => HEX.DATAB
+HEX1[2] => HEX.DATAB
+HEX1[3] => HEX.DATAB
+HEX1[4] => HEX.DATAB
+HEX1[5] => HEX.DATAB
+HEX1[6] => HEX.DATAB
+HEX2[0] => HEX.DATAB
+HEX2[1] => HEX.DATAB
+HEX2[2] => HEX.DATAB
+HEX2[3] => HEX.DATAB
+HEX2[4] => HEX.DATAB
+HEX2[5] => HEX.DATAB
+HEX2[6] => HEX.DATAB
+HEX3[0] => HEX.DATAB
+HEX3[1] => HEX.DATAB
+HEX3[2] => HEX.DATAB
+HEX3[3] => HEX.DATAB
+HEX3[4] => HEX.DATAB
+HEX3[5] => HEX.DATAB
+HEX3[6] => HEX.DATAB
+clk => sweep:S0.mclk
+
+
+|part2|DE1_disp:DE1|sweep:S0
+mclk => q[0].CLK
+mclk => q[1].CLK
+mclk => q[2].CLK
+mclk => q[3].CLK
+mclk => q[4].CLK
+mclk => q[5].CLK
+mclk => q[6].CLK
+mclk => q[7].CLK
+mclk => q[8].CLK
+mclk => q[9].CLK
+mclk => q[10].CLK
+mclk => q[11].CLK
+
+
+|part2|comparator:C0
+INPUT[0] => ~NO_FANOUT~
+INPUT[1] => OUTPUT.IN0
+INPUT[2] => OUTPUT.IN0
+INPUT[3] => OUTPUT.IN1
+INPUT[3] => OUTPUT.IN1
+
+
+|part2|circuita:C1
+INPUT[0] => OUTPUT[0].DATAIN
+INPUT[1] => OUTPUT.IN0
+INPUT[1] => OUTPUT[1].DATAIN
+INPUT[2] => OUTPUT.IN1
+
+
+|part2|mplex:M3
+V[0] => M.IN0
+V[1] => M.IN0
+Z => M.IN1
+Z => M.IN1
+
+
+|part2|mplex:M2
+V[0] => M.IN0
+V[1] => M.IN0
+Z => M.IN1
+Z => M.IN1
+
+
+|part2|mplex:M1
+V[0] => M.IN0
+V[1] => M.IN0
+Z => M.IN1
+Z => M.IN1
+
+
+|part2|mplex:M0
+V[0] => M.IN0
+V[1] => M.IN0
+Z => M.IN1
+Z => M.IN1
+
+

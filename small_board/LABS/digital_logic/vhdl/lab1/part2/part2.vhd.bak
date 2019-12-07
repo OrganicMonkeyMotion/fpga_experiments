@@ -1,0 +1,22 @@
+LIBRARY ieee;
+USE ieee.std_logic_1164.all;
+
+-- simple mulitplexer module
+-- based on labs from Altera
+-- ftp://ftp.altera.com/up/pub/Altera_Material/11.1/Laboratory_Exercises/Digital_Logic/DE1/vhdl/lab1_VHDL.pdf
+
+ENTITY part2 IS
+	PORT ( S: IN;
+			 X: IN STD_LOGIC_VECTOR (3 DOWNTO 0);
+			 Y: IN STD_LOGIC_VECTOR (3 DOWNTO 0);
+			 M: OUT STD_LOGIC_VECTOR (3 DOWNTO 0));
+END part2;
+
+ARCHITECTURE Behavior OF part2 IS
+BEGIN
+	M[0]<=(NOT(S)AND X[0])OR(S and Y[0]);
+	M[1]<=(NOT(S)AND X[1])OR(S and Y[1]);
+	M[2]<=(NOT(S)AND X[2])OR(S and Y[2]);
+	M[3]<=(NOT(S)AND X[3])OR(S and Y[3]);
+
+END Behavior;

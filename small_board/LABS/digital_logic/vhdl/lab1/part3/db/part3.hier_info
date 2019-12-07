@@ -1,0 +1,23 @@
+|part3test
+S1 => part3:inst1.S1
+S0 => part3:inst1.S0
+
+
+|part3test|part3:inst1
+S1 => M.IN0
+S1 => M.IN0
+S1 => M.IN0
+S1 => M.IN0
+S0 => M.IN1
+S0 => M.IN1
+U[0] => M.IN1
+U[1] => M.IN1
+V[0] => M.IN1
+V[1] => M.IN1
+W[0] => M.IN1
+W[1] => M.IN1
+
+
+|part3test|testsig:inst2
+
+

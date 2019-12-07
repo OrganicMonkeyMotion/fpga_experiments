@@ -1,0 +1,512 @@
+# vsim +altera -do part6_run_msim_rtl_vhdl.do -l msim_transcript -gui work.de1_disp work.sweep 
+# Loading std.standard
+# Loading std.textio(body)
+# Loading ieee.std_logic_1164(body)
+# Loading work.de1_disp(behavior)
+# Loading ieee.numeric_std(body)
+# Loading work.sweep(arch)
+# do part6_run_msim_rtl_vhdl.do 
+# if {[file exists rtl_work]} {
+# 	vdel -lib rtl_work -all
+# }
+# vlib rtl_work
+# vmap work rtl_work
+# Modifying C:/Users/rr/Documents/GitHub/fpga_experiments/small_board/LABS/digital_logic/vhdl/lab1/part6/simulation/modelsim/de1disp.mpf
+# 
+# vcom -93 -work work {C:/Users/rr/Documents/GitHub/fpga_experiments/small_board/LABS/digital_logic/vhdl/lab1/part6/sweep.vhd}
+# Model Technology ModelSim ALTERA vcom 10.0c Compiler 2011.09 Sep 21 2011
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package NUMERIC_STD
+# -- Compiling entity sweep
+# -- Compiling architecture arch of sweep
+# ** Warning: C:/Users/rr/Documents/GitHub/fpga_experiments/small_board/LABS/digital_logic/vhdl/lab1/part6/sweep.vhd(16): (vcom-1083) Implicit array operator "=" always returns FALSE (left length 12 is not equal to right length 10).
+# vcom -93 -work work {C:/Users/rr/Documents/GitHub/fpga_experiments/small_board/LABS/digital_logic/vhdl/lab1/part6/DE1_disp.vhd}
+# Model Technology ModelSim ALTERA vcom 10.0c Compiler 2011.09 Sep 21 2011
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Compiling entity DE1_disp
+# -- Compiling architecture Behavior of DE1_disp
+# vcom -93 -work work {C:/Users/rr/Documents/GitHub/fpga_experiments/small_board/LABS/digital_logic/vhdl/lab1/part6/part6.vhd}
+# Model Technology ModelSim ALTERA vcom 10.0c Compiler 2011.09 Sep 21 2011
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Compiling entity part6
+# -- Compiling architecture Behavior of part6
+# vcom -93 -work work {C:/Users/rr/Documents/GitHub/fpga_experiments/small_board/LABS/digital_logic/vhdl/lab1/part6/mux_2bit_4to1.vhd}
+# Model Technology ModelSim ALTERA vcom 10.0c Compiler 2011.09 Sep 21 2011
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Compiling entity mux_2bit_4to1
+# -- Compiling architecture Behavior of mux_2bit_4to1
+# vcom -93 -work work {C:/Users/rr/Documents/GitHub/fpga_experiments/small_board/LABS/digital_logic/vhdl/lab1/part6/char_7seg.vhd}
+# Model Technology ModelSim ALTERA vcom 10.0c Compiler 2011.09 Sep 21 2011
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Compiling entity char_7seg
+# -- Compiling architecture Behavior of char_7seg
+# vcom -93 -work work {C:/Users/rr/Documents/GitHub/fpga_experiments/small_board/LABS/digital_logic/vhdl/lab1/part6/lpm_constant0.vhd}
+# Model Technology ModelSim ALTERA vcom 10.0c Compiler 2011.09 Sep 21 2011
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Compiling entity lpm_constant0
+# -- Compiling architecture SYN of lpm_constant0
+# 
+add wave  \
+sim:/de1_disp/HEX0 \
+sim:/de1_disp/HEX0(6) \
+sim:/de1_disp/HEX0(5) \
+sim:/de1_disp/HEX0(4) \
+sim:/de1_disp/HEX0(3) \
+sim:/de1_disp/HEX0(2) \
+sim:/de1_disp/HEX0(1) \
+sim:/de1_disp/HEX0(0) \
+sim:/de1_disp/HEX1 \
+sim:/de1_disp/HEX2 \
+sim:/de1_disp/HEX3 \
+sim:/de1_disp/clk \
+sim:/de1_disp/HEX \
+sim:/de1_disp/DISPn
+force -freeze sim:/de1_disp/clk 1 0, 0 {5 ps} -r 10
+add wave  \
+sim:/de1_disp/HEX0 \
+sim:/de1_disp/HEX1 \
+sim:/de1_disp/HEX2 \
+sim:/de1_disp/HEX3 \
+sim:/de1_disp/clk \
+sim:/de1_disp/HEX \
+sim:/de1_disp/DISPn
+force -freeze sim:/de1_disp/HEX0 0000110 0
+force -freeze sim:/de1_disp/HEX1 0100001 0
+force -freeze sim:/de1_disp/HEX2 0001000 0
+force -freeze sim:/de1_disp/HEX3 1111111 0
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+add wave sim:/de1_disp/*
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+add wave sim:/de1_disp/*
+add wave sim:/sweep/*
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+force -freeze sim:/sweep/mclk 1 0, 0 {5 ps} -r 10
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+force -freeze sim:/de1_disp/clk 1 0, 0 {50 ps} -r 100
+force -freeze sim:/sweep/mclk 1 0, 0 {50 ps} -r 100
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+step
+step
+step
+step
+step
+step
+step
+step
+step
+# Next activity is in 5 ps.
+step
+step
+step
+step
+step
+step -out
+step -out
+# Next activity is in 5 ps.
+step -out
+step -over
+step -over
+step -over
+step -over
+step -inst sim:/de1_disp/S0/line__14
+step -inst sim:/de1_disp/S0/line__14
+run -continue
+run
+run
+run
+run
+run -continue
+# Break key hit 
+# Break key hit 
+run
+run
+run
+run
+run
+run
+force -freeze sim:/sweep/mclk 1 0, 0 {50 ps} -r 100
+step
+step
+step
+step
+step
+step
+# Next activity is in 5 ps.
+step
+step
+step
+step
+step
+step
+# Next activity is in 5 ps.
+run -continue
+run -continue
+run -continue
+step
+step -inst sim:/sweep/line__14
+step -inst sim:/sweep/line__14
+step -inst sim:/sweep/line__14
+step -inst sim:/sweep/line__14
+step -inst sim:/sweep/line__14
+step -inst sim:/sweep/line__14
+step -inst sim:/sweep/line__14
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run -continue
+step
+step
+step
+step
+step
+step
+step
+step
+step
+# Next activity is in 5 ps.
+step
+step
+step
+step
+step
+step
+step
+step
+step
+step
+step
+# Next activity is in 5 ps.
+step
+step
+step
+run -all
+run -continue
+# Break key hit 
+# Simulation stop requested.
+run
+step
+step
+step
+step
+step
+step
+step
+step
+step
+step
+step
+# Next activity is in 5 ps.
+step
+step
+step
+step
+step
+step
+step
+step
+step
+# Next activity is in 5 ps.
+step
+step
+step
+step
+step
+step
+run
+run -continue
+step
+step -over
+step -over
+step -over
+step -out
+step -out
+# Next activity is in 5 ps.
+step -over
+step -over
+step -over
+step -over
+step -over
+step -over
+step -over
+step -over
+step -over
+step -over
+step -over
+# Next activity is in 5 ps.
+step -over
+step -over
+step -over
+step -over
+step -over
+step -over
+step -over
+step -over
+step -over
+# Next activity is in 5 ps.
+step -over
+# Break key hit 
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+noforce sim:/sweep/mclk
+force -freeze sim:/sweep/mclk u 0
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+noforce sim:/sweep/mclk
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+step
+step
+step
+step
+step
+# Next activity is in 5 ps.
+step
+step
+step
+step
+step
+step
+# Next activity is in 5 ps.
+step
+step
+step
+step
+step
+# Next activity is in 5 ps.
+step
+step
+step
+step
+step
+step
+# Next activity is in 5 ps.
+step
+step
+step
+step
+step
+# Next activity is in 5 ps.
+step
+step
+add wave  \
+sim:/de1_disp/HEX0 \
+sim:/de1_disp/HEX1 \
+sim:/de1_disp/HEX2 \
+sim:/de1_disp/HEX3 \
+sim:/de1_disp/clk \
+sim:/de1_disp/HEX \
+sim:/de1_disp/DISPn
+restart
+# Loading work.de1_disp(behavior)
+# Loading work.sweep(arch)
+run
+# Break in Architecture arch at C:/Users/rr/Documents/GitHub/fpga_experiments/small_board/LABS/digital_logic/vhdl/lab1/part6/sweep.vhd line 23
+force -freeze sim:/de1_disp/clk 1 0, 0 {0 ps} -r 1
+run
+# Break in Process DISPProcess at C:/Users/rr/Documents/GitHub/fpga_experiments/small_board/LABS/digital_logic/vhdl/lab1/part6/DE1_disp.vhd line 22
+run
+# Break in Architecture arch at C:/Users/rr/Documents/GitHub/fpga_experiments/small_board/LABS/digital_logic/vhdl/lab1/part6/sweep.vhd line 23

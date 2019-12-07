@@ -1,0 +1,6 @@
+<?xml version="1.0" ?>
+<LOG_ROOT>
+	<PROJECT NAME="part6">
+		<CBX_INST_ENTRY INSTANCE_NAME="|part6_top|lpm_constant0:inst4|lpm_constant:LPM_CONSTANT_component" CBX_FILE_NAME="lpm_constant_0f8.tdf"/>
+	</PROJECT>
+</LOG_ROOT>

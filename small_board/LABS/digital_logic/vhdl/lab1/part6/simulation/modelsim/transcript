@@ -1,0 +1,7 @@
+# Error: Acs sdne.
+# 
+#        Unable to replace existing ini file (C:/Users/rr/Documents/GitHub/fpga_experiments/small_board/LABS/digital_logic/vhdl/lab1/part6/simulation/modelsim/de1disp.mpf).  File can not be renamed.
+# Compile of DE1_disp.vhd was successful.
+# Compile of sweep.vhd was successful with warnings.
+# 2 compiles, 0 failed with no errors. 
+vsim +altera -do part6_run_msim_rtl_vhdl.do -l msim_transcript -gui work.de1_disp work.sweep

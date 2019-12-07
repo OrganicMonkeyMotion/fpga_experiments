@@ -1,0 +1,862 @@
+|part4
+clk_in => part4_code:inst.clk_in
+button_in[0] => part4_code:inst.BUTTONS[0]
+button_in[1] => part4_code:inst.BUTTONS[1]
+button_in[2] => part4_code:inst.BUTTONS[2]
+button_in[3] => part4_code:inst.BUTTONS[3]
+
+
+|part4|part4_code:inst
+BUTTONS[0] => bcd_adder:badder.b_in[0]
+BUTTONS[1] => bcd_adder:badder.b_in[1]
+BUTTONS[2] => bcd_adder:badder.b_in[2]
+BUTTONS[3] => bcd_adder:badder.b_in[3]
+CONSTANTS[0] => bcd_adder:badder.a_in[0]
+CONSTANTS[1] => bcd_adder:badder.a_in[1]
+CONSTANTS[2] => bcd_adder:badder.a_in[2]
+CONSTANTS[3] => bcd_adder:badder.a_in[3]
+clk_in => DE1_disp:DE1.clk
+carry_in => bcd_adder:badder.c_in
+
+
+|part4|part4_code:inst|segseven:S0
+SW[0] => LEDSEG.IN1
+SW[0] => LEDSEG.IN1
+SW[0] => LEDSEG.IN0
+SW[0] => LEDSEG.IN1
+SW[0] => LEDSEG.IN1
+SW[0] => LEDSEG.IN1
+SW[0] => LEDSEG.IN0
+SW[0] => LEDSEG.IN1
+SW[0] => LEDSEG.IN1
+SW[0] => LEDSEG.IN1
+SW[0] => LEDSEG.IN1
+SW[1] => LEDSEG.IN0
+SW[1] => LEDSEG.IN1
+SW[1] => LEDSEG.IN0
+SW[1] => LEDSEG.IN0
+SW[1] => LEDSEG.IN1
+SW[1] => LEDSEG.IN0
+SW[1] => LEDSEG.IN0
+SW[2] => LEDSEG.IN1
+SW[2] => LEDSEG.IN1
+SW[2] => LEDSEG.IN0
+SW[2] => LEDSEG.IN0
+SW[2] => LEDSEG.IN1
+SW[2] => LEDSEG.IN1
+SW[3] => LEDSEG.IN1
+SW[3] => LEDSEG.IN1
+SW[3] => LEDSEG.IN1
+SW[3] => LEDSEG.IN1
+
+
+|part4|part4_code:inst|circuitb:S1
+SW => LEDSEG[5].DATAIN
+SW => LEDSEG[0].DATAIN
+SW => LEDSEG[3].DATAIN
+SW => LEDSEG[4].DATAIN
+
+
+|part4|part4_code:inst|DE1_disp:DE1
+HEX0[0] => HEX.DATAB
+HEX0[1] => HEX.DATAB
+HEX0[2] => HEX.DATAB
+HEX0[3] => HEX.DATAB
+HEX0[4] => HEX.DATAB
+HEX0[5] => HEX.DATAB
+HEX0[6] => HEX.DATAB
+HEX1[0] => HEX.DATAB
+HEX1[1] => HEX.DATAB
+HEX1[2] => HEX.DATAB
+HEX1[3] => HEX.DATAB
+HEX1[4] => HEX.DATAB
+HEX1[5] => HEX.DATAB
+HEX1[6] => HEX.DATAB
+HEX2[0] => HEX.DATAB
+HEX2[1] => HEX.DATAB
+HEX2[2] => HEX.DATAB
+HEX2[3] => HEX.DATAB
+HEX2[4] => HEX.DATAB
+HEX2[5] => HEX.DATAB
+HEX2[6] => HEX.DATAB
+HEX3[0] => HEX.DATAB
+HEX3[1] => HEX.DATAB
+HEX3[2] => HEX.DATAB
+HEX3[3] => HEX.DATAB
+HEX3[4] => HEX.DATAB
+HEX3[5] => HEX.DATAB
+HEX3[6] => HEX.DATAB
+clk => sweep:S0.mclk
+
+
+|part4|part4_code:inst|DE1_disp:DE1|sweep:S0
+mclk => q[0].CLK
+mclk => q[1].CLK
+mclk => q[2].CLK
+mclk => q[3].CLK
+mclk => q[4].CLK
+mclk => q[5].CLK
+mclk => q[6].CLK
+mclk => q[7].CLK
+mclk => q[8].CLK
+mclk => q[9].CLK
+mclk => q[10].CLK
+mclk => q[11].CLK
+
+
+|part4|part4_code:inst|bcd_adder:badder
+b_in[0] => adder:FA0.b
+b_in[1] => adder:FA1.b
+b_in[2] => adder:FA2.b
+b_in[3] => adder:FA3.b
+a_in[0] => adder:FA0.a
+a_in[1] => adder:FA1.a
+a_in[2] => adder:FA2.a
+a_in[3] => adder:FA3.a
+c_in => ~NO_FANOUT~
+
+
+|part4|part4_code:inst|bcd_adder:badder|adder:FA3
+b => s.IN1
+b => s.IN1
+b => co.IN0
+b => co.IN0
+b => s.IN1
+b => s.IN1
+a => s.IN0
+a => co.IN0
+a => co.IN1
+a => s.IN0
+a => s.IN0
+ci => s.IN1
+ci => co.IN1
+ci => co.IN1
+ci => s.IN1
+ci => s.IN1
+
+
+|part4|part4_code:inst|bcd_adder:badder|adder:FA2
+b => s.IN1
+b => s.IN1
+b => co.IN0
+b => co.IN0
+b => s.IN1
+b => s.IN1
+a => s.IN0
+a => co.IN0
+a => co.IN1
+a => s.IN0
+a => s.IN0
+ci => s.IN1
+ci => co.IN1
+ci => co.IN1
+ci => s.IN1
+ci => s.IN1
+
+
+|part4|part4_code:inst|bcd_adder:badder|adder:FA1
+b => s.IN1
+b => s.IN1
+b => co.IN0
+b => co.IN0
+b => s.IN1
+b => s.IN1
+a => s.IN0
+a => co.IN0
+a => co.IN1
+a => s.IN0
+a => s.IN0
+ci => s.IN1
+ci => co.IN1
+ci => co.IN1
+ci => s.IN1
+ci => s.IN1
+
+
+|part4|part4_code:inst|bcd_adder:badder|adder:FA0
+b => s.IN1
+b => s.IN1
+b => co.IN0
+b => co.IN0
+b => s.IN1
+b => s.IN1
+a => s.IN0
+a => co.IN0
+a => co.IN1
+a => s.IN0
+a => s.IN0
+ci => s.IN1
+ci => co.IN1
+ci => co.IN1
+ci => s.IN1
+ci => s.IN1
+
+
+|part4|part4_code:inst|bcd_adder:badder|adder:FA5
+b => s.IN1
+b => s.IN1
+b => co.IN0
+b => co.IN0
+b => s.IN1
+b => s.IN1
+a => s.IN0
+a => co.IN0
+a => co.IN1
+a => s.IN0
+a => s.IN0
+ci => s.IN1
+ci => co.IN1
+ci => co.IN1
+ci => s.IN1
+ci => s.IN1
+
+
+|part4|part4_code:inst|bcd_adder:badder|adder:FA4
+b => s.IN1
+b => s.IN1
+b => co.IN0
+b => co.IN0
+b => s.IN1
+b => s.IN1
+a => s.IN0
+a => co.IN0
+a => co.IN1
+a => s.IN0
+a => s.IN0
+ci => s.IN1
+ci => co.IN1
+ci => co.IN1
+ci => s.IN1
+ci => s.IN1
+
+
+|part4|lpm_constant4:inst1
+
+
+|part4|lpm_constant4:inst1|lpm_constant:LPM_CONSTANT_component
+
+
+|part4|lpm_constant4:inst1|lpm_constant:LPM_CONSTANT_component|lpm_constant_7b8:ag
+
+
+|part4|lpm_constant4:inst1|lpm_constant:LPM_CONSTANT_component|lpm_constant_7b8:ag|sld_mod_ram_rom:mgl_prim1
+data_read[0] => ~NO_FANOUT~
+raw_tck => is_in_use_reg.CLK
+raw_tck => bypass_reg_out.CLK
+raw_tck => ir_loaded_address_reg[0].CLK
+raw_tck => constant_update_reg[0].CLK
+raw_tck => constant_shift_reg[0].CLK
+raw_tck => sld_rom_sr:constant_logic_gen:name_gen:info_rom_sr.TCK
+tdi => constant_shift_reg.DATAB
+tdi => sld_rom_sr:constant_logic_gen:name_gen:info_rom_sr.TDI
+tdi => bypass_reg_out.DATAIN
+usr1 => sld_rom_sr:constant_logic_gen:name_gen:info_rom_sr.USR1
+usr1 => dr_scan.IN0
+usr1 => name_gen.IN0
+jtag_state_cdr => cdr.IN1
+jtag_state_cdr => name_gen.IN0
+jtag_state_sdr => sdr.IN1
+jtag_state_sdr => name_gen.IN1
+jtag_state_sdr => sld_rom_sr:constant_logic_gen:name_gen:info_rom_sr.SHIFT
+jtag_state_e1dr => e1dr.IN1
+jtag_state_udr => sld_rom_sr:constant_logic_gen:name_gen:info_rom_sr.UPDATE
+jtag_state_uir => ~NO_FANOUT~
+clr => is_in_use_reg.ACLR
+clr => bypass_reg_out.ACLR
+ena => dr_scan.IN1
+ena => name_gen.IN1
+ena => bypass_reg_out.ENA
+ir_in[0] => process_1.IN0
+ir_in[0] => tdo.OUTPUTSELECT
+ir_in[0] => is_in_use_reg.OUTPUTSELECT
+ir_in[1] => process_0.IN1
+ir_in[1] => process_1.IN0
+ir_in[2] => process_0.IN1
+ir_in[2] => process_1.IN1
+ir_in[3] => ~NO_FANOUT~
+ir_in[4] => process_1.IN1
+ir_in[4] => is_in_use_reg.OUTPUTSELECT
+
+
+|part4|lpm_constant4:inst1|lpm_constant:LPM_CONSTANT_component|lpm_constant_7b8:ag|sld_mod_ram_rom:mgl_prim1|sld_rom_sr:\constant_logic_gen:name_gen:info_rom_sr
+ROM_DATA[0] => Mux3.IN66
+ROM_DATA[1] => Mux2.IN66
+ROM_DATA[2] => Mux1.IN66
+ROM_DATA[3] => Mux0.IN66
+ROM_DATA[4] => Mux3.IN62
+ROM_DATA[5] => Mux2.IN62
+ROM_DATA[6] => Mux1.IN62
+ROM_DATA[7] => Mux0.IN62
+ROM_DATA[8] => Mux3.IN58
+ROM_DATA[9] => Mux2.IN58
+ROM_DATA[10] => Mux1.IN58
+ROM_DATA[11] => Mux0.IN58
+ROM_DATA[12] => Mux3.IN54
+ROM_DATA[13] => Mux2.IN54
+ROM_DATA[14] => Mux1.IN54
+ROM_DATA[15] => Mux0.IN54
+ROM_DATA[16] => Mux3.IN50
+ROM_DATA[17] => Mux2.IN50
+ROM_DATA[18] => Mux1.IN50
+ROM_DATA[19] => Mux0.IN50
+ROM_DATA[20] => Mux3.IN46
+ROM_DATA[21] => Mux2.IN46
+ROM_DATA[22] => Mux1.IN46
+ROM_DATA[23] => Mux0.IN46
+ROM_DATA[24] => Mux3.IN42
+ROM_DATA[25] => Mux2.IN42
+ROM_DATA[26] => Mux1.IN42
+ROM_DATA[27] => Mux0.IN42
+ROM_DATA[28] => Mux3.IN38
+ROM_DATA[29] => Mux2.IN38
+ROM_DATA[30] => Mux1.IN38
+ROM_DATA[31] => Mux0.IN38
+ROM_DATA[32] => Mux3.IN34
+ROM_DATA[33] => Mux2.IN34
+ROM_DATA[34] => Mux1.IN34
+ROM_DATA[35] => Mux0.IN34
+ROM_DATA[36] => Mux3.IN30
+ROM_DATA[37] => Mux2.IN30
+ROM_DATA[38] => Mux1.IN30
+ROM_DATA[39] => Mux0.IN30
+ROM_DATA[40] => Mux3.IN26
+ROM_DATA[41] => Mux2.IN26
+ROM_DATA[42] => Mux1.IN26
+ROM_DATA[43] => Mux0.IN26
+ROM_DATA[44] => Mux3.IN22
+ROM_DATA[45] => Mux2.IN22
+ROM_DATA[46] => Mux1.IN22
+ROM_DATA[47] => Mux0.IN22
+TCK => WORD_SR[0].CLK
+TCK => WORD_SR[1].CLK
+TCK => WORD_SR[2].CLK
+TCK => WORD_SR[3].CLK
+TCK => word_counter[0].CLK
+TCK => word_counter[1].CLK
+TCK => word_counter[2].CLK
+TCK => word_counter[3].CLK
+SHIFT => word_counter.OUTPUTSELECT
+SHIFT => word_counter.OUTPUTSELECT
+SHIFT => word_counter.OUTPUTSELECT
+SHIFT => word_counter.OUTPUTSELECT
+SHIFT => WORD_SR.OUTPUTSELECT
+SHIFT => WORD_SR.OUTPUTSELECT
+SHIFT => WORD_SR.OUTPUTSELECT
+SHIFT => WORD_SR.OUTPUTSELECT
+UPDATE => clear_signal.IN0
+USR1 => clear_signal.IN1
+ENA => word_counter.OUTPUTSELECT
+ENA => word_counter.OUTPUTSELECT
+ENA => word_counter.OUTPUTSELECT
+ENA => word_counter.OUTPUTSELECT
+ENA => WORD_SR.OUTPUTSELECT
+ENA => WORD_SR.OUTPUTSELECT
+ENA => WORD_SR.OUTPUTSELECT
+ENA => WORD_SR.OUTPUTSELECT
+TDI => WORD_SR.DATAA
+
+
+|part4|lpm_constant0:inst4
+
+
+|part4|lpm_constant0:inst4|lpm_constant:LPM_CONSTANT_component
+
+
+|part4|lpm_constant0:inst4|lpm_constant:LPM_CONSTANT_component|lpm_constant_968:ag
+
+
+|part4|lpm_constant0:inst4|lpm_constant:LPM_CONSTANT_component|lpm_constant_968:ag|sld_mod_ram_rom:mgl_prim1
+data_read[0] => ~NO_FANOUT~
+raw_tck => is_in_use_reg.CLK
+raw_tck => bypass_reg_out.CLK
+raw_tck => ir_loaded_address_reg[0].CLK
+raw_tck => constant_update_reg[0].CLK
+raw_tck => constant_shift_reg[0].CLK
+raw_tck => sld_rom_sr:constant_logic_gen:name_gen:info_rom_sr.TCK
+tdi => constant_shift_reg.DATAB
+tdi => sld_rom_sr:constant_logic_gen:name_gen:info_rom_sr.TDI
+tdi => bypass_reg_out.DATAIN
+usr1 => sld_rom_sr:constant_logic_gen:name_gen:info_rom_sr.USR1
+usr1 => dr_scan.IN0
+usr1 => name_gen.IN0
+jtag_state_cdr => cdr.IN1
+jtag_state_cdr => name_gen.IN0
+jtag_state_sdr => sdr.IN1
+jtag_state_sdr => name_gen.IN1
+jtag_state_sdr => sld_rom_sr:constant_logic_gen:name_gen:info_rom_sr.SHIFT
+jtag_state_e1dr => e1dr.IN1
+jtag_state_udr => sld_rom_sr:constant_logic_gen:name_gen:info_rom_sr.UPDATE
+jtag_state_uir => ~NO_FANOUT~
+clr => is_in_use_reg.ACLR
+clr => bypass_reg_out.ACLR
+ena => dr_scan.IN1
+ena => name_gen.IN1
+ena => bypass_reg_out.ENA
+ir_in[0] => process_1.IN0
+ir_in[0] => tdo.OUTPUTSELECT
+ir_in[0] => is_in_use_reg.OUTPUTSELECT
+ir_in[1] => process_0.IN1
+ir_in[1] => process_1.IN0
+ir_in[2] => process_0.IN1
+ir_in[2] => process_1.IN1
+ir_in[3] => ~NO_FANOUT~
+ir_in[4] => process_1.IN1
+ir_in[4] => is_in_use_reg.OUTPUTSELECT
+
+
+|part4|lpm_constant0:inst4|lpm_constant:LPM_CONSTANT_component|lpm_constant_968:ag|sld_mod_ram_rom:mgl_prim1|sld_rom_sr:\constant_logic_gen:name_gen:info_rom_sr
+ROM_DATA[0] => Mux3.IN66
+ROM_DATA[1] => Mux2.IN66
+ROM_DATA[2] => Mux1.IN66
+ROM_DATA[3] => Mux0.IN66
+ROM_DATA[4] => Mux3.IN62
+ROM_DATA[5] => Mux2.IN62
+ROM_DATA[6] => Mux1.IN62
+ROM_DATA[7] => Mux0.IN62
+ROM_DATA[8] => Mux3.IN58
+ROM_DATA[9] => Mux2.IN58
+ROM_DATA[10] => Mux1.IN58
+ROM_DATA[11] => Mux0.IN58
+ROM_DATA[12] => Mux3.IN54
+ROM_DATA[13] => Mux2.IN54
+ROM_DATA[14] => Mux1.IN54
+ROM_DATA[15] => Mux0.IN54
+ROM_DATA[16] => Mux3.IN50
+ROM_DATA[17] => Mux2.IN50
+ROM_DATA[18] => Mux1.IN50
+ROM_DATA[19] => Mux0.IN50
+ROM_DATA[20] => Mux3.IN46
+ROM_DATA[21] => Mux2.IN46
+ROM_DATA[22] => Mux1.IN46
+ROM_DATA[23] => Mux0.IN46
+ROM_DATA[24] => Mux3.IN42
+ROM_DATA[25] => Mux2.IN42
+ROM_DATA[26] => Mux1.IN42
+ROM_DATA[27] => Mux0.IN42
+ROM_DATA[28] => Mux3.IN38
+ROM_DATA[29] => Mux2.IN38
+ROM_DATA[30] => Mux1.IN38
+ROM_DATA[31] => Mux0.IN38
+ROM_DATA[32] => Mux3.IN34
+ROM_DATA[33] => Mux2.IN34
+ROM_DATA[34] => Mux1.IN34
+ROM_DATA[35] => Mux0.IN34
+ROM_DATA[36] => Mux3.IN30
+ROM_DATA[37] => Mux2.IN30
+ROM_DATA[38] => Mux1.IN30
+ROM_DATA[39] => Mux0.IN30
+ROM_DATA[40] => Mux3.IN26
+ROM_DATA[41] => Mux2.IN26
+ROM_DATA[42] => Mux1.IN26
+ROM_DATA[43] => Mux0.IN26
+ROM_DATA[44] => Mux3.IN22
+ROM_DATA[45] => Mux2.IN22
+ROM_DATA[46] => Mux1.IN22
+ROM_DATA[47] => Mux0.IN22
+TCK => WORD_SR[0].CLK
+TCK => WORD_SR[1].CLK
+TCK => WORD_SR[2].CLK
+TCK => WORD_SR[3].CLK
+TCK => word_counter[0].CLK
+TCK => word_counter[1].CLK
+TCK => word_counter[2].CLK
+TCK => word_counter[3].CLK
+SHIFT => word_counter.OUTPUTSELECT
+SHIFT => word_counter.OUTPUTSELECT
+SHIFT => word_counter.OUTPUTSELECT
+SHIFT => word_counter.OUTPUTSELECT
+SHIFT => WORD_SR.OUTPUTSELECT
+SHIFT => WORD_SR.OUTPUTSELECT
+SHIFT => WORD_SR.OUTPUTSELECT
+SHIFT => WORD_SR.OUTPUTSELECT
+UPDATE => clear_signal.IN0
+USR1 => clear_signal.IN1
+ENA => word_counter.OUTPUTSELECT
+ENA => word_counter.OUTPUTSELECT
+ENA => word_counter.OUTPUTSELECT
+ENA => word_counter.OUTPUTSELECT
+ENA => WORD_SR.OUTPUTSELECT
+ENA => WORD_SR.OUTPUTSELECT
+ENA => WORD_SR.OUTPUTSELECT
+ENA => WORD_SR.OUTPUTSELECT
+TDI => WORD_SR.DATAA
+
+
+|part4|lpm_constant1:inst5
+
+
+|part4|lpm_constant1:inst5|lpm_constant:LPM_CONSTANT_component
+
+
+|part4|lpm_constant1:inst5|lpm_constant:LPM_CONSTANT_component|lpm_constant_868:ag
+
+
+|part4|lpm_constant1:inst5|lpm_constant:LPM_CONSTANT_component|lpm_constant_868:ag|sld_mod_ram_rom:mgl_prim1
+data_read[0] => ~NO_FANOUT~
+raw_tck => is_in_use_reg.CLK
+raw_tck => bypass_reg_out.CLK
+raw_tck => ir_loaded_address_reg[0].CLK
+raw_tck => constant_update_reg[0].CLK
+raw_tck => constant_shift_reg[0].CLK
+raw_tck => sld_rom_sr:constant_logic_gen:name_gen:info_rom_sr.TCK
+tdi => constant_shift_reg.DATAB
+tdi => sld_rom_sr:constant_logic_gen:name_gen:info_rom_sr.TDI
+tdi => bypass_reg_out.DATAIN
+usr1 => sld_rom_sr:constant_logic_gen:name_gen:info_rom_sr.USR1
+usr1 => dr_scan.IN0
+usr1 => name_gen.IN0
+jtag_state_cdr => cdr.IN1
+jtag_state_cdr => name_gen.IN0
+jtag_state_sdr => sdr.IN1
+jtag_state_sdr => name_gen.IN1
+jtag_state_sdr => sld_rom_sr:constant_logic_gen:name_gen:info_rom_sr.SHIFT
+jtag_state_e1dr => e1dr.IN1
+jtag_state_udr => sld_rom_sr:constant_logic_gen:name_gen:info_rom_sr.UPDATE
+jtag_state_uir => ~NO_FANOUT~
+clr => is_in_use_reg.ACLR
+clr => bypass_reg_out.ACLR
+ena => dr_scan.IN1
+ena => name_gen.IN1
+ena => bypass_reg_out.ENA
+ir_in[0] => process_1.IN0
+ir_in[0] => tdo.OUTPUTSELECT
+ir_in[0] => is_in_use_reg.OUTPUTSELECT
+ir_in[1] => process_0.IN1
+ir_in[1] => process_1.IN0
+ir_in[2] => process_0.IN1
+ir_in[2] => process_1.IN1
+ir_in[3] => ~NO_FANOUT~
+ir_in[4] => process_1.IN1
+ir_in[4] => is_in_use_reg.OUTPUTSELECT
+
+
+|part4|lpm_constant1:inst5|lpm_constant:LPM_CONSTANT_component|lpm_constant_868:ag|sld_mod_ram_rom:mgl_prim1|sld_rom_sr:\constant_logic_gen:name_gen:info_rom_sr
+ROM_DATA[0] => Mux3.IN66
+ROM_DATA[1] => Mux2.IN66
+ROM_DATA[2] => Mux1.IN66
+ROM_DATA[3] => Mux0.IN66
+ROM_DATA[4] => Mux3.IN62
+ROM_DATA[5] => Mux2.IN62
+ROM_DATA[6] => Mux1.IN62
+ROM_DATA[7] => Mux0.IN62
+ROM_DATA[8] => Mux3.IN58
+ROM_DATA[9] => Mux2.IN58
+ROM_DATA[10] => Mux1.IN58
+ROM_DATA[11] => Mux0.IN58
+ROM_DATA[12] => Mux3.IN54
+ROM_DATA[13] => Mux2.IN54
+ROM_DATA[14] => Mux1.IN54
+ROM_DATA[15] => Mux0.IN54
+ROM_DATA[16] => Mux3.IN50
+ROM_DATA[17] => Mux2.IN50
+ROM_DATA[18] => Mux1.IN50
+ROM_DATA[19] => Mux0.IN50
+ROM_DATA[20] => Mux3.IN46
+ROM_DATA[21] => Mux2.IN46
+ROM_DATA[22] => Mux1.IN46
+ROM_DATA[23] => Mux0.IN46
+ROM_DATA[24] => Mux3.IN42
+ROM_DATA[25] => Mux2.IN42
+ROM_DATA[26] => Mux1.IN42
+ROM_DATA[27] => Mux0.IN42
+ROM_DATA[28] => Mux3.IN38
+ROM_DATA[29] => Mux2.IN38
+ROM_DATA[30] => Mux1.IN38
+ROM_DATA[31] => Mux0.IN38
+ROM_DATA[32] => Mux3.IN34
+ROM_DATA[33] => Mux2.IN34
+ROM_DATA[34] => Mux1.IN34
+ROM_DATA[35] => Mux0.IN34
+ROM_DATA[36] => Mux3.IN30
+ROM_DATA[37] => Mux2.IN30
+ROM_DATA[38] => Mux1.IN30
+ROM_DATA[39] => Mux0.IN30
+ROM_DATA[40] => Mux3.IN26
+ROM_DATA[41] => Mux2.IN26
+ROM_DATA[42] => Mux1.IN26
+ROM_DATA[43] => Mux0.IN26
+ROM_DATA[44] => Mux3.IN22
+ROM_DATA[45] => Mux2.IN22
+ROM_DATA[46] => Mux1.IN22
+ROM_DATA[47] => Mux0.IN22
+TCK => WORD_SR[0].CLK
+TCK => WORD_SR[1].CLK
+TCK => WORD_SR[2].CLK
+TCK => WORD_SR[3].CLK
+TCK => word_counter[0].CLK
+TCK => word_counter[1].CLK
+TCK => word_counter[2].CLK
+TCK => word_counter[3].CLK
+SHIFT => word_counter.OUTPUTSELECT
+SHIFT => word_counter.OUTPUTSELECT
+SHIFT => word_counter.OUTPUTSELECT
+SHIFT => word_counter.OUTPUTSELECT
+SHIFT => WORD_SR.OUTPUTSELECT
+SHIFT => WORD_SR.OUTPUTSELECT
+SHIFT => WORD_SR.OUTPUTSELECT
+SHIFT => WORD_SR.OUTPUTSELECT
+UPDATE => clear_signal.IN0
+USR1 => clear_signal.IN1
+ENA => word_counter.OUTPUTSELECT
+ENA => word_counter.OUTPUTSELECT
+ENA => word_counter.OUTPUTSELECT
+ENA => word_counter.OUTPUTSELECT
+ENA => WORD_SR.OUTPUTSELECT
+ENA => WORD_SR.OUTPUTSELECT
+ENA => WORD_SR.OUTPUTSELECT
+ENA => WORD_SR.OUTPUTSELECT
+TDI => WORD_SR.DATAA
+
+
+|part4|lpm_constant2:inst6
+
+
+|part4|lpm_constant2:inst6|lpm_constant:LPM_CONSTANT_component
+
+
+|part4|lpm_constant2:inst6|lpm_constant:LPM_CONSTANT_component|lpm_constant_768:ag
+
+
+|part4|lpm_constant2:inst6|lpm_constant:LPM_CONSTANT_component|lpm_constant_768:ag|sld_mod_ram_rom:mgl_prim1
+data_read[0] => ~NO_FANOUT~
+raw_tck => is_in_use_reg.CLK
+raw_tck => bypass_reg_out.CLK
+raw_tck => ir_loaded_address_reg[0].CLK
+raw_tck => constant_update_reg[0].CLK
+raw_tck => constant_shift_reg[0].CLK
+raw_tck => sld_rom_sr:constant_logic_gen:name_gen:info_rom_sr.TCK
+tdi => constant_shift_reg.DATAB
+tdi => sld_rom_sr:constant_logic_gen:name_gen:info_rom_sr.TDI
+tdi => bypass_reg_out.DATAIN
+usr1 => sld_rom_sr:constant_logic_gen:name_gen:info_rom_sr.USR1
+usr1 => dr_scan.IN0
+usr1 => name_gen.IN0
+jtag_state_cdr => cdr.IN1
+jtag_state_cdr => name_gen.IN0
+jtag_state_sdr => sdr.IN1
+jtag_state_sdr => name_gen.IN1
+jtag_state_sdr => sld_rom_sr:constant_logic_gen:name_gen:info_rom_sr.SHIFT
+jtag_state_e1dr => e1dr.IN1
+jtag_state_udr => sld_rom_sr:constant_logic_gen:name_gen:info_rom_sr.UPDATE
+jtag_state_uir => ~NO_FANOUT~
+clr => is_in_use_reg.ACLR
+clr => bypass_reg_out.ACLR
+ena => dr_scan.IN1
+ena => name_gen.IN1
+ena => bypass_reg_out.ENA
+ir_in[0] => process_1.IN0
+ir_in[0] => tdo.OUTPUTSELECT
+ir_in[0] => is_in_use_reg.OUTPUTSELECT
+ir_in[1] => process_0.IN1
+ir_in[1] => process_1.IN0
+ir_in[2] => process_0.IN1
+ir_in[2] => process_1.IN1
+ir_in[3] => ~NO_FANOUT~
+ir_in[4] => process_1.IN1
+ir_in[4] => is_in_use_reg.OUTPUTSELECT
+
+
+|part4|lpm_constant2:inst6|lpm_constant:LPM_CONSTANT_component|lpm_constant_768:ag|sld_mod_ram_rom:mgl_prim1|sld_rom_sr:\constant_logic_gen:name_gen:info_rom_sr
+ROM_DATA[0] => Mux3.IN66
+ROM_DATA[1] => Mux2.IN66
+ROM_DATA[2] => Mux1.IN66
+ROM_DATA[3] => Mux0.IN66
+ROM_DATA[4] => Mux3.IN62
+ROM_DATA[5] => Mux2.IN62
+ROM_DATA[6] => Mux1.IN62
+ROM_DATA[7] => Mux0.IN62
+ROM_DATA[8] => Mux3.IN58
+ROM_DATA[9] => Mux2.IN58
+ROM_DATA[10] => Mux1.IN58
+ROM_DATA[11] => Mux0.IN58
+ROM_DATA[12] => Mux3.IN54
+ROM_DATA[13] => Mux2.IN54
+ROM_DATA[14] => Mux1.IN54
+ROM_DATA[15] => Mux0.IN54
+ROM_DATA[16] => Mux3.IN50
+ROM_DATA[17] => Mux2.IN50
+ROM_DATA[18] => Mux1.IN50
+ROM_DATA[19] => Mux0.IN50
+ROM_DATA[20] => Mux3.IN46
+ROM_DATA[21] => Mux2.IN46
+ROM_DATA[22] => Mux1.IN46
+ROM_DATA[23] => Mux0.IN46
+ROM_DATA[24] => Mux3.IN42
+ROM_DATA[25] => Mux2.IN42
+ROM_DATA[26] => Mux1.IN42
+ROM_DATA[27] => Mux0.IN42
+ROM_DATA[28] => Mux3.IN38
+ROM_DATA[29] => Mux2.IN38
+ROM_DATA[30] => Mux1.IN38
+ROM_DATA[31] => Mux0.IN38
+ROM_DATA[32] => Mux3.IN34
+ROM_DATA[33] => Mux2.IN34
+ROM_DATA[34] => Mux1.IN34
+ROM_DATA[35] => Mux0.IN34
+ROM_DATA[36] => Mux3.IN30
+ROM_DATA[37] => Mux2.IN30
+ROM_DATA[38] => Mux1.IN30
+ROM_DATA[39] => Mux0.IN30
+ROM_DATA[40] => Mux3.IN26
+ROM_DATA[41] => Mux2.IN26
+ROM_DATA[42] => Mux1.IN26
+ROM_DATA[43] => Mux0.IN26
+ROM_DATA[44] => Mux3.IN22
+ROM_DATA[45] => Mux2.IN22
+ROM_DATA[46] => Mux1.IN22
+ROM_DATA[47] => Mux0.IN22
+TCK => WORD_SR[0].CLK
+TCK => WORD_SR[1].CLK
+TCK => WORD_SR[2].CLK
+TCK => WORD_SR[3].CLK
+TCK => word_counter[0].CLK
+TCK => word_counter[1].CLK
+TCK => word_counter[2].CLK
+TCK => word_counter[3].CLK
+SHIFT => word_counter.OUTPUTSELECT
+SHIFT => word_counter.OUTPUTSELECT
+SHIFT => word_counter.OUTPUTSELECT
+SHIFT => word_counter.OUTPUTSELECT
+SHIFT => WORD_SR.OUTPUTSELECT
+SHIFT => WORD_SR.OUTPUTSELECT
+SHIFT => WORD_SR.OUTPUTSELECT
+SHIFT => WORD_SR.OUTPUTSELECT
+UPDATE => clear_signal.IN0
+USR1 => clear_signal.IN1
+ENA => word_counter.OUTPUTSELECT
+ENA => word_counter.OUTPUTSELECT
+ENA => word_counter.OUTPUTSELECT
+ENA => word_counter.OUTPUTSELECT
+ENA => WORD_SR.OUTPUTSELECT
+ENA => WORD_SR.OUTPUTSELECT
+ENA => WORD_SR.OUTPUTSELECT
+ENA => WORD_SR.OUTPUTSELECT
+TDI => WORD_SR.DATAA
+
+
+|part4|lpm_constant3:inst7
+
+
+|part4|lpm_constant3:inst7|lpm_constant:LPM_CONSTANT_component
+
+
+|part4|lpm_constant3:inst7|lpm_constant:LPM_CONSTANT_component|lpm_constant_668:ag
+
+
+|part4|lpm_constant3:inst7|lpm_constant:LPM_CONSTANT_component|lpm_constant_668:ag|sld_mod_ram_rom:mgl_prim1
+data_read[0] => ~NO_FANOUT~
+raw_tck => is_in_use_reg.CLK
+raw_tck => bypass_reg_out.CLK
+raw_tck => ir_loaded_address_reg[0].CLK
+raw_tck => constant_update_reg[0].CLK
+raw_tck => constant_shift_reg[0].CLK
+raw_tck => sld_rom_sr:constant_logic_gen:name_gen:info_rom_sr.TCK
+tdi => constant_shift_reg.DATAB
+tdi => sld_rom_sr:constant_logic_gen:name_gen:info_rom_sr.TDI
+tdi => bypass_reg_out.DATAIN
+usr1 => sld_rom_sr:constant_logic_gen:name_gen:info_rom_sr.USR1
+usr1 => dr_scan.IN0
+usr1 => name_gen.IN0
+jtag_state_cdr => cdr.IN1
+jtag_state_cdr => name_gen.IN0
+jtag_state_sdr => sdr.IN1
+jtag_state_sdr => name_gen.IN1
+jtag_state_sdr => sld_rom_sr:constant_logic_gen:name_gen:info_rom_sr.SHIFT
+jtag_state_e1dr => e1dr.IN1
+jtag_state_udr => sld_rom_sr:constant_logic_gen:name_gen:info_rom_sr.UPDATE
+jtag_state_uir => ~NO_FANOUT~
+clr => is_in_use_reg.ACLR
+clr => bypass_reg_out.ACLR
+ena => dr_scan.IN1
+ena => name_gen.IN1
+ena => bypass_reg_out.ENA
+ir_in[0] => process_1.IN0
+ir_in[0] => tdo.OUTPUTSELECT
+ir_in[0] => is_in_use_reg.OUTPUTSELECT
+ir_in[1] => process_0.IN1
+ir_in[1] => process_1.IN0
+ir_in[2] => process_0.IN1
+ir_in[2] => process_1.IN1
+ir_in[3] => ~NO_FANOUT~
+ir_in[4] => process_1.IN1
+ir_in[4] => is_in_use_reg.OUTPUTSELECT
+
+
+|part4|lpm_constant3:inst7|lpm_constant:LPM_CONSTANT_component|lpm_constant_668:ag|sld_mod_ram_rom:mgl_prim1|sld_rom_sr:\constant_logic_gen:name_gen:info_rom_sr
+ROM_DATA[0] => Mux3.IN66
+ROM_DATA[1] => Mux2.IN66
+ROM_DATA[2] => Mux1.IN66
+ROM_DATA[3] => Mux0.IN66
+ROM_DATA[4] => Mux3.IN62
+ROM_DATA[5] => Mux2.IN62
+ROM_DATA[6] => Mux1.IN62
+ROM_DATA[7] => Mux0.IN62
+ROM_DATA[8] => Mux3.IN58
+ROM_DATA[9] => Mux2.IN58
+ROM_DATA[10] => Mux1.IN58
+ROM_DATA[11] => Mux0.IN58
+ROM_DATA[12] => Mux3.IN54
+ROM_DATA[13] => Mux2.IN54
+ROM_DATA[14] => Mux1.IN54
+ROM_DATA[15] => Mux0.IN54
+ROM_DATA[16] => Mux3.IN50
+ROM_DATA[17] => Mux2.IN50
+ROM_DATA[18] => Mux1.IN50
+ROM_DATA[19] => Mux0.IN50
+ROM_DATA[20] => Mux3.IN46
+ROM_DATA[21] => Mux2.IN46
+ROM_DATA[22] => Mux1.IN46
+ROM_DATA[23] => Mux0.IN46
+ROM_DATA[24] => Mux3.IN42
+ROM_DATA[25] => Mux2.IN42
+ROM_DATA[26] => Mux1.IN42
+ROM_DATA[27] => Mux0.IN42
+ROM_DATA[28] => Mux3.IN38
+ROM_DATA[29] => Mux2.IN38
+ROM_DATA[30] => Mux1.IN38
+ROM_DATA[31] => Mux0.IN38
+ROM_DATA[32] => Mux3.IN34
+ROM_DATA[33] => Mux2.IN34
+ROM_DATA[34] => Mux1.IN34
+ROM_DATA[35] => Mux0.IN34
+ROM_DATA[36] => Mux3.IN30
+ROM_DATA[37] => Mux2.IN30
+ROM_DATA[38] => Mux1.IN30
+ROM_DATA[39] => Mux0.IN30
+ROM_DATA[40] => Mux3.IN26
+ROM_DATA[41] => Mux2.IN26
+ROM_DATA[42] => Mux1.IN26
+ROM_DATA[43] => Mux0.IN26
+ROM_DATA[44] => Mux3.IN22
+ROM_DATA[45] => Mux2.IN22
+ROM_DATA[46] => Mux1.IN22
+ROM_DATA[47] => Mux0.IN22
+TCK => WORD_SR[0].CLK
+TCK => WORD_SR[1].CLK
+TCK => WORD_SR[2].CLK
+TCK => WORD_SR[3].CLK
+TCK => word_counter[0].CLK
+TCK => word_counter[1].CLK
+TCK => word_counter[2].CLK
+TCK => word_counter[3].CLK
+SHIFT => word_counter.OUTPUTSELECT
+SHIFT => word_counter.OUTPUTSELECT
+SHIFT => word_counter.OUTPUTSELECT
+SHIFT => word_counter.OUTPUTSELECT
+SHIFT => WORD_SR.OUTPUTSELECT
+SHIFT => WORD_SR.OUTPUTSELECT
+SHIFT => WORD_SR.OUTPUTSELECT
+SHIFT => WORD_SR.OUTPUTSELECT
+UPDATE => clear_signal.IN0
+USR1 => clear_signal.IN1
+ENA => word_counter.OUTPUTSELECT
+ENA => word_counter.OUTPUTSELECT
+ENA => word_counter.OUTPUTSELECT
+ENA => word_counter.OUTPUTSELECT
+ENA => WORD_SR.OUTPUTSELECT
+ENA => WORD_SR.OUTPUTSELECT
+ENA => WORD_SR.OUTPUTSELECT
+ENA => WORD_SR.OUTPUTSELECT
+TDI => WORD_SR.DATAA
+
+

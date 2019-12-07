@@ -1,0 +1,37 @@
+(Info) ********************************************************************************************
+(Info) Deeds VHDL converter (ver. 1.80.100) is running...
+(Info) Convertion started (9:53:06 PM, 6/6/2014) on file:
+(Info) --> "C:\Users\rr\Documents\GitHub\fpga_experiments\small_board\LABS\digital_logic\vhdl\lab1\part2\part2.pbs"
+(Info) --------------------------------------------------------------------------------------------
+(Info) Converting schematic (file: "part2.pbs") into VHDL
+(Info) Extracting and Coding VHDL components
+(Info) VHDL components coded (file: "Components.vhd", 1620 bytes)
+(Info) Processing Input and Output Signals
+(Warning) Unnamed Input [Id#32] named as "iID0032"
+(Warning) Unnamed Input [Id#34] named as "iID0034"
+(Warning) Unnamed Input [Id#55] named as "iID0055"
+(Warning) Unnamed Input [Id#57] named as "iID0057"
+(Warning) Unnamed Input [Id#78] named as "iID0078"
+(Warning) Unnamed Input [Id#80] named as "iID0080"
+(Warning) Unnamed Input [Id#101] named as "iID0101"
+(Warning) Unnamed Input [Id#102] named as "iID0102"
+(Warning) Unnamed Input [Id#103] named as "iID0103"
+(Warning) Unnamed Output [Id#35] named as "oID0035"
+(Warning) Unnamed Output [Id#58] named as "oID0058"
+(Warning) Unnamed Output [Id#81] named as "oID0081"
+(Warning) Unnamed Output [Id#104] named as "oID0104"
+(Info) 9 Native Input(s), 4 Native Output(s) processed.
+(Info) 0 Added Input(s), 0 Added Output(s), 0 Default Output(s).
+(Info) Top level structural VHDL description coded (file "part2.vhd", 3762 bytes)
+(Info) --------------------------------------------------------------------------------------------
+(Info) Saving all the VHDL files in the subfolder:
+(Info) --> "C:\Users\rr\Documents\GitHub\fpga_experiments\small_board\LABS\digital_logic\vhdl\lab1\part2\part2_VHDL"
+(Info)   |--- "Components.vhd" file saved.
+(Info)   |--- "part2.vhd" file saved.
+(Info) --------------------------------------------------------------------------------------------
+(Info) --------------------------------------------------------------------------------------------
+(Info) This message list saved on file:
+(Info) --> "C:\Users\rr\Documents\GitHub\fpga_experiments\small_board\LABS\digital_logic\vhdl\lab1\part2\part2_VHDL\ReportMessages.txt"
+(Info) --------------------------------------------------------------------------------------------
+(Info) All files saved! VHDL conversion ended (9:53:06 PM, 6/6/2014)
+(Info) ********************************************************************************************

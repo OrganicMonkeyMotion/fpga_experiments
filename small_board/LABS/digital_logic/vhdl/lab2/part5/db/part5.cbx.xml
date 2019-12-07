@@ -1,0 +1,10 @@
+<?xml version="1.0" ?>
+<LOG_ROOT>
+	<PROJECT NAME="part5">
+		<CBX_INST_ENTRY INSTANCE_NAME="|part5|lpm_constant0:inst4|lpm_constant:LPM_CONSTANT_component" CBX_FILE_NAME="lpm_constant_968.tdf"/>
+		<CBX_INST_ENTRY INSTANCE_NAME="|part5|lpm_constant1:inst5|lpm_constant:LPM_CONSTANT_component" CBX_FILE_NAME="lpm_constant_868.tdf"/>
+		<CBX_INST_ENTRY INSTANCE_NAME="|part5|lpm_constant2:inst6|lpm_constant:LPM_CONSTANT_component" CBX_FILE_NAME="lpm_constant_768.tdf"/>
+		<CBX_INST_ENTRY INSTANCE_NAME="|part5|lpm_constant3:inst7|lpm_constant:LPM_CONSTANT_component" CBX_FILE_NAME="lpm_constant_668.tdf"/>
+		<CBX_INST_ENTRY INSTANCE_NAME="|part5|lpm_constant4:inst1|lpm_constant:LPM_CONSTANT_component" CBX_FILE_NAME="lpm_constant_7b8.tdf"/>
+	</PROJECT>
+</LOG_ROOT>

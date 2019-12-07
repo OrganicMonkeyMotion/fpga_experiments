@@ -1,0 +1,531 @@
+TimeQuest Timing Analyzer report for part5
+Sun Apr 09 14:32:04 2017
+Quartus II 32-bit Version 11.1 Build 259 01/25/2012 Service Pack 2 SJ Web Edition
+
+
+---------------------
+; Table of Contents ;
+---------------------
+  1. Legal Notice
+  2. TimeQuest Timing Analyzer Summary
+  3. Parallel Compilation
+  4. Clocks
+  5. Slow Model Fmax Summary
+  6. Slow Model Setup Summary
+  7. Slow Model Hold Summary
+  8. Slow Model Recovery Summary
+  9. Slow Model Removal Summary
+ 10. Slow Model Minimum Pulse Width Summary
+ 11. Slow Model Minimum Pulse Width: 'altera_reserved_tck'
+ 12. Propagation Delay
+ 13. Minimum Propagation Delay
+ 14. Fast Model Setup Summary
+ 15. Fast Model Hold Summary
+ 16. Fast Model Recovery Summary
+ 17. Fast Model Removal Summary
+ 18. Fast Model Minimum Pulse Width Summary
+ 19. Fast Model Minimum Pulse Width: 'altera_reserved_tck'
+ 20. Propagation Delay
+ 21. Minimum Propagation Delay
+ 22. Multicorner Timing Analysis Summary
+ 23. Progagation Delay
+ 24. Minimum Progagation Delay
+ 25. Clock Transfers
+ 26. Report TCCS
+ 27. Report RSKM
+ 28. Unconstrained Paths
+ 29. TimeQuest Timing Analyzer Messages
+
+
+
+----------------
+; Legal Notice ;
+----------------
+Copyright (C) 1991-2011 Altera Corporation
+Your use of Altera Corporation's design tools, logic functions 
+and other software and tools, and its AMPP partner logic 
+functions, and any output files from any of the foregoing 
+(including device programming or simulation files), and any 
+associated documentation or information are expressly subject 
+to the terms and conditions of the Altera Program License 
+Subscription Agreement, Altera MegaCore Function License 
+Agreement, or other applicable license agreement, including, 
+without limitation, that your use is for the sole purpose of 
+programming logic devices manufactured by Altera and sold by 
+Altera or its authorized distributors.  Please refer to the 
+applicable agreement for further details.
+
+
+
++--------------------------------------------------------------------------------------+
+; TimeQuest Timing Analyzer Summary                                                    ;
++--------------------+-----------------------------------------------------------------+
+; Quartus II Version ; Version 11.1 Build 259 01/25/2012 Service Pack 2 SJ Web Edition ;
+; Revision Name      ; part5                                                           ;
+; Device Family      ; Cyclone II                                                      ;
+; Device Name        ; EP2C5T144C8                                                     ;
+; Timing Models      ; Final                                                           ;
+; Delay Model        ; Combined                                                        ;
+; Rise/Fall Delays   ; Unavailable                                                     ;
++--------------------+-----------------------------------------------------------------+
+
+
+Parallel compilation was disabled, but you have multiple processors available. Enable parallel compilation to reduce compilation time.
++-------------------------------------+
+; Parallel Compilation                ;
++----------------------------+--------+
+; Processors                 ; Number ;
++----------------------------+--------+
+; Number detected on machine ; 4      ;
+; Maximum allowed            ; 1      ;
++----------------------------+--------+
+
+
++-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Clocks                                                                                                                                                                                                    ;
++---------------------+------+---------+-----------+-------+--------+------------+-----------+-------------+-------+--------+-----------+------------+----------+--------+--------+-------------------------+
+; Clock Name          ; Type ; Period  ; Frequency ; Rise  ; Fall   ; Duty Cycle ; Divide by ; Multiply by ; Phase ; Offset ; Edge List ; Edge Shift ; Inverted ; Master ; Source ; Targets                 ;
++---------------------+------+---------+-----------+-------+--------+------------+-----------+-------------+-------+--------+-----------+------------+----------+--------+--------+-------------------------+
+; altera_reserved_tck ; Base ; 100.000 ; 10.0 MHz  ; 0.000 ; 50.000 ;            ;           ;             ;       ;        ;           ;            ;          ;        ;        ; { altera_reserved_tck } ;
++---------------------+------+---------+-----------+-------+--------+------------+-----------+-------------+-------+--------+-----------+------------+----------+--------+--------+-------------------------+
+
+
+---------------------------
+; Slow Model Fmax Summary ;
+---------------------------
+No paths to report.
+
+
+----------------------------
+; Slow Model Setup Summary ;
+----------------------------
+No paths to report.
+
+
+---------------------------
+; Slow Model Hold Summary ;
+---------------------------
+No paths to report.
+
+
+-------------------------------
+; Slow Model Recovery Summary ;
+-------------------------------
+No paths to report.
+
+
+------------------------------
+; Slow Model Removal Summary ;
+------------------------------
+No paths to report.
+
+
++----------------------------------------------+
+; Slow Model Minimum Pulse Width Summary       ;
++---------------------+--------+---------------+
+; Clock               ; Slack  ; End Point TNS ;
++---------------------+--------+---------------+
+; altera_reserved_tck ; 97.223 ; 0.000         ;
++---------------------+--------+---------------+
+
+
++-------------------------------------------------------------------------------------------------------------+
+; Slow Model Minimum Pulse Width: 'altera_reserved_tck'                                                       ;
++--------+--------------+----------------+-----------+---------------------+------------+---------------------+
+; Slack  ; Actual Width ; Required Width ; Type      ; Clock               ; Clock Edge ; Target              ;
++--------+--------------+----------------+-----------+---------------------+------------+---------------------+
+; 97.223 ; 100.000      ; 2.777          ; Port Rate ; altera_reserved_tck ; Rise       ; altera_reserved_tck ;
++--------+--------------+----------------+-----------+---------------------+------------+---------------------+
+
+
++----------------------------------------------------------------+
+; Propagation Delay                                              ;
++--------------+-------------+--------+--------+--------+--------+
+; Input Port   ; Output Port ; RR     ; RF     ; FR     ; FF     ;
++--------------+-------------+--------+--------+--------+--------+
+; button_in[0] ; carry_led   ; 15.578 ; 15.578 ; 15.578 ; 15.578 ;
+; button_in[0] ; segments[0] ; 16.478 ; 16.478 ; 16.478 ; 16.478 ;
+; button_in[0] ; segments[1] ; 16.803 ; 16.803 ; 16.803 ; 16.803 ;
+; button_in[0] ; segments[2] ; 16.440 ; 16.440 ; 16.440 ; 16.440 ;
+; button_in[0] ; segments[3] ; 17.443 ; 17.443 ; 17.443 ; 17.443 ;
+; button_in[0] ; segments[4] ; 19.118 ; 19.118 ; 19.118 ; 19.118 ;
+; button_in[0] ; segments[5] ; 20.342 ; 20.342 ; 20.342 ; 20.342 ;
+; button_in[0] ; segments[6] ; 16.481 ; 16.481 ; 16.481 ; 16.481 ;
+; button_in[1] ; carry_led   ; 15.129 ; 15.129 ; 15.129 ; 15.129 ;
+; button_in[1] ; segments[0] ; 16.029 ; 16.029 ; 16.029 ; 16.029 ;
+; button_in[1] ; segments[1] ; 16.354 ; 16.354 ; 16.354 ; 16.354 ;
+; button_in[1] ; segments[2] ; 15.991 ; 15.991 ; 15.991 ; 15.991 ;
+; button_in[1] ; segments[3] ; 16.994 ; 16.994 ; 16.994 ; 16.994 ;
+; button_in[1] ; segments[4] ; 18.669 ; 18.669 ; 18.669 ; 18.669 ;
+; button_in[1] ; segments[5] ; 19.893 ; 19.893 ; 19.893 ; 19.893 ;
+; button_in[1] ; segments[6] ; 16.032 ; 16.032 ; 16.032 ; 16.032 ;
+; button_in[2] ; carry_led   ; 14.582 ; 14.582 ; 14.582 ; 14.582 ;
+; button_in[2] ; segments[0] ; 15.761 ; 15.761 ; 15.761 ; 15.761 ;
+; button_in[2] ; segments[1] ; 16.140 ; 16.140 ; 16.140 ; 16.140 ;
+; button_in[2] ; segments[2] ; 15.777 ; 15.777 ; 15.777 ; 15.777 ;
+; button_in[2] ; segments[3] ; 16.780 ; 16.780 ; 16.780 ; 16.780 ;
+; button_in[2] ; segments[4] ; 18.122 ; 18.122 ; 18.122 ; 18.122 ;
+; button_in[2] ; segments[5] ; 19.346 ; 19.346 ; 19.346 ; 19.346 ;
+; button_in[2] ; segments[6] ; 15.818 ; 15.818 ; 15.818 ; 15.818 ;
+; button_in[3] ; carry_led   ; 14.037 ; 14.037 ; 14.037 ; 14.037 ;
+; button_in[3] ; segments[0] ; 15.216 ; 15.216 ; 15.216 ; 15.216 ;
+; button_in[3] ; segments[1] ; 15.595 ; 15.595 ; 15.595 ; 15.595 ;
+; button_in[3] ; segments[2] ; 15.232 ; 15.232 ; 15.232 ; 15.232 ;
+; button_in[3] ; segments[3] ; 16.235 ; 16.235 ; 16.235 ; 16.235 ;
+; button_in[3] ; segments[4] ; 17.577 ; 17.577 ; 17.577 ; 17.577 ;
+; button_in[3] ; segments[5] ; 18.801 ; 18.801 ; 18.801 ; 18.801 ;
+; button_in[3] ; segments[6] ; 15.273 ; 15.273 ; 15.273 ; 15.273 ;
++--------------+-------------+--------+--------+--------+--------+
+
+
++----------------------------------------------------------------+
+; Minimum Propagation Delay                                      ;
++--------------+-------------+--------+--------+--------+--------+
+; Input Port   ; Output Port ; RR     ; RF     ; FR     ; FF     ;
++--------------+-------------+--------+--------+--------+--------+
+; button_in[0] ; carry_led   ; 15.118 ; 15.118 ; 15.118 ; 15.118 ;
+; button_in[0] ; segments[0] ; 15.207 ; 15.207 ; 15.207 ; 15.207 ;
+; button_in[0] ; segments[1] ; 15.577 ; 15.577 ; 15.577 ; 15.577 ;
+; button_in[0] ; segments[2] ; 14.678 ; 14.678 ; 14.678 ; 14.678 ;
+; button_in[0] ; segments[3] ; 15.219 ; 15.219 ; 15.219 ; 15.219 ;
+; button_in[0] ; segments[4] ; 16.312 ; 16.312 ; 16.312 ; 16.312 ;
+; button_in[0] ; segments[5] ; 16.430 ; 16.430 ; 16.430 ; 16.430 ;
+; button_in[0] ; segments[6] ; 15.262 ; 15.262 ; 15.262 ; 15.262 ;
+; button_in[1] ; carry_led   ; 14.264 ; 14.264 ; 14.264 ; 14.264 ;
+; button_in[1] ; segments[0] ; 15.032 ; 15.032 ; 15.032 ; 15.032 ;
+; button_in[1] ; segments[1] ; 15.013 ; 15.013 ; 15.013 ; 15.013 ;
+; button_in[1] ; segments[2] ; 14.629 ; 14.629 ; 14.629 ; 14.629 ;
+; button_in[1] ; segments[3] ; 15.703 ; 15.703 ; 15.703 ; 15.703 ;
+; button_in[1] ; segments[4] ; 16.402 ; 16.402 ; 16.402 ; 16.402 ;
+; button_in[1] ; segments[5] ; 15.981 ; 15.981 ; 15.981 ; 15.981 ;
+; button_in[1] ; segments[6] ; 15.086 ; 15.086 ; 15.086 ; 15.086 ;
+; button_in[2] ; carry_led   ; 14.522 ; 14.522 ; 14.522 ; 14.522 ;
+; button_in[2] ; segments[0] ; 15.312 ; 15.312 ; 15.312 ; 15.312 ;
+; button_in[2] ; segments[1] ; 15.249 ; 15.249 ; 15.249 ; 15.249 ;
+; button_in[2] ; segments[2] ; 14.865 ; 14.865 ; 14.865 ; 14.865 ;
+; button_in[2] ; segments[3] ; 15.991 ; 15.991 ; 15.991 ; 15.991 ;
+; button_in[2] ; segments[4] ; 16.675 ; 16.675 ; 16.675 ; 16.675 ;
+; button_in[2] ; segments[5] ; 15.767 ; 15.767 ; 15.767 ; 15.767 ;
+; button_in[2] ; segments[6] ; 15.340 ; 15.340 ; 15.340 ; 15.340 ;
+; button_in[3] ; carry_led   ; 14.037 ; 14.037 ; 14.037 ; 14.037 ;
+; button_in[3] ; segments[0] ; 14.937 ; 14.937 ; 14.937 ; 14.937 ;
+; button_in[3] ; segments[1] ; 14.771 ; 14.771 ; 14.771 ; 14.771 ;
+; button_in[3] ; segments[2] ; 14.387 ; 14.387 ; 14.387 ; 14.387 ;
+; button_in[3] ; segments[3] ; 15.886 ; 15.886 ; 15.886 ; 15.886 ;
+; button_in[3] ; segments[4] ; 16.156 ; 16.156 ; 16.156 ; 16.156 ;
+; button_in[3] ; segments[5] ; 15.222 ; 15.222 ; 15.222 ; 15.222 ;
+; button_in[3] ; segments[6] ; 15.273 ; 15.273 ; 15.273 ; 15.273 ;
++--------------+-------------+--------+--------+--------+--------+
+
+
+----------------------------
+; Fast Model Setup Summary ;
+----------------------------
+No paths to report.
+
+
+---------------------------
+; Fast Model Hold Summary ;
+---------------------------
+No paths to report.
+
+
+-------------------------------
+; Fast Model Recovery Summary ;
+-------------------------------
+No paths to report.
+
+
+------------------------------
+; Fast Model Removal Summary ;
+------------------------------
+No paths to report.
+
+
++----------------------------------------------+
+; Fast Model Minimum Pulse Width Summary       ;
++---------------------+--------+---------------+
+; Clock               ; Slack  ; End Point TNS ;
++---------------------+--------+---------------+
+; altera_reserved_tck ; 97.778 ; 0.000         ;
++---------------------+--------+---------------+
+
+
++-------------------------------------------------------------------------------------------------------------+
+; Fast Model Minimum Pulse Width: 'altera_reserved_tck'                                                       ;
++--------+--------------+----------------+-----------+---------------------+------------+---------------------+
+; Slack  ; Actual Width ; Required Width ; Type      ; Clock               ; Clock Edge ; Target              ;
++--------+--------------+----------------+-----------+---------------------+------------+---------------------+
+; 97.778 ; 100.000      ; 2.222          ; Port Rate ; altera_reserved_tck ; Rise       ; altera_reserved_tck ;
++--------+--------------+----------------+-----------+---------------------+------------+---------------------+
+
+
++------------------------------------------------------------+
+; Propagation Delay                                          ;
++--------------+-------------+-------+-------+-------+-------+
+; Input Port   ; Output Port ; RR    ; RF    ; FR    ; FF    ;
++--------------+-------------+-------+-------+-------+-------+
+; button_in[0] ; carry_led   ; 6.753 ; 6.753 ; 6.753 ; 6.753 ;
+; button_in[0] ; segments[0] ; 6.921 ; 6.921 ; 6.921 ; 6.921 ;
+; button_in[0] ; segments[1] ; 6.991 ; 6.991 ; 6.991 ; 6.991 ;
+; button_in[0] ; segments[2] ; 6.898 ; 6.898 ; 6.898 ; 6.898 ;
+; button_in[0] ; segments[3] ; 7.172 ; 7.172 ; 7.172 ; 7.172 ;
+; button_in[0] ; segments[4] ; 7.802 ; 7.802 ; 7.802 ; 7.802 ;
+; button_in[0] ; segments[5] ; 8.211 ; 8.211 ; 8.211 ; 8.211 ;
+; button_in[0] ; segments[6] ; 6.905 ; 6.905 ; 6.905 ; 6.905 ;
+; button_in[1] ; carry_led   ; 6.583 ; 6.583 ; 6.583 ; 6.583 ;
+; button_in[1] ; segments[0] ; 6.751 ; 6.751 ; 6.751 ; 6.751 ;
+; button_in[1] ; segments[1] ; 6.821 ; 6.821 ; 6.821 ; 6.821 ;
+; button_in[1] ; segments[2] ; 6.728 ; 6.728 ; 6.728 ; 6.728 ;
+; button_in[1] ; segments[3] ; 7.002 ; 7.002 ; 7.002 ; 7.002 ;
+; button_in[1] ; segments[4] ; 7.632 ; 7.632 ; 7.632 ; 7.632 ;
+; button_in[1] ; segments[5] ; 8.041 ; 8.041 ; 8.041 ; 8.041 ;
+; button_in[1] ; segments[6] ; 6.735 ; 6.735 ; 6.735 ; 6.735 ;
+; button_in[2] ; carry_led   ; 6.399 ; 6.399 ; 6.399 ; 6.399 ;
+; button_in[2] ; segments[0] ; 6.617 ; 6.617 ; 6.617 ; 6.617 ;
+; button_in[2] ; segments[1] ; 6.725 ; 6.725 ; 6.725 ; 6.725 ;
+; button_in[2] ; segments[2] ; 6.632 ; 6.632 ; 6.632 ; 6.632 ;
+; button_in[2] ; segments[3] ; 6.906 ; 6.906 ; 6.906 ; 6.906 ;
+; button_in[2] ; segments[4] ; 7.448 ; 7.448 ; 7.448 ; 7.448 ;
+; button_in[2] ; segments[5] ; 7.857 ; 7.857 ; 7.857 ; 7.857 ;
+; button_in[2] ; segments[6] ; 6.639 ; 6.639 ; 6.639 ; 6.639 ;
+; button_in[3] ; carry_led   ; 6.285 ; 6.285 ; 6.285 ; 6.285 ;
+; button_in[3] ; segments[0] ; 6.503 ; 6.503 ; 6.503 ; 6.503 ;
+; button_in[3] ; segments[1] ; 6.611 ; 6.611 ; 6.611 ; 6.611 ;
+; button_in[3] ; segments[2] ; 6.518 ; 6.518 ; 6.518 ; 6.518 ;
+; button_in[3] ; segments[3] ; 6.792 ; 6.792 ; 6.792 ; 6.792 ;
+; button_in[3] ; segments[4] ; 7.334 ; 7.334 ; 7.334 ; 7.334 ;
+; button_in[3] ; segments[5] ; 7.743 ; 7.743 ; 7.743 ; 7.743 ;
+; button_in[3] ; segments[6] ; 6.525 ; 6.525 ; 6.525 ; 6.525 ;
++--------------+-------------+-------+-------+-------+-------+
+
+
++------------------------------------------------------------+
+; Minimum Propagation Delay                                  ;
++--------------+-------------+-------+-------+-------+-------+
+; Input Port   ; Output Port ; RR    ; RF    ; FR    ; FF    ;
++--------------+-------------+-------+-------+-------+-------+
+; button_in[0] ; carry_led   ; 6.578 ; 6.578 ; 6.578 ; 6.578 ;
+; button_in[0] ; segments[0] ; 6.481 ; 6.481 ; 6.481 ; 6.481 ;
+; button_in[0] ; segments[1] ; 6.579 ; 6.579 ; 6.579 ; 6.579 ;
+; button_in[0] ; segments[2] ; 6.325 ; 6.325 ; 6.325 ; 6.325 ;
+; button_in[0] ; segments[3] ; 6.470 ; 6.470 ; 6.470 ; 6.470 ;
+; button_in[0] ; segments[4] ; 6.910 ; 6.910 ; 6.910 ; 6.910 ;
+; button_in[0] ; segments[5] ; 7.068 ; 7.068 ; 7.068 ; 7.068 ;
+; button_in[0] ; segments[6] ; 6.494 ; 6.494 ; 6.494 ; 6.494 ;
+; button_in[1] ; carry_led   ; 6.308 ; 6.308 ; 6.308 ; 6.308 ;
+; button_in[1] ; segments[0] ; 6.419 ; 6.419 ; 6.419 ; 6.419 ;
+; button_in[1] ; segments[1] ; 6.406 ; 6.406 ; 6.406 ; 6.406 ;
+; button_in[1] ; segments[2] ; 6.310 ; 6.310 ; 6.310 ; 6.310 ;
+; button_in[1] ; segments[3] ; 6.618 ; 6.618 ; 6.618 ; 6.618 ;
+; button_in[1] ; segments[4] ; 6.938 ; 6.938 ; 6.938 ; 6.938 ;
+; button_in[1] ; segments[5] ; 6.898 ; 6.898 ; 6.898 ; 6.898 ;
+; button_in[1] ; segments[6] ; 6.431 ; 6.431 ; 6.431 ; 6.431 ;
+; button_in[2] ; carry_led   ; 6.384 ; 6.384 ; 6.384 ; 6.384 ;
+; button_in[2] ; segments[0] ; 6.486 ; 6.486 ; 6.486 ; 6.486 ;
+; button_in[2] ; segments[1] ; 6.473 ; 6.473 ; 6.473 ; 6.473 ;
+; button_in[2] ; segments[2] ; 6.377 ; 6.377 ; 6.377 ; 6.377 ;
+; button_in[2] ; segments[3] ; 6.690 ; 6.690 ; 6.690 ; 6.690 ;
+; button_in[2] ; segments[4] ; 7.004 ; 7.004 ; 7.004 ; 7.004 ;
+; button_in[2] ; segments[5] ; 6.802 ; 6.802 ; 6.802 ; 6.802 ;
+; button_in[2] ; segments[6] ; 6.507 ; 6.507 ; 6.507 ; 6.507 ;
+; button_in[3] ; carry_led   ; 6.285 ; 6.285 ; 6.285 ; 6.285 ;
+; button_in[3] ; segments[0] ; 6.453 ; 6.453 ; 6.453 ; 6.453 ;
+; button_in[3] ; segments[1] ; 6.373 ; 6.373 ; 6.373 ; 6.373 ;
+; button_in[3] ; segments[2] ; 6.277 ; 6.277 ; 6.277 ; 6.277 ;
+; button_in[3] ; segments[3] ; 6.713 ; 6.713 ; 6.713 ; 6.713 ;
+; button_in[3] ; segments[4] ; 6.898 ; 6.898 ; 6.898 ; 6.898 ;
+; button_in[3] ; segments[5] ; 6.688 ; 6.688 ; 6.688 ; 6.688 ;
+; button_in[3] ; segments[6] ; 6.525 ; 6.525 ; 6.525 ; 6.525 ;
++--------------+-------------+-------+-------+-------+-------+
+
+
++--------------------------------------------------------------------------------+
+; Multicorner Timing Analysis Summary                                            ;
++----------------------+-------+------+----------+---------+---------------------+
+; Clock                ; Setup ; Hold ; Recovery ; Removal ; Minimum Pulse Width ;
++----------------------+-------+------+----------+---------+---------------------+
+; Worst-case Slack     ; N/A   ; N/A  ; N/A      ; N/A     ; 97.223              ;
+;  altera_reserved_tck ; N/A   ; N/A  ; N/A      ; N/A     ; 97.223              ;
+; Design-wide TNS      ; 0.0   ; 0.0  ; 0.0      ; 0.0     ; 0.0                 ;
+;  altera_reserved_tck ; N/A   ; N/A  ; N/A      ; N/A     ; 0.000               ;
++----------------------+-------+------+----------+---------+---------------------+
+
+
++----------------------------------------------------------------+
+; Progagation Delay                                              ;
++--------------+-------------+--------+--------+--------+--------+
+; Input Port   ; Output Port ; RR     ; RF     ; FR     ; FF     ;
++--------------+-------------+--------+--------+--------+--------+
+; button_in[0] ; carry_led   ; 15.578 ; 15.578 ; 15.578 ; 15.578 ;
+; button_in[0] ; segments[0] ; 16.478 ; 16.478 ; 16.478 ; 16.478 ;
+; button_in[0] ; segments[1] ; 16.803 ; 16.803 ; 16.803 ; 16.803 ;
+; button_in[0] ; segments[2] ; 16.440 ; 16.440 ; 16.440 ; 16.440 ;
+; button_in[0] ; segments[3] ; 17.443 ; 17.443 ; 17.443 ; 17.443 ;
+; button_in[0] ; segments[4] ; 19.118 ; 19.118 ; 19.118 ; 19.118 ;
+; button_in[0] ; segments[5] ; 20.342 ; 20.342 ; 20.342 ; 20.342 ;
+; button_in[0] ; segments[6] ; 16.481 ; 16.481 ; 16.481 ; 16.481 ;
+; button_in[1] ; carry_led   ; 15.129 ; 15.129 ; 15.129 ; 15.129 ;
+; button_in[1] ; segments[0] ; 16.029 ; 16.029 ; 16.029 ; 16.029 ;
+; button_in[1] ; segments[1] ; 16.354 ; 16.354 ; 16.354 ; 16.354 ;
+; button_in[1] ; segments[2] ; 15.991 ; 15.991 ; 15.991 ; 15.991 ;
+; button_in[1] ; segments[3] ; 16.994 ; 16.994 ; 16.994 ; 16.994 ;
+; button_in[1] ; segments[4] ; 18.669 ; 18.669 ; 18.669 ; 18.669 ;
+; button_in[1] ; segments[5] ; 19.893 ; 19.893 ; 19.893 ; 19.893 ;
+; button_in[1] ; segments[6] ; 16.032 ; 16.032 ; 16.032 ; 16.032 ;
+; button_in[2] ; carry_led   ; 14.582 ; 14.582 ; 14.582 ; 14.582 ;
+; button_in[2] ; segments[0] ; 15.761 ; 15.761 ; 15.761 ; 15.761 ;
+; button_in[2] ; segments[1] ; 16.140 ; 16.140 ; 16.140 ; 16.140 ;
+; button_in[2] ; segments[2] ; 15.777 ; 15.777 ; 15.777 ; 15.777 ;
+; button_in[2] ; segments[3] ; 16.780 ; 16.780 ; 16.780 ; 16.780 ;
+; button_in[2] ; segments[4] ; 18.122 ; 18.122 ; 18.122 ; 18.122 ;
+; button_in[2] ; segments[5] ; 19.346 ; 19.346 ; 19.346 ; 19.346 ;
+; button_in[2] ; segments[6] ; 15.818 ; 15.818 ; 15.818 ; 15.818 ;
+; button_in[3] ; carry_led   ; 14.037 ; 14.037 ; 14.037 ; 14.037 ;
+; button_in[3] ; segments[0] ; 15.216 ; 15.216 ; 15.216 ; 15.216 ;
+; button_in[3] ; segments[1] ; 15.595 ; 15.595 ; 15.595 ; 15.595 ;
+; button_in[3] ; segments[2] ; 15.232 ; 15.232 ; 15.232 ; 15.232 ;
+; button_in[3] ; segments[3] ; 16.235 ; 16.235 ; 16.235 ; 16.235 ;
+; button_in[3] ; segments[4] ; 17.577 ; 17.577 ; 17.577 ; 17.577 ;
+; button_in[3] ; segments[5] ; 18.801 ; 18.801 ; 18.801 ; 18.801 ;
+; button_in[3] ; segments[6] ; 15.273 ; 15.273 ; 15.273 ; 15.273 ;
++--------------+-------------+--------+--------+--------+--------+
+
+
++------------------------------------------------------------+
+; Minimum Progagation Delay                                  ;
++--------------+-------------+-------+-------+-------+-------+
+; Input Port   ; Output Port ; RR    ; RF    ; FR    ; FF    ;
++--------------+-------------+-------+-------+-------+-------+
+; button_in[0] ; carry_led   ; 6.578 ; 6.578 ; 6.578 ; 6.578 ;
+; button_in[0] ; segments[0] ; 6.481 ; 6.481 ; 6.481 ; 6.481 ;
+; button_in[0] ; segments[1] ; 6.579 ; 6.579 ; 6.579 ; 6.579 ;
+; button_in[0] ; segments[2] ; 6.325 ; 6.325 ; 6.325 ; 6.325 ;
+; button_in[0] ; segments[3] ; 6.470 ; 6.470 ; 6.470 ; 6.470 ;
+; button_in[0] ; segments[4] ; 6.910 ; 6.910 ; 6.910 ; 6.910 ;
+; button_in[0] ; segments[5] ; 7.068 ; 7.068 ; 7.068 ; 7.068 ;
+; button_in[0] ; segments[6] ; 6.494 ; 6.494 ; 6.494 ; 6.494 ;
+; button_in[1] ; carry_led   ; 6.308 ; 6.308 ; 6.308 ; 6.308 ;
+; button_in[1] ; segments[0] ; 6.419 ; 6.419 ; 6.419 ; 6.419 ;
+; button_in[1] ; segments[1] ; 6.406 ; 6.406 ; 6.406 ; 6.406 ;
+; button_in[1] ; segments[2] ; 6.310 ; 6.310 ; 6.310 ; 6.310 ;
+; button_in[1] ; segments[3] ; 6.618 ; 6.618 ; 6.618 ; 6.618 ;
+; button_in[1] ; segments[4] ; 6.938 ; 6.938 ; 6.938 ; 6.938 ;
+; button_in[1] ; segments[5] ; 6.898 ; 6.898 ; 6.898 ; 6.898 ;
+; button_in[1] ; segments[6] ; 6.431 ; 6.431 ; 6.431 ; 6.431 ;
+; button_in[2] ; carry_led   ; 6.384 ; 6.384 ; 6.384 ; 6.384 ;
+; button_in[2] ; segments[0] ; 6.486 ; 6.486 ; 6.486 ; 6.486 ;
+; button_in[2] ; segments[1] ; 6.473 ; 6.473 ; 6.473 ; 6.473 ;
+; button_in[2] ; segments[2] ; 6.377 ; 6.377 ; 6.377 ; 6.377 ;
+; button_in[2] ; segments[3] ; 6.690 ; 6.690 ; 6.690 ; 6.690 ;
+; button_in[2] ; segments[4] ; 7.004 ; 7.004 ; 7.004 ; 7.004 ;
+; button_in[2] ; segments[5] ; 6.802 ; 6.802 ; 6.802 ; 6.802 ;
+; button_in[2] ; segments[6] ; 6.507 ; 6.507 ; 6.507 ; 6.507 ;
+; button_in[3] ; carry_led   ; 6.285 ; 6.285 ; 6.285 ; 6.285 ;
+; button_in[3] ; segments[0] ; 6.453 ; 6.453 ; 6.453 ; 6.453 ;
+; button_in[3] ; segments[1] ; 6.373 ; 6.373 ; 6.373 ; 6.373 ;
+; button_in[3] ; segments[2] ; 6.277 ; 6.277 ; 6.277 ; 6.277 ;
+; button_in[3] ; segments[3] ; 6.713 ; 6.713 ; 6.713 ; 6.713 ;
+; button_in[3] ; segments[4] ; 6.898 ; 6.898 ; 6.898 ; 6.898 ;
+; button_in[3] ; segments[5] ; 6.688 ; 6.688 ; 6.688 ; 6.688 ;
+; button_in[3] ; segments[6] ; 6.525 ; 6.525 ; 6.525 ; 6.525 ;
++--------------+-------------+-------+-------+-------+-------+
+
+
+-------------------
+; Clock Transfers ;
+-------------------
+Nothing to report.
+
+
+---------------
+; Report TCCS ;
+---------------
+No dedicated SERDES Transmitter circuitry present in device or used in design
+
+
+---------------
+; Report RSKM ;
+---------------
+No dedicated SERDES Receiver circuitry present in device or used in design
+
+
++------------------------------------------------+
+; Unconstrained Paths                            ;
++---------------------------------+-------+------+
+; Property                        ; Setup ; Hold ;
++---------------------------------+-------+------+
+; Illegal Clocks                  ; 0     ; 0    ;
+; Unconstrained Clocks            ; 1     ; 1    ;
+; Unconstrained Input Ports       ; 4     ; 4    ;
+; Unconstrained Input Port Paths  ; 32    ; 32   ;
+; Unconstrained Output Ports      ; 12    ; 12   ;
+; Unconstrained Output Port Paths ; 105   ; 105  ;
++---------------------------------+-------+------+
+
+
++------------------------------------+
+; TimeQuest Timing Analyzer Messages ;
++------------------------------------+
+Info: *******************************************************************
+Info: Running Quartus II 32-bit TimeQuest Timing Analyzer
+    Info: Version 11.1 Build 259 01/25/2012 Service Pack 2 SJ Web Edition
+    Info: Processing started: Sun Apr 09 14:32:01 2017
+Info: Command: quartus_sta part5 -c part5
+Info: qsta_default_script.tcl version: #1
+Warning (20028): Parallel compilation is not licensed and has been disabled
+Info (21077): Low junction temperature is 0 degrees C
+Info (21077): High junction temperature is 85 degrees C
+Info (332164): Evaluating HDL-embedded SDC commands
+    Info (332165): Entity sld_hub
+        Info (332166): create_clock -period 10MHz -name altera_reserved_tck [get_ports {altera_reserved_tck}]
+        Info (332166): set_clock_groups -asynchronous -group {altera_reserved_tck}
+Critical Warning (332012): Synopsys Design Constraints File file not found: 'part5.sdc'. A Synopsys Design Constraints File is required by the TimeQuest Timing Analyzer to get proper timing constraints. Without it, the Compiler will not properly optimize the design.
+Warning (332060): Node: clk_in was determined to be a clock but was found without an associated clock assignment.
+Info: Found TIMEQUEST_REPORT_SCRIPT_INCLUDE_DEFAULT_ANALYSIS = ON
+Info: Analyzing Slow Model
+Info (332140): No fmax paths to report
+Info (332140): No Setup paths to report
+Info (332140): No Hold paths to report
+Info (332140): No Recovery paths to report
+Info (332140): No Removal paths to report
+Info (332146): Worst-case minimum pulse width slack is 97.223
+    Info (332119):     Slack End Point TNS Clock 
+    Info (332119): ========= ============= =====================
+    Info (332119):    97.223         0.000 altera_reserved_tck 
+Info (332001): The selected device family is not supported by the report_metastability command.
+Info: Analyzing Fast Model
+Info (306004): Started post-fitting delay annotation
+Warning (306006): Found 12 output pins without output pin load capacitance assignment
+    Info (306007): Pin "carry_led" has no specified output pin load capacitance -- assuming default load capacitance of 0 pF for timing analysis
+    Info (306007): Pin "enable[3]" has no specified output pin load capacitance -- assuming default load capacitance of 0 pF for timing analysis
+    Info (306007): Pin "enable[2]" has no specified output pin load capacitance -- assuming default load capacitance of 0 pF for timing analysis
+    Info (306007): Pin "enable[1]" has no specified output pin load capacitance -- assuming default load capacitance of 0 pF for timing analysis
+    Info (306007): Pin "enable[0]" has no specified output pin load capacitance -- assuming default load capacitance of 0 pF for timing analysis
+    Info (306007): Pin "segments[6]" has no specified output pin load capacitance -- assuming default load capacitance of 0 pF for timing analysis
+    Info (306007): Pin "segments[5]" has no specified output pin load capacitance -- assuming default load capacitance of 0 pF for timing analysis
+    Info (306007): Pin "segments[4]" has no specified output pin load capacitance -- assuming default load capacitance of 0 pF for timing analysis
+    Info (306007): Pin "segments[3]" has no specified output pin load capacitance -- assuming default load capacitance of 0 pF for timing analysis
+    Info (306007): Pin "segments[2]" has no specified output pin load capacitance -- assuming default load capacitance of 0 pF for timing analysis
+    Info (306007): Pin "segments[1]" has no specified output pin load capacitance -- assuming default load capacitance of 0 pF for timing analysis
+    Info (306007): Pin "segments[0]" has no specified output pin load capacitance -- assuming default load capacitance of 0 pF for timing analysis
+Info (306005): Delay annotation completed successfully
+Warning (332060): Node: clk_in was determined to be a clock but was found without an associated clock assignment.
+Info (332140): No Setup paths to report
+Info (332140): No Hold paths to report
+Info (332140): No Recovery paths to report
+Info (332140): No Removal paths to report
+Info (332146): Worst-case minimum pulse width slack is 97.778
+    Info (332119):     Slack End Point TNS Clock 
+    Info (332119): ========= ============= =====================
+    Info (332119):    97.778         0.000 altera_reserved_tck 
+Info (332001): The selected device family is not supported by the report_metastability command.
+Info (332102): Design is not fully constrained for setup requirements
+Info (332102): Design is not fully constrained for hold requirements
+Info: Quartus II 32-bit TimeQuest Timing Analyzer was successful. 0 errors, 5 warnings
+    Info: Peak virtual memory: 306 megabytes
+    Info: Processing ended: Sun Apr 09 14:32:04 2017
+    Info: Elapsed time: 00:00:03
+    Info: Total CPU time (on all processors): 00:00:02
+
+
