@@ -13,6 +13,6 @@ Ye Olde website kept as well.  Not much there really save for screen dumps and v
 
 You can use this to support:
 
-[DEEDS](https://www.digitalelectronicsdeeds.com/)
+[DEEDS](https://www.digitalelectronicsdeeds.com/) // my other prototyping tool, will output VHDL
 
-[LOGISIM](https://sourceforge.net/projects/circuit/)  [Youtube 3](https://www.youtube.com/results?search_query=logisim)
+[LOGISIM](https://sourceforge.net/projects/circuit/)  [Youtube 3](https://www.youtube.com/results?search_query=logisim) // if you want an alternative to DEEDS
