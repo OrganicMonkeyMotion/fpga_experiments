@@ -3,7 +3,7 @@ Some ideas for Part VI
 
 1. [Idea 1](https://allaboutfpga.com/vhdl-code-for-binary-to-bcd-converter/)
 2. [Idea 2](https://shop.doulos.com/knowhow/vhdl/binary-to-bcd-conversion/)
-3. [Idea 3.1] (https://en.wikipedia.org/wiki/Double_dabble) // Double Dabble
+3. [Idea 3.1](https://en.wikipedia.org/wiki/Double_dabble) // Double Dabble
 4. [Idea 3.2](http://www.tkt.cs.tut.fi/kurssit/1426/S12/Ex/ex4/Binary2BCD.pdf)
 5. [Idea 3.3](https://www.nandland.com/vhdl/modules/double-dabble.html)
 6. [TutVid 1](https://www.youtube.com/watch?v=VKKGyOc4zRA)
