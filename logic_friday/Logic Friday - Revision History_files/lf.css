@@ -1,0 +1,145 @@
+
+
+
+body
+{
+	color: #000000;
+	background-color: #ffffff;
+	text-align:left;
+	font-size: 14px;
+	font-family: verdana, Geneva, Arial, Helvetica, sans-serif;
+}
+
+img.margin { margin: 10px 10px 0 0; }
+
+
+a:link{
+	color: #0000ff;
+	text-decoration:none;
+}
+
+a:visited{
+	color: #0000ff;
+	text-decoration:none;
+}
+
+a:hover{
+	color: #0000ff;
+	text-decoration:underline;
+}
+h1 {
+	color: #3f3f3f;
+	font-family: Verdana, Geneva, Arial, Helvetica, sans-serif;
+	font-size: 26pt;
+}
+h2 {
+	color: #3f3f3f;
+	font-family: Verdana, Geneva, Arial, Helvetica, sans-serif;
+	font-size: 18pt;
+}
+h3 {
+	color: #3f3f3f;
+	font-family: Verdana, Geneva, Arial, Helvetica, sans-serif;
+	font-size: 10pt;
+}
+h4 {
+	color: #3f3f3f;
+	font-family: Verdana, Geneva, Arial, Helvetica, sans-serif;
+	font-size: 14pt;
+}
+
+h6 {
+	color: #3f3f3f;
+	font-family: Verdana, Geneva, Arial, Helvetica, sans-serif;
+	font-size: 6pt;
+}
+
+.lh30 {
+	line-height : 30px;
+}
+
+.indent {
+	text-indent: 2%;
+}
+
+textarea {
+	font-family: Verdana, Geneva, Arial, Helvetica, sans-serif;
+	font-size: 14px;
+}
+
+#wrapper {
+	width: 750px;
+	height: 550px;
+	margin: 0 auto;
+	/*border: black solid 1px;*/
+}
+
+#spacer {
+	float: left;
+	width: 720px;
+	height: 20px;
+	/*border: red solid 1px;*/
+}
+
+#header {
+	float: left;
+	width: 720px;
+	height: 100px;
+	/*border: green solid 1px;*/
+}
+
+#main {
+	float: left;
+	top: 0px;
+	left: 0px;
+	width: 580px;
+	height: 670px;
+	/*border: red solid 1px;*/
+}
+
+#bar {
+	float: left;
+	top: 0px;
+	line-height: 20pt;
+	width: 140px;
+	height: 580px;
+	/*background-color:#ffffdf;*/
+	/*border: blue solid 1px;*/
+}
+
+#bottom {
+	float: left;
+	top: 0px;	
+	width: 580px;
+	height: 10px;
+	text-align: right;
+	/*border: blue solid 1px;*/
+}
+
+
+
+
+
+
+
+/*
+     FILE ARCHIVED ON 15:23:20 Dec 28, 2013 AND RETRIEVED FROM THE
+     INTERNET ARCHIVE ON 03:40:57 Sep 27, 2020.
+     JAVASCRIPT APPENDED BY WAYBACK MACHINE, COPYRIGHT INTERNET ARCHIVE.
+
+     ALL OTHER CONTENT MAY ALSO BE PROTECTED BY COPYRIGHT (17 U.S.C.
+     SECTION 108(a)(3)).
+*/
+/*
+playback timings (ms):
+  exclusion.robots: 0.2
+  load_resource: 86.053
+  captures_list: 931.335
+  esindex: 0.013
+  LoadShardBlock: 902.202 (3)
+  exclusion.robots.policy: 0.186
+  PetaboxLoader3.resolve: 40.331
+  RedisCDXSource: 0.726
+  CDXLines.iter: 23.686 (3)
+  PetaboxLoader3.datanode: 927.99 (4)
+*/
