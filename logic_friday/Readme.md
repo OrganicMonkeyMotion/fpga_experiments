@@ -7,9 +7,9 @@ I use it all the time when plodding through my FPGA design tutorials.
 
 Ye Olde website kept as well.  Not much there really save for screen dumps and version history.  Contacts and support long gone.
 
-[Youtube 1](https://www.youtube.com/watch?v=3yKC02AwjuQ)
+[Youtube 1](https://www.youtube.com/watch?v=3yKC02AwjuQ) in English
 
-[Youtube 2](https://www.youtube.com/watch?v=uQqFFwQQr3o)
+[Youtube 2](https://www.youtube.com/watch?v=uQqFFwQQr3o) not in English
 
 You can use this to support:
 
